@@ -1,0 +1,94 @@
+{
+  "id": "comfyui-beginners",
+  "ar": {
+    "title": "ComfyUI للمبتدئين المطلقين",
+    "category": "ComfyUI",
+    "difficulty": "مبتدئ",
+    "summary": "يبدو ComfyUI مخيفًا — كتلة من الصناديق والأسلاك المتشابكة. لكن خلف هذا المخطط البياني يكمن أحد أبسط خطوط توليد الصور في هذا النظام البيئي. يأخذك هذا الدليل خطوة بخطوة من التثبيت وحتى أول صورة منجزة.",
+    "content": [
+      {
+        "heading": "لماذا المخططات العُقدية؟",
+        "paragraphs": [
+          "كل خط من خطوط توليد الصور بالذكاء الاصطناعي هو في الحقيقة سلسلة من الخطوات: تحميل نموذج، وتحويل النص إلى أرقام، وأخذ عينات من الضوضاء، وفك ترميز البكسلات. يكشف ComfyUI هذه الخطوات في صورة عُقد ويتيح لك ربطها بصريًا معًا. وهذا يعني أنه لا شيء مخفي، وأن كل شيء قابل لإعادة الإنتاج."
+        ]
+      },
+      {
+        "heading": "التثبيت",
+        "paragraphs": [
+          "على ويندوز، حمّل الحزمة المحمولة من صفحة الإصدارات الرسمية وفك ضغطها. شغّل run_nvidia_gpu.bat (إنفيديا) أو run_cpu.bat (بدون بطاقة رسومية). يمكن لمستخدمي لينكس وماك استخدام نصوص التثبيت المرفقة. بايثون مرفقة، لذا لا يوجد شيء آخر لتثبيته.",
+          "عند بدء تشغيل الخادم يطبع عنوان URL محليًا — عادةً http://127.0.0.1:8188. افتحه في متصفحك للوصول إلى لوحة الرسم."
+        ]
+      },
+      {
+        "heading": "سير عملك الأول",
+        "paragraphs": [
+          "تحتوي لوحة الرسم الافتراضية بالفعل على سير عمل أساسي. لبناء واحد من الصفر، اضغط بزر الفأرة الأيمن على اللوحة الفارغة واختر Add Node. تحتاج إلى ستة عناصر:",
+          "CheckpointLoaderSimple (تحميل النموذج + CLIP + VAE)، وعقدتا CLIPTextEncode (إيجابية وسلبية)، و EmptyLatentImage، و KSampler، و VAEDecode، و SaveImage.",
+          "اربط MODEL بـ KSampler.model، وCLIP الإيجابي/السلبي بـ KSampler.positive/negative، والكامن بـ KSampler.latent، ثم KSampler.latent بـ VAEDecode.samples و VAEDecode.image بـ SaveImage. وأخيرًا اربط CLIP بترميزات النص وVAE بفك الترميز."
+        ],
+        "list": [
+          "Queue Prompt: Ctrl+Enter",
+          "Cancel current: Esc",
+          "Duplicate selection: Ctrl+C / Ctrl+V",
+          "Save workflow as image (includes embedded JSON)"
+        ]
+      },
+      {
+        "heading": "نصائح التشغيل الأولى",
+        "paragraphs": [
+          "ابدأ بدقة 1024x1024 (SDXL) أو 512x512 (SD 1.5). ثمانية وعشرون خطوة بقيمة CFG 5.0 هي خط أساس آمن. إذا نفدت ذاكرة بطاقة الرسوميات، فعّل --lowvram في مشغل الدفعات أو انتقل إلى VAE مقسم."
+        ]
+      }
+    ],
+    "tags": ["comfyui", "مبتدئ", "إعداد", "عُقد"]
+  },
+  "title": "ComfyUI for Absolute Beginners",
+  "type": "tutorial",
+  "category": "ComfyUI",
+  "author": "Maya Torres",
+  "published": "2026-06-12",
+  "readTime": "12 min",
+  "difficulty": "Beginner",
+  "rating": 4.9,
+  "ratingsCount": 842,
+  "cover": 1,
+  "featured": true,
+  "summary": "ComfyUI looks intimidating — a tangle of boxes and wires. But behind the graph is one of the simplest generation pipelines in the ecosystem. This guide walks you from installation to your first finished image.",
+  "content": [
+    {
+      "heading": "Why node graphs?",
+      "paragraphs": [
+        "Every AI image pipeline is really a sequence of steps: load a model, turn text into numbers, sample noise, decode pixels. ComfyUI exposes those steps as nodes and lets you wire them together visually. That means nothing is hidden, and everything is reproducible."
+      ]
+    },
+    {
+      "heading": "Installation",
+      "paragraphs": [
+        "On Windows, download the portable package from the official releases page and extract it. Launch run_nvidia_gpu.bat (NVIDIA) or run_cpu.bat (no GPU). Linux and macOS users can use the included install scripts. Python is bundled, so there is nothing else to install.",
+        "When the server starts it prints a local URL — usually http://127.0.0.1:8188. Open it in your browser to reach the canvas."
+      ]
+    },
+    {
+      "heading": "Your first workflow",
+      "paragraphs": [
+        "The default canvas already contains a basic workflow. To build one from scratch, right-click the empty canvas and choose Add Node. You need six things:",
+        "CheckpointLoaderSimple (loads model + CLIP + VAE), two CLIPTextEncode nodes (positive and negative), EmptyLatentImage, KSampler, VAEDecode and SaveImage.",
+        "Connect MODEL to KSampler.model, positive/negative CLIP to KSampler.positive/negative, latent to KSampler.latent, then KSampler.latent to VAEDecode.samples and VAEDecode.image to SaveImage. Finally connect CLIP to the text encoders and VAE to the decoder."
+      ],
+      "list": [
+        "Queue Prompt: Ctrl+Enter",
+        "Cancel current: Esc",
+        "Duplicate selection: Ctrl+C / Ctrl+V",
+        "Save workflow as image (includes embedded JSON)"
+      ]
+    },
+    {
+      "heading": "First run tips",
+      "paragraphs": [
+        "Start with 1024x1024 (SDXL) or 512x512 (SD 1.5). Twenty-eight steps at CFG 5.0 is a safe baseline. If your GPU runs out of memory, enable --lowvram in the batch launcher or switch to a tiled VAE."
+      ]
+    }
+  ],
+  "tags": ["comfyui", "beginner", "setup", "nodes"],
+  "related": ["sdxl-parameters", "train-first-lora", "flux-on-8gb"]
+}

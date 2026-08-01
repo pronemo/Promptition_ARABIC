@@ -1,0 +1,46 @@
+{
+  "id": "comfyui-ipadapter",
+  "ar": {
+    "name": "ComfyUI IPAdapter Plus",
+    "category": "نقل الأنماط",
+    "description": "IPAdapter Plus هو التنفيذ المرجعي لـIPAdapter في ComfyUI. يُمكّن من التلميح بالصور ونقل الأنماط عبر تضمين الصور المرجعية مباشرة في شروط التكييف، مع تحكم دقيق في الوزن والمزج.",
+    "features": [
+      "نقل الأنماط والتلميح بالصور",
+      "أنواع أوزان وأوضاع مزج متعددة",
+      "دعم CLIP Vision وFaceID",
+      "تكييف دفعي للصور المرجعية",
+      "يعمل مع نقاط تفتيش Flux وSDXL"
+    ],
+    "installation": "ثبّت عبر ComfyUI Manager، ثم نزّل نماذج IPAdapter وCLIP-Vision إلى models/ipadapter وmodels/clip_vision.",
+    "inputs": ["نموذج", "صورة", "رؤية CLIP", "وزن"],
+    "outputs": ["نموذج مشروط"],
+    "requirements": ["ComfyUI", "IPAdapter weights", "CLIP-Vision weights"],
+    "tags": ["ipadapter", "نقل-أنماط", "مرجع", "تلميح-بالصور"]
+  },
+  "name": "ComfyUI IPAdapter Plus",
+  "type": "node",
+  "package": "ComfyUI_IPAdapter_plus",
+  "category": "Style Transfer",
+  "author": "cubiq",
+  "version": "v2.5",
+  "license": "GPL-3.0",
+  "rating": 4.8,
+  "stars": "5.3k",
+  "cover": 3,
+  "featured": true,
+  "github": "https://github.com/cubiq/ComfyUI_IPAdapter_plus",
+  "description": "IPAdapter Plus is the reference implementation of IPAdapter in ComfyUI. It enables image prompting and style transfer by embedding reference images directly into the conditioning, with fine-grained control over weight and blending.",
+  "features": [
+    "Style transfer and image prompting",
+    "Multiple weight types and blending modes",
+    "CLIP Vision and FaceID support",
+    "Batch reference image conditioning",
+    "Works with Flux and SDXL checkpoints"
+  ],
+  "installation": "Install via ComfyUI Manager, then download the IPAdapter and CLIP-Vision models to models/ipadapter and models/clip_vision.",
+  "inputs": ["model", "image", "clip vision", "weight"],
+  "outputs": ["conditioned model"],
+  "requirements": ["ComfyUI", "IPAdapter weights", "CLIP-Vision weights"],
+  "tags": ["ipadapter", "style-transfer", "reference", "image-prompt"],
+  "related": ["comfyui-controlnet-aux", "comfyui-gguf", "was-node-suite"]
+}

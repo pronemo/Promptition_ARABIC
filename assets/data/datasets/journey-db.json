@@ -1,0 +1,44 @@
+{
+  "id": "journey-db",
+  "ar": {
+    "name": "JourneyDB",
+    "category": "انتقاء البيانات",
+    "license": "للبحث فقط",
+    "description": "يقطّر JourneyDB أربعة ملايين صورة غنية بصريًا من مجموعة عالية الجماليات. وهو مصمم لدفع تدريب نماذج الانتشار نحو جماليات أقوى وتكوينات أنظف.",
+    "features": [
+      "4 ملايين صورة منتقاة عالية الجماليات",
+      "تعليقات مفلترة مسبقًا",
+      "ملفات parquet جاهزة للاستخدام",
+      "مُستشهد بها على نطاق واسع في أبحاث الجودة"
+    ],
+    "uses": [
+      "تدريب على جودة الجماليات",
+      "خطوط أساس لجودة التعليقات",
+      "دراسات مواءمة النص مع الصورة"
+    ],
+    "tags": ["منتقى", "الجماليات", "تدريب", "بحث"],
+    "source": "https://github.com/Vchitect/JourneyDB"
+  },
+  "name": "JourneyDB",
+  "type": "dataset",
+  "category": "Curation",
+  "samples": "4M",
+  "sizeGb": 800,
+  "format": "Parquet + images",
+  "license": "Research only",
+  "rating": 4.6,
+  "usedBy": "Midjourney distillation",
+  "cover": 2,
+  "featured": false,
+  "source": "https://github.com/Vchitect/JourneyDB",
+  "description": "JourneyDB distills 4 million visually rich images from an aggregated high-aesthetic corpus. It is designed to push diffusion training toward stronger aesthetics and cleaner compositions.",
+  "features": [
+    "4M high-aesthetic curated images",
+    "Pre-filtered captions",
+    "Ready-to-use parquet manifests",
+    "Widely cited in quality-focused research"
+  ],
+  "uses": ["Aesthetic quality training", "Caption quality baselines", "Prompt–image alignment studies"],
+  "tags": ["curated", "aesthetics", "training", "research"],
+  "related": ["laion-aesthetics", "vision-aesthetics", "danbooru"]
+}

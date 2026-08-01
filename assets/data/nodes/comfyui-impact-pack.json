@@ -1,0 +1,46 @@
+{
+  "id": "comfyui-impact-pack",
+  "ar": {
+    "name": "ComfyUI Impact Pack",
+    "category": "سير عمل",
+    "description": "يضيف Impact Pack عقد كشف وتفصيل تعمل على أتمتة إصلاح الوجوه والتحسين الإقليمي: ابحث عن وجه، اقتطعه، عالجه بالتعبئة بدقة أعلى ثم أعد مزجه — وكل ذلك داخل الرسم البياني.",
+    "features": [
+      "كاشفات الوجوه والمربعات المحيطة",
+      "عقد DetailerForEach لإصلاح المناطق",
+      "سير عمل تلقائي لإصلاح الوجوه",
+      "أدوات SAM والمربعات المحيطة",
+      "معالجة متوافقة مع الدفعات"
+    ],
+    "installation": "ثبّت عبر ComfyUI Manager. عند أول تشغيل ستُطلب منك تنزيل نماذج إضافية (كاشفات المربعات/الوجوه).",
+    "inputs": ["صورة", "نموذج", "كاشف"],
+    "outputs": ["صورة"],
+    "requirements": ["ComfyUI", "detector models"],
+    "tags": ["تفصيل", "وجه", "كشف", "تعبئة"]
+  },
+  "name": "ComfyUI Impact Pack",
+  "type": "node",
+  "package": "ComfyUI-Impact-Pack",
+  "category": "Workflow",
+  "author": "ltdrdata",
+  "version": "v7.2",
+  "license": "GPL-3.0",
+  "rating": 4.7,
+  "stars": "2.4k",
+  "cover": 5,
+  "featured": false,
+  "github": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
+  "description": "Impact Pack adds detection and detailer nodes that automate face repair and regional refinement: find a face, crop it, inpaint it at higher resolution and blend it back — all inside the graph.",
+  "features": [
+    "Face and bounding-box detectors",
+    "DetailerForEach nodes for region fixes",
+    "Automatic face repair workflows",
+    "SAM and bbox utilities",
+    "Batch-friendly processing"
+  ],
+  "installation": "Install via ComfyUI Manager. The first run prompts you to download additional models (bbox/face detectors).",
+  "inputs": ["image", "model", "detector"],
+  "outputs": ["image"],
+  "requirements": ["ComfyUI", "detector models"],
+  "tags": ["detailer", "face", "detection", "inpainting"],
+  "related": ["comfyui-inspire-pack", "was-node-suite", "comfyui-easy-use"]
+}

@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Promptition — App Layout Shell
+   Core: layout.css
+   ========================================================================== */
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+}
+
+/* Page header used by collection/detail pages */
+.page-hero {
+  background: linear-gradient(
+    180deg,
+    var(--bg-soft),
+    var(--bg)
+  );
+  border-bottom: 1px solid var(--border);
+  padding-block: var(--sp-6) var(--sp-5);
+}
+
+.page-hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.page-title {
+  font-size: var(--fs-3xl);
+  letter-spacing: -0.025em;
+  background: linear-gradient(120deg, var(--text), var(--brand-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-description {
+  color: var(--text-muted);
+  max-width: 70ch;
+}
+
+/* Sidebar layout (collection pages) */
+.collection-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: var(--sp-5);
+  align-items: start;
+}
+
+.collection-main {
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .collection-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sticky helpers */
+.sticky-top {
+  position: sticky;
+  top: calc(var(--header-h) + var(--sp-4));
+}
+
+/* Two column content layout (detail pages) */
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: var(--sp-6);
+  align-items: start;
+}
+
+.content-grid .content-side {
+  position: sticky;
+  top: calc(var(--header-h) + var(--sp-4));
+}
+
+@media (max-width: 960px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  .content-grid .content-side {
+    position: static;
+  }
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .section {
+    padding-block: var(--sp-6);
+  }
+  .page-title {
+    font-size: var(--fs-2xl);
+  }
+}

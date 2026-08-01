@@ -1,0 +1,56 @@
+{
+  "id": "cyberpunk-city",
+  "ar": {
+    "name": "شارع مدينة سايبربانك",
+    "category": "خيال علمي",
+    "description": "شارع سايبربانك لامع بمياه المطر ومغمور بالنيون، مباشرة من أجواء فيلم إثارة ديستوبي. نتائج قوية مع نماذج Flux وواقعية SDXL.",
+    "positive": "شارع مدينة سايبربانك ليلاً تحت المطر، لافتات نيون متوهجة بالسيان والماجنتا، أسفلت مبلل يعكس الأضواء، ضباب جوي كثيف، ناطحات سحاب شامخة بلوحات هولوغرامية، شخص وحيد يحمل مظلة ويبتعد، تكوين سينمائي، توهج عدسة أنامورفي، تفاصيل فائقة، 8k",
+    "negative": "ضوء النهار، مشمس، نظيف، ضبابي، جودة منخفضة، كرتوني، تشبع مفرط، علامة مائية، نص، أشخاص إضافيون، أيدي مشوهة، تفاصيل منخفضة",
+    "settings": {
+      "width": 1280,
+      "height": 720,
+      "steps": 30,
+      "cfg": 5.5,
+      "sampler": "dpmpp_2m",
+      "model": "SDXL",
+      "aspect": "16:9"
+    },
+    "tags": ["سايبربانك", "خيال علمي", "نيون", "مدينة", "ليل"],
+    "examples": [
+      {
+        "title": "مطاردة على السطح",
+        "positive": "مشهد مطاردة على سطح مبنى سايبربانك، مدينة نيون من الأسفل، مطر، ضباب حركة، سينمائي، تفاصيل فائقة"
+      }
+    ]
+  },
+  "name": "Cyberpunk City Street",
+  "type": "prompt",
+  "category": "Sci-Fi",
+  "rating": 4.8,
+  "ratingsCount": 1150,
+  "usedBy": "198k",
+  "cover": 3,
+  "featured": false,
+  "description": "A rain-slicked neon cyberpunk street straight out of a dystopian thriller. Strong results on Flux and photoreal SDXL checkpoints.",
+  "positive": "cyberpunk city street at night in the rain, glowing neon signs in cyan and magenta, wet asphalt reflecting lights, dense atmospheric fog, towering skyscrapers with holographic billboards, a lone figure with an umbrella walking away, cinematic composition, anamorphic lens flare, ultra detailed, 8k",
+  "negative": "daylight, sunny, clean, blurry, low quality, cartoon, oversaturated, watermark, text, extra people, deformed hands, low detail",
+  "settings": {
+    "width": 1280,
+    "height": 720,
+    "steps": 30,
+    "cfg": 5.5,
+    "sampler": "dpmpp_2m",
+    "model": "SDXL",
+    "aspect": "16:9"
+  },
+  "tags": ["cyberpunk", "sci-fi", "neon", "city", "night"],
+  "compatibleModels": ["juggernaut-xl", "flux-1-dev", "sdxl-base"],
+  "compatibleLoras": ["cinematic-style", "epi-noise-offset", "detail-tweaker-xl"],
+  "examples": [
+    {
+      "title": "Rooftop chase",
+      "positive": "cyberpunk rooftop chase scene, neon city below, rain, motion blur, cinematic, ultra detailed"
+    }
+  ],
+  "related": ["retro-80s", "cinematic-portrait", "concept-art"]
+}

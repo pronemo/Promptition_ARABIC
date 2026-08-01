@@ -1,0 +1,63 @@
+{
+  "id": "comfyui",
+  "ar": {
+    "name": "ComfyUI",
+    "category": "منصة سير العمل",
+    "description": "ComfyUI محرك سير عمل قائم على العُقد لتوليد الصور باستخدام Stable Diffusion و Flux ونماذج الانتشار الأخرى. كل عملية — من ترميز النص إلى KSampler إلى تكبير الدقة — هي عقدة رسومية يمكنك ربطها وإعادة توجيهها وإعادة استخدامها، مما يمنحك تحكمًا دقيقًا في كل بكسل وإمكانية إعادة إنتاج بلا حدود.",
+    "features": [
+      "نظام سير عمل نمطي قائم على العُقد",
+      "معمارية فعّالة في استخدام ذاكرة وحدة المعالجة الرسومية",
+      "دعم أصلي لـ Flux و SDXL و SD3 و Cascade",
+      "تحميل نماذج GGUF المكمّمة",
+      "قابل للتوسعة عبر مئات حزم العُقد المخصصة",
+      "وضع خادم بلا واجهة للأتمتة وواجهات برمجة التطبيقات"
+    ],
+    "requirements": {
+      "os": ["ويندوز", "لينكس", "ماك"],
+      "gpu": "إنفيديا CUDA / AMD ROCm / سيليكون آبل",
+      "minVram": "4 جيجابايت (مقسم)",
+      "python": "3.10+",
+      "cuda": "11.8+"
+    },
+    "license": "GPL-3.0",
+    "tags": ["سير عمل", "عُقد", "مفتوح المصدر", "متقدم", "عُقد مخصصة"]
+  },
+  "name": "ComfyUI",
+  "type": "tool",
+  "category": "Workflow Platform",
+  "publisher": "comfyanonymous",
+  "version": "v0.3.30",
+  "license": "GPL-3.0",
+  "rating": 4.9,
+  "ratingsCount": 2210,
+  "released": "2023-01",
+  "cover": 1,
+  "featured": true,
+  "description": "ComfyUI is a node-based workflow engine for generating images with Stable Diffusion, Flux and other diffusion models. Every operation — from text encoding to KSampler to upscaling — is a graph node you can connect, reroute and reuse, giving pixel-perfect control and infinite reproducibility.",
+  "features": [
+    "Modular node-graph workflow system",
+    "GPU-memory efficient architecture",
+    "Native support for Flux, SDXL, SD3, Cascade",
+    "Quantized GGUF model loading",
+    "Expandable via hundreds of custom node packs",
+    "Headless server mode for automation and APIs"
+  ],
+  "requirements": {
+    "os": ["Windows", "Linux", "macOS"],
+    "gpu": "NVIDIA CUDA / AMD ROCm / Apple Silicon",
+    "minVram": "4 GB (tiled)",
+    "python": "3.10+",
+    "cuda": "11.8+"
+  },
+  "supportedModels": ["flux-1-dev", "flux-1-schnell", "sdxl-base", "sd-3-5-large", "sd-1-5", "stable-cascade", "pixart-sigma"],
+  "supportedFormats": ["safetensors", "ckpt", "gguf", "lora", "pt"],
+  "links": {
+    "website": "https://comfyui.org",
+    "github": "https://github.com/comfyanonymous/ComfyUI",
+    "download": "https://github.com/comfyanonymous/ComfyUI/releases"
+  },
+  "screenshots": [1, 2, 3],
+  "tags": ["workflow", "nodes", "open-source", "advanced", "custom-nodes"],
+  "downloads": { "monthly": "2.1M", "stars": "68k" },
+  "related": ["swarmui", "automatic1111", "forge-webui", "diffusers"]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "add-detail-xl",
+  "ar": {
+    "name": "Add Detail XL",
+    "category": "تفاصيل",
+    "license": "مجتمعي",
+    "triggerWords": ["لا شيء (عام)"],
+    "description": "Add Detail XL يضخ نسيجًا عالي التردد في نتائج SDXL. يتفوق في إضافة تفاصيل دقيقة مقنعة لنسيج الأقمشة ومسام البشرة وأوراق الشجر والأسطح المعمارية حيث تميل قاعدة SDXL إلى البقاء ناعمة.",
+    "effects": [
+      "ضخ تفاصيل دقيقة عالية التردد",
+      "يحسّن الأقمشة والبشرة وأوراق الشجر",
+      "رفع طفيف للتباين",
+      "لا يتطلب كلمة تحفيز"
+    ],
+    "trainedOn": ["قاعدة SDXL، مجموعة بيانات تركّز على التفاصيل", "الأنسجة الفوتوغرافية ذات أولوية"],
+    "settings": {
+      "steps": 11000,
+      "networkDim": 32,
+      "learningRate": "8e-5 cosine",
+      "scheduler": "constant"
+    },
+    "tags": ["تفاصيل", "ملمس", "sdxl", "تحسين"],
+    "examples": [
+      {
+        "prompt": "لقطة مقربة جدًا لقماش كتان منسوج، بنية خيوط واضحة، تصوير ماكرو",
+        "strength": 0.6
+      }
+    ]
+  },
+  "name": "Add Detail XL",
+  "type": "lora",
+  "category": "Detail",
+  "baseModel": "SDXL",
+  "publisher": "Javacox",
+  "recommendedStrength": 0.6,
+  "range": [0.0, 1.0],
+  "sizeMb": 64,
+  "license": "Community",
+  "rating": 4.8,
+  "ratingsCount": 1890,
+  "downloads": "2.1M",
+  "cover": 2,
+  "featured": false,
+  "triggerWords": ["none (global)"],
+  "description": "Add Detail XL injects high-frequency texture into SDXL generations. It excels at adding convincing micro-detail to fabric weave, skin pores, foliage and architectural surfaces where base SDXL tends to stay smooth.",
+  "effects": [
+    "High-frequency micro-detail injection",
+    "Improves fabric, skin and foliage",
+    "Slight contrast lift",
+    "No trigger word required"
+  ],
+  "trainedOn": ["SDXL base, detail-focused dataset", "Photographic textures prioritized"],
+  "settings": {
+    "steps": 11000,
+    "networkDim": 32,
+    "learningRate": "8e-5 cosine",
+    "scheduler": "constant"
+  },
+  "tags": ["detail", "texture", "sdxl", "enhancement"],
+  "examples": [
+    {
+      "prompt": "extreme close-up of woven linen fabric, visible thread structure, macro photography",
+      "strength": 0.6
+    }
+  ],
+  "related": ["detail-tweaker-xl", "epi-noise-offset", "film-grain"]
+}

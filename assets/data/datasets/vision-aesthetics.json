@@ -1,0 +1,46 @@
+{
+  "id": "vision-aesthetics",
+  "ar": {
+    "name": "Vision Aesthetics",
+    "category": "انتقاء البيانات",
+    "license": "CC-BY",
+    "description": "Vision Aesthetics هي مجموعة بيانات جمالية متوازنة ومتنوعة المحتوى، منتقاة لضبط LoRA الأسلوبية والنماذج المرجعية بدقة. تمزج عمدًا بين التصوير الفوتوغرافي والرسوم التوضيحية والتصميم لتجنب انهيار الأسلوب أثناء التدريب.",
+    "features": [
+      "مليونا عينة جمالية متوازنة",
+      "ضوابط تنوع المحتوى والأسلوب",
+      "تعليقات نظيفة ومفلترة",
+      "مصادر CC-BY نقية الترخيص",
+      "بنية مجلدات جاهزة للتجميع"
+    ],
+    "uses": [
+      "ضبط LoRA الأسلوبية بدقة",
+      "تحسين النماذج المرجعية",
+      "تدريب مراعٍ للتنوع"
+    ],
+    "tags": ["الجماليات", "ضبط دقيق", "متوازنة", "منتقاة"],
+    "source": "https://huggingface.co/datasets"
+  },
+  "name": "Vision Aesthetics",
+  "type": "dataset",
+  "category": "Curation",
+  "samples": "2M",
+  "sizeGb": 300,
+  "format": "Parquet + images",
+  "license": "CC-BY",
+  "rating": 4.5,
+  "usedBy": "Fine-tune LoRAs",
+  "cover": 6,
+  "featured": false,
+  "source": "https://huggingface.co/datasets",
+  "description": "Vision Aesthetics is a balanced, content-diverse aesthetic dataset curated for style LoRA and checkpoint fine-tuning. It deliberately mixes photography, illustration and design to avoid style collapse during training.",
+  "features": [
+    "2M balanced aesthetic samples",
+    "Content and style diversity controls",
+    "Filtered, clean captions",
+    "License-clean CC-BY sources",
+    "Bucket-ready folder structure"
+  ],
+  "uses": ["Style LoRA fine-tuning", "Checkpoint refinement", "Diversity-aware training"],
+  "tags": ["aesthetics", "fine-tune", "balanced", "curated"],
+  "related": ["laion-aesthetics", "journey-db", "danbooru"]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "flux-on-8gb",
+  "ar": {
+    "title": "تشغيل FLUX.1 على بطاقة رسوميات بسعة 8 جيجابايت",
+    "category": "الأجهزة",
+    "difficulty": "متوسط",
+    "summary": "نموذج FLUX.1 dev هو نموذج من 12 مليار معلمة يتطلب اسميًا 24 جيجابايت. مع الكمّمة وتحميل GGUF وفك الترميز المقسّم، يعمل بشكل مريح ضمن 8 جيجابايت.",
+    "content": [
+      {
+        "heading": "لماذا يناسب",
+        "paragraphs": [
+          "تحتاج أوزان bf16 إلى حوالي 24 جيجابايت، لكن جودة النموذج تصمد بشكل لافت عند الدقة fp8 و nf4. كمّمة GGUF تأخذ هذا أبعد — أوزان Q4 و Q5 تصل إلى حوالي 6–7 جيجابايت وتتصرف جيدًا للتوليد المحلي. الجانب الصعب هو الإعدادات المرتبطة بالدقة: ترميز النص والمربعات والتفريغ كلها أصبحت أكثر أهمية."
+        ]
+      },
+      {
+        "heading": "إعداد GGUF في ComfyUI",
+        "paragraphs": [
+          "ثبّت ComfyUI-GGUF من المدير (Manager)، ثم حمّل نسخة Q4_K_M أو Q5_K_S من GGUF الخاصة بـ FLUX.1 dev وضعها في models/checkpoints. استخدم عقدة UnetLoaderGGUF بدلًا من CheckpointLoaderSimple واربط CLIP وVAE من مجلدات FLUX القياسية. اضبط العينة على euler، والجدولة على simple، و20 خطوة، وموجّه بقوة 3.5."
+        ]
+      },
+      {
+        "heading": "التقسيم (Tiling) صديقك",
+        "paragraphs": [
+          "يمكن لفك الترميز الذاتي الخاص بـ FLUX فك ترميز مربع واحد في كل مرة. فعّل VAE المقسّم (vae_decode_tiled) بحجم مربع 512 وتداخل 64. هذا يقايض بضع ثوانٍ من السرعة مقابل خفض حاد في الذروة المطلوبة من الذاكرة — وهو عادةً الفرق بين التشغيل وبين نفاد الذاكرة على بطاقة 8 جيجابايت."
+        ]
+      },
+      {
+        "heading": "توقعات واقعية",
+        "paragraphs": [
+          "عند دقة 1024x1024 مع GGUF من نوع Q4 يجب أن ترى 1–2 دقيقة لكل صورة على بطاقة بمستوى 3060. يبقى حجم الدفعة عند 1. استخدم نسخة 'schnell' من GGUF إذا أردت تفاعلية من 4 خطوات. لا تسبب أي من هذه الخطوات ضررًا مرئيًا لجودة المخرجات مع البرومبتات اليومية."
+        ]
+      }
+    ],
+    "tags": ["flux", "كمّمة", "vram", "gguf"]
+  },
+  "title": "Running FLUX.1 on an 8 GB GPU",
+  "type": "tutorial",
+  "category": "Hardware",
+  "author": "Priya Nair",
+  "published": "2026-03-30",
+  "readTime": "11 min",
+  "difficulty": "Intermediate",
+  "rating": 4.7,
+  "ratingsCount": 489,
+  "cover": 4,
+  "featured": false,
+  "summary": "FLUX.1 dev is a 12-billion-parameter model that nominally wants 24 GB. With quantization, GGUF loading and tiled decoding, it runs comfortably inside 8 GB.",
+  "content": [
+    {
+      "heading": "Why it fits",
+      "paragraphs": [
+        "The bf16 weights need ~24 GB, but the model's quality holds up remarkably well at fp8 and nf4 precision. GGUF quantization takes this further — Q4 and Q5 weights land around 6–7 GB and behave well for local generation. The catch is precision-driven settings: text encoding, tiles and offloading all matter more."
+      ]
+    },
+    {
+      "heading": "Set up GGUF in ComfyUI",
+      "paragraphs": [
+        "Install ComfyUI-GGUF from the Manager, then download a Q4_K_M or Q5_K_S GGUF of FLUX.1 dev and place it in models/checkpoints. Use the UnetLoaderGGUF node instead of CheckpointLoaderSimple and connect the CLIP and VAE from the standard FLUX folders. Set the sampler to euler, scheduler to simple, steps 20, guidance 3.5."
+      ]
+    },
+    {
+      "heading": "Tiling is your friend",
+      "paragraphs": [
+        "The FLUX autoencoder can decode one tile at a time. Enable tiled VAE (vae_decode_tiled) with tile size 512 and overlap 64. This trades a few seconds of speed for dramatically lower peak memory — usually the difference between running and OOM on an 8 GB card."
+      ]
+    },
+    {
+      "heading": "Realistic expectations",
+      "paragraphs": [
+        "At 1024x1024 with Q4 GGUF you should see 1–2 minutes per image on a 3060-level GPU. Batch size stays at 1. Use the 'schnell' GGUF if you want 4-step interactivity. None of these steps visibly hurt output quality for everyday prompts."
+      ]
+    }
+  ],
+  "tags": ["flux", "quantization", "vram", "gguf"],
+  "related": ["train-first-lora", "comfyui-beginners", "sdxl-parameters"]
+}

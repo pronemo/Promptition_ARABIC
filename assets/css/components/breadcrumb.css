@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Promptition — Breadcrumbs
+   Components: breadcrumb.css
+   ========================================================================== */
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+  margin-bottom: var(--sp-4);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+.breadcrumbs a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  transition: color var(--dur) var(--ease);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.breadcrumbs a:hover {
+  color: var(--brand-500);
+}
+.breadcrumbs a .icon {
+  width: 14px;
+  height: 14px;
+}
+.breadcrumbs .sep {
+  color: var(--text-faint);
+  user-select: none;
+}
+.breadcrumbs .current {
+  color: var(--text-soft);
+  font-weight: 600;
+  max-width: 260px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

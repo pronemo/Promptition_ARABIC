@@ -1,0 +1,31 @@
+{
+  "id": "cinematic-film",
+  "ar": {
+    "name": "فيلم سينمائي",
+    "category": "تصوير",
+    "mood": ["درامي", "غامر", "سينمائي"],
+    "palette": ["ظلال فيروزية", "بريق برتقالي", "درجات وسطى غير مشبعة"],
+    "description": "يطبّق فيلم سينمائي تأطيرًا أنامورفيًا وتدرجًا لونيًا بين الفيروزي والبرتقالي ووهجًا خفيفًا على أي موضوع، محوّلًا النتائج إلى لقطات أفلام مقنعة. يعمل بشكل أفضل مع نقاط تفتيش واقعية فوتوغرافيًا.",
+    "promptSuffix": "لقطة فيلم سينمائي، عدسة أنامورفية، تدرج لوني بين الفيروزي والبرتقالي، حبيبات فيلم، إضاءة درامية، عمق ميدان ضحل، لقطة فيلم، 35mm، تكوين سينمائي",
+    "negativeSuffix": "إضاءة مسطحة، ظلال قاسية، كرتوني، مظهر فن رقمي، تشبع مفرط، علامة مائية، نص، تصوير هاوٍ، جودة منخفضة",
+    "tags": ["سينمائي", "فيلم", "أنامورفي", "color-grading"]
+  },
+  "name": "Cinematic Film",
+  "type": "style",
+  "category": "Photography",
+  "rating": 4.9,
+  "ratingsCount": 1540,
+  "usedBy": "210k",
+  "cover": 1,
+  "featured": true,
+  "mood": ["Dramatic", "Immersive", "Cinematic"],
+  "palette": ["Teal shadows", "Orange highlights", "Desaturated mids"],
+  "description": "Cinematic Film applies anamorphic framing, a teal-orange color grade and subtle halation to any subject, transforming renders into convincing movie stills. Best paired with photoreal checkpoints.",
+  "promptSuffix": "cinematic film still, anamorphic lens, teal and orange color grade, film grain, dramatic lighting, shallow depth of field, movie still, 35mm, cinematic composition",
+  "negativeSuffix": "flat lighting, harsh shadows, cartoon, digital art look, oversaturated, watermark, text, amateur photography, low quality",
+  "strength": 0.75,
+  "tags": ["cinematic", "film", "anamorphic", "color-grading"],
+  "compatibleModels": ["juggernaut-xl", "realistic-vision-v6", "flux-1-dev"],
+  "compatibleLoras": ["cinematic-style", "film-grain"],
+  "related": ["retro-analog", "cyberpunk-neon", "photorealistic"]
+}

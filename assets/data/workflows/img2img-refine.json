@@ -1,0 +1,53 @@
+{
+  "id": "img2img-refine",
+  "ar": {
+    "name": "صورة إلى صورة (تحسين)",
+    "category": "متوسط",
+    "difficulty": "مبتدئ",
+    "description": "أعد تنسيق أو تحسين صورة موجودة عن طريق تمريرها عبر VAE وإزالة الضوضاء من مساحة كامنة مدمجة بقوة مختارة. القوة المنخفضة تحافظ على تركيب المصدر؛ والقوة المرتفعة تدفع نحو المطالبة.",
+    "steps": [
+      { "title": "تحميل الصورة المصدر", "description": "استخدم LoadImage. تُرجع البكسلات وموضعًا للقالب؛ هنا نستخدم البكسلات فقط." },
+      { "title": "ترميز المساحة الكامنة", "description": "تحوّل VAEEncode البكسلات المحمّلة إلى مساحة كامنة يمكن لجهاز أخذ العينات التعامل معها." },
+      { "title": "المزج مع الضوضاء", "description": "تتحكم قوة إزالة الضوضاء (0.3–0.7) في KSampler في مقدار ما يبقى من الأصل." },
+      { "title": "كتابة مطالبة إعادة التنسيق", "description": "صِف النمط أو الموضوع الجديد. اذكر التركيب الأصلي بالكلمات لتوجيه النموذج." },
+      { "title": "فك الترميز والمقارنة", "description": "استخدم VAEDecode وSaveImage، ثم جرّب القوة والمطالبة حتى يبدو المزيج مناسبًا." }
+    ],
+    "tags": ["comfyui", "img2img", "إعادة تنسيق", "متوسط"]
+  },
+  "name": "Image-to-Image Refine",
+  "type": "workflow",
+  "category": "Intermediate",
+  "difficulty": "Beginner",
+  "estimatedTime": "8 min",
+  "rating": 4.8,
+  "ratingsCount": 1450,
+  "downloads": "0.9M",
+  "cover": 2,
+  "featured": true,
+  "description": "Restyle or refine an existing image by feeding it through the VAE and denoising a blended latent at a chosen strength. A low strength keeps the source composition; a high strength drifts toward your prompt.",
+  "steps": [
+    { "title": "Load the source image", "description": "Use LoadImage. It returns pixels and a mask placeholder; we only use the pixels here." },
+    { "title": "Encode the latent", "description": "VAEEncode turns the loaded pixels into a latent the sampler can work with." },
+    { "title": "Blend with noise", "description": "The KSampler's denoise strength (0.3–0.7) controls how much of the original survives." },
+    { "title": "Write the restyle prompt", "description": "Describe the new style or subject. Keep the original composition in words to guide the model." },
+    { "title": "Decode and compare", "description": "VAEDecode + SaveImage, then iterate on strength and prompt until the blend feels right." }
+  ],
+  "requiredExtensions": [],
+  "compatibleNodes": [],
+  "compatibleModels": ["sdxl-base", "flux-1-dev", "sd-1-5", "dreamshaper-xl"],
+  "tags": ["comfyui", "img2img", "restyle", "intermediate"],
+  "download": { "filename": "img2img-refine.json", "sizeKb": 48 },
+  "workflowJson": {
+    "nodes": [
+      { "id": 1, "type": "LoadImage", "title": "Load Source" },
+      { "id": 2, "type": "VAEEncode", "title": "Encode Latent" },
+      { "id": 3, "type": "CheckpointLoaderSimple", "title": "Load Checkpoint" },
+      { "id": 4, "type": "CLIPTextEncode", "title": "Style Prompt" },
+      { "id": 5, "type": "KSampler", "title": "KSampler (denoise 0.5)" },
+      { "id": 6, "type": "VAEDecode", "title": "VAE Decode" },
+      { "id": 7, "type": "SaveImage", "title": "Save Image" }
+    ],
+    "links": [[1, 0, 2, 0], [2, 0, 5, 3], [3, 0, 5, 0], [4, 0, 5, 1], [5, 0, 6, 0], [3, 2, 6, 1], [6, 0, 7, 0]]
+  },
+  "related": ["txt2img-basic", "inpaint-outpaint", "highres-upscale"]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "dreamshaper-xl",
+  "ar": {
+    "name": "DreamShaper XL",
+    "category": "نقطة فحص",
+    "subcategory": "ضبط دقيق على SDXL",
+    "architecture": "ضبط دقيق على SDXL",
+    "license": "CreativeML Open RAIL++-M",
+    "description": "DreamShaper XL هو نموذج فحص SDXL متعدد الاستخدامات يمتد بين الخيال التصويري والواقعية الفوتوغرافية الحادة. يتفوق مع الحد الأدنى من الأوامر، منتجًا تركيبات متوازنة وألوانًا غنية واتساقًا قويًا عبر مجموعة واسعة من الموضوعات.",
+    "features": [
+      "نموذج فحص واحد للخيال والمفاهيم والتصوير",
+      "يتعامل مع الأوامر البسيطة بضبط ضئيل",
+      "تدرج ألوان نابض بالحياة ومتوازن",
+      "خيار افتراضي رائع للمبتدئين على SDXL",
+      "مشهد مجتمعي نشط من النماذج المشتقة"
+    ],
+    "quantizations": [
+      { "name": "bf16", "sizeGb": 6.9, "quality": "مرجع" }
+    ],
+    "requirements": {
+      "minVram": "6 جيجابايت (fp16، VAE مقسّم)",
+      "recommendedVram": "12 جيجابايت",
+      "minRam": "16 جيجابايت",
+      "cuda": "11.8+",
+      "python": "3.9+"
+    },
+    "examples": [
+      {
+        "prompt": "قلعة خيالية ملحمية تطفو فوق بحر من السحب، ساعة ذهبية، تنانين تحلق حولها، عمارة معقدة، إضاءة سينمائية",
+        "width": 1024,
+        "height": 1024,
+        "steps": 28,
+        "cfg": 5.5,
+        "seed": 21
+      }
+    ],
+    "tags": ["فني", "خيال", "متعدد الاستخدامات", "sdxl"]
+  },
+  "name": "DreamShaper XL",
+  "type": "model",
+  "category": "Checkpoint",
+  "subcategory": "SDXL Fine-Tune",
+  "publisher": "Lykon",
+  "architecture": "SDXL Fine-Tune",
+  "params": "3.5B",
+  "released": "2024-04-02",
+  "version": "1.0",
+  "license": "CreativeML Open RAIL++-M",
+  "rating": 4.8,
+  "ratingsCount": 956,
+  "downloads": "5.4M",
+  "cover": 8,
+  "featured": true,
+  "description": "DreamShaper XL is a versatile SDXL checkpoint that spans painterly fantasy and crisp photorealism. It excels with minimal prompting, producing balanced compositions, rich color and strong consistency across a wide range of subjects.",
+  "features": [
+    "One checkpoint for fantasy, concept and photo work",
+    "Handles simple prompts with minimal tuning",
+    "Vibrant yet balanced color grading",
+    "Great default for beginners on SDXL",
+    "Active community derivative scene"
+  ],
+  "quantizations": [
+    { "name": "bf16", "sizeGb": 6.9, "quality": "Reference" }
+  ],
+  "formats": ["safetensors", "ckpt"],
+  "requirements": {
+    "minVram": "6 GB (fp16, tiled VAE)",
+    "recommendedVram": "12 GB",
+    "minRam": "16 GB",
+    "cuda": "11.8+",
+    "python": "3.9+"
+  },
+  "links": {
+    "website": "https://civitai.com",
+    "download": "https://civitai.com/models/126665",
+    "github": null
+  },
+  "examples": [
+    {
+      "prompt": "epic fantasy castle floating above a sea of clouds, golden hour, dragons circling, intricate architecture, cinematic lighting",
+      "width": 1024,
+      "height": 1024,
+      "steps": 28,
+      "cfg": 5.5,
+      "seed": 21
+    }
+  ],
+  "tags": ["artistic", "fantasy", "versatile", "sdxl"],
+  "compatibleTools": ["comfyui", "automatic1111", "invokeai", "fooocus"],
+  "related": ["sdxl-base", "juggernaut-xl", "flux-1-dev"]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "retro-80s",
+  "ar": {
+    "name": "رجعية الثمانينيات سينثويف",
+    "category": "ستايل",
+    "description": "سينثويف رجعي مستقبلي مع تدرجات كروم وشمس رجعية متوهجة. مثالي للملصقات وأغلفة الألبومات وأجواء فابروويف.",
+    "positive": "رسم سينثويف رجعي من الثمانينيات، سيارة كروم متسارعة على شبكة رقعة شطرنج لا نهائية، شمس رجعية ضخمة متوهجة بخطوط مسح أفقية، سماء متدرجة بالنيون الوردي والأرجواني، ظلال أشجار نخيل، جبال، جو داكن مشبع، حبيبات VHS، جمالية آركيد، تفاصيل عالية",
+    "negative": "واقعي فائق، حديث، تصيير ثلاثي الأبعاد، علامة مائية، نص، شعار، جودة منخفضة، ضبابي، ألوان مسطحة، مزدحم، تشبع مفرط",
+    "settings": {
+      "width": 1280,
+      "height": 720,
+      "steps": 35,
+      "cfg": 7.0,
+      "sampler": "euler_a",
+      "model": "SDXL",
+      "aspect": "16:9"
+    },
+    "tags": ["رجعي", "80s", "synthwave", "vaporwave", "ملصق"],
+    "examples": [
+      {
+        "title": "جمجمة كروم",
+        "positive": "جمجمة كروم رجعية من الثمانينيات على أرضية شبكية، شمس سينثويف متوهجة، سماء متدرجة بالنيون، حبيبات VHS، جمالية آركيد، مفصّل"
+      }
+    ]
+  },
+  "name": "Retro 80s Synthwave",
+  "type": "prompt",
+  "category": "Style",
+  "rating": 4.6,
+  "ratingsCount": 590,
+  "usedBy": "130k",
+  "cover": 11,
+  "featured": false,
+  "description": "Retro-futuristic synthwave with chrome gradients and a glowing retro sun. Perfect for posters, album art and vaporwave moods.",
+  "positive": "retro 80s synthwave illustration, a chrome vector car speeding on an infinite checkerboard grid, huge glowing retro sun with horizontal scan lines, neon pink and purple gradient sky, palm tree silhouettes, mountains, dark moody atmosphere, vhs grain, arcade aesthetic, highly detailed",
+  "negative": "photorealistic, modern, 3d render, watermark, text, logo, low quality, blurry, flat colors, cluttered, oversaturated",
+  "settings": {
+    "width": 1280,
+    "height": 720,
+    "steps": 35,
+    "cfg": 7.0,
+    "sampler": "euler_a",
+    "model": "SDXL",
+    "aspect": "16:9"
+  },
+  "tags": ["retro", "80s", "synthwave", "vaporwave", "poster"],
+  "compatibleModels": ["sdxl-base", "dreamshaper-xl", "flux-1-dev"],
+  "compatibleLoras": ["cinematic-style", "film-grain", "epi-noise-offset"],
+  "examples": [
+    {
+      "title": "Chrome skull",
+      "positive": "retro 80s chrome skull on a grid floor, glowing synthwave sun, neon gradient sky, vhs grain, arcade aesthetic, detailed"
+    }
+  ],
+  "related": ["cyberpunk-city", "abstract-art", "anime-style"]
+}

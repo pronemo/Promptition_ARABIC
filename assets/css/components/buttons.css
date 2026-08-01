@@ -1,0 +1,170 @@
+/* ==========================================================================
+   Promptition — Buttons
+   Components: buttons.css
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  padding: 0.6rem 1.1rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  line-height: 1.2;
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color var(--dur) var(--ease),
+    color var(--dur) var(--ease), border-color var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+.btn .icon {
+  width: 17px;
+  height: 17px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--brand-500), var(--brand-600));
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+.btn-primary:hover:not(:disabled) {
+  box-shadow: var(--shadow-glow);
+  filter: brightness(1.06);
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, var(--accent-400), var(--accent-500));
+  color: #06222b;
+}
+.btn-accent:hover:not(:disabled) {
+  filter: brightness(1.05);
+  box-shadow: 0 8px 28px rgba(34, 211, 238, 0.3);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-soft);
+  border-color: var(--border);
+}
+.btn-ghost:hover:not(:disabled) {
+  color: var(--text);
+  border-color: var(--border-strong);
+  background: var(--bg-soft);
+}
+
+.btn-outline {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+.btn-outline:hover:not(:disabled) {
+  border-color: var(--brand-500);
+  color: var(--brand-600);
+}
+
+.btn-soft {
+  background: var(--brand-50);
+  color: var(--brand-700);
+}
+:root[data-theme="dark"] .btn-soft,
+:root:not([data-theme="light"]) .btn-soft {
+  background: rgba(124, 92, 252, 0.16);
+  color: var(--brand-300);
+}
+.btn-soft:hover:not(:disabled) {
+  background: var(--brand-100);
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: #fff;
+}
+.btn-danger:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+.btn-sm {
+  padding: 0.42rem 0.8rem;
+  font-size: var(--fs-xs);
+  border-radius: var(--radius-sm);
+}
+.btn-sm .icon {
+  width: 15px;
+  height: 15px;
+}
+.btn-lg {
+  padding: 0.8rem 1.6rem;
+  font-size: var(--fs-base);
+  border-radius: var(--radius-md);
+}
+.btn-block {
+  width: 100%;
+}
+
+/* Icon-only button with filled background */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  color: var(--text-soft);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: background-color var(--dur) var(--ease),
+    color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.btn-icon:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+  background: var(--bg-soft);
+}
+.btn-icon .icon {
+  width: 18px;
+  height: 18px;
+}
+.btn-icon.is-active {
+  color: var(--brand-500);
+  border-color: var(--brand-300);
+  background: var(--brand-50);
+}
+:root[data-theme="dark"] .btn-icon.is-active,
+:root:not([data-theme="light"]) .btn-icon.is-active {
+  background: rgba(124, 92, 252, 0.16);
+}
+
+/* Button groups */
+.btn-group {
+  display: inline-flex;
+  padding: 3px;
+  gap: 2px;
+  background: var(--bg-soft);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+.btn-group .btn {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  padding: 0.42rem 0.85rem;
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+.btn-group .btn.is-active {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-xs);
+  border-radius: var(--radius-sm);
+}

@@ -1,0 +1,31 @@
+{
+  "id": "retro-analog",
+  "ar": {
+    "name": "تناظري رجعي",
+    "category": "تصوير",
+    "mood": ["حنين", "دافئ", "مثل الأفلام"],
+    "palette": ["وهج دافئ", "أسود باهت", "درجات مصفرة بالشمس"],
+    "description": "يعيد التناظري الرجعي إنتاج مظهر أفلام السبعينيات: وهج دافئ، وتباين باهت بلطف، وتظليل خفيف عند الحواف، وحبيبات عضوية. رائع لقصص السفر والموضة والذكريات.",
+    "promptSuffix": "تصوير تناظري رجعي، مظهر أفلام السبعينيات، وهج دافئ، تباين باهت، تظليل حواف خفيف، حبيبات فيلم عضوية، لوحة ألوان kodak، درجات عتيقة",
+    "negativeSuffix": "حدة رقمية، ألوان نيون، hdr، تشبع مفرط، مظهر عصري، علامة مائية، نص، جودة منخفضة، إضاءة مسطحة",
+    "tags": ["رجعي", "تناظري", "فيلم", "70s", "عتيق"]
+  },
+  "name": "Retro Analog",
+  "type": "style",
+  "category": "Photography",
+  "rating": 4.6,
+  "ratingsCount": 710,
+  "usedBy": "88k",
+  "cover": 8,
+  "featured": false,
+  "mood": ["Nostalgic", "Warm", "Film-like"],
+  "palette": ["Warm halation", "Faded blacks", "Sunbleached tones"],
+  "description": "Retro Analog recreates the 1970s film look: warm halation, gently faded contrast, subtle vignette and organic grain. Great for travel, fashion and memory-driven narratives.",
+  "promptSuffix": "retro analog photography, 1970s film look, warm halation, faded contrast, subtle vignette, organic film grain, kodak color palette, vintage tones",
+  "negativeSuffix": "digital sharpness, neon colors, hdr, oversaturated, modern look, watermark, text, low quality, flat lighting",
+  "strength": 0.7,
+  "tags": ["retro", "analog", "film", "70s", "vintage"],
+  "compatibleModels": ["realistic-vision-v6", "juggernaut-xl", "majicmix-realistic"],
+  "compatibleLoras": ["film-grain", "cinematic-style"],
+  "related": ["cinematic-film", "photorealistic", "cyberpunk-neon"]
+}

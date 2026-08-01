@@ -1,0 +1,88 @@
+{
+  "id": "prompt-engineering-guide",
+  "ar": {
+    "title": "الدليل العملي لهندسة البرومبتات",
+    "category": "أدلة",
+    "difficulty": "جميع المستويات",
+    "summary": "لا توجد صيغة سحرية — بل هناك بنية، وأوزان، ومعرفة بما ينتبه إليه النموذج فعلًا. إطار عمل مجرَّب ميدانيًا لكتابة برومبتات تتصرف كما هو مطلوب.",
+    "content": [
+      {
+        "heading": "تشريح البرومبت",
+        "paragraphs": [
+          "فكّر في البرومبت على أنه طبقات: الموضوع، والفعل، والبيئة، والإضاءة، والأسلوب، والجودة. يأتي الموضوع أولًا ويحظى بأقوى انتباه. كل طبقة تضيف معلومات أو تزيلها، لذا فإن الترتيب مهم. جملة 'صورة لامرأة' تخبر النموذج أقل مما تخبره 'صورة سينمائية لامرأة واثقة ترتدي معطف مطر، في شارع نيون ليلًا، إضاءة حافية، لقطة من فيلم 35mm، تفاصيل فائقة الدقة'."
+        ]
+      },
+      {
+        "heading": "الأوزان",
+        "paragraphs": [
+          "في AUTOMATIC1111 و ComfyUI، تقوم (كلمة:1.3) بمضاعفة الانتباه. ارفع وزن العنصر الذي يهمك أكثر — عادةً الموضوع أو مرساة الأسلوب — واخفض العناصر المشتتة أو أزلها. استخدم (كلمة:0.8) باعتدال لكبح تفصيل مفرط النشاط بدلًا من إضافة عناصر سلبية لكل شيء."
+        ]
+      },
+      {
+        "heading": "البرومبت السلبي أداة، وليس عكازة",
+        "paragraphs": [
+          "يوجّه البرومبت السلبي النموذج بعيدًا عن المفاهيم غير المرغوب فيها: 'ضبابي، مشوّه، علامة مائية، أصابع زائدة'. أبقِه قصيرًا ومحددًا. البرومبتات السلبية الطويلة قد تصارع البرومبت الإيجابي وتشوّش النتائج. إذا ظهرت مشكلة متكررة، فذلك عادةً مشكلة في نقطة التحقق، وليس مشكلة في صياغة البرومبت."
+        ]
+      },
+      {
+        "heading": "رموز الأسلوب والمحفّزات",
+        "paragraphs": [
+          "كلمات مثل 'لقطة فيلم سينمائية' أو 'فوتوغرافي واقعي' أو رمز محفّز LoRA تتصرف كمراسٍ دلالية. أبقِها متسقة ضمن سلسلة واحدة لبناء أسلوب. انسخ الإعدادات (البذرة، والسامبلر، وCFG) من الصور التي تعجبك — فالبرومبت وحده نادرًا ما يعيد إنتاج مظهر ما بدقة."
+        ],
+        "list": [
+          "الموضوع أولًا، والأسلوب أخيرًا",
+          "أعطِ وزنًا للعنصر الحاسم",
+          "أبقِ السلبيات قصيرة ومحددة",
+          "احفظ البذرة والسامبلر مع كل برومبت"
+        ]
+      }
+    ],
+    "tags": ["برومبتات", "دليل", "تقنية", "أفضل الممارسات"]
+  },
+  "title": "The Practical Prompt Engineering Guide",
+  "type": "article",
+  "category": "Guides",
+  "author": "Daniel Reyes",
+  "published": "2026-02-20",
+  "readTime": "14 min",
+  "difficulty": "All Levels",
+  "rating": 4.8,
+  "ratingsCount": 921,
+  "cover": 5,
+  "featured": true,
+  "summary": "There is no magic syntax — there is structure, weighting, and knowing what the model actually attends to. A field-tested framework for writing prompts that behave.",
+  "content": [
+    {
+      "heading": "Prompt anatomy",
+      "paragraphs": [
+        "Think of a prompt in layers: subject, action, environment, lighting, style, quality. The subject comes first and gets the strongest attention. Each layer adds or removes information, so order matters. 'A portrait of a woman' tells the model less than 'A cinematic portrait of a confident woman in a raincoat, neon street at night, rim lighting, 35mm film still, ultra detailed'."
+      ]
+    },
+    {
+      "heading": "Weighting",
+      "paragraphs": [
+        "In AUTOMATIC1111 and ComfyUI, (word:1.3) multiplies attention. Raise the weight of the element you care most about — usually the subject or the style anchor — and lower or remove distractors. Use (word:0.8) sparingly to suppress an overactive detail rather than adding negatives for everything."
+      ]
+    },
+    {
+      "heading": "The negative prompt is a tool, not a crutch",
+      "paragraphs": [
+        "The negative prompt steers the model away from undesired concepts: 'blurry, deformed, watermark, extra fingers'. Keep it short and specific. Long negative prompts can fight the positive one and muddy results. If a recurring problem appears, that is usually a checkpoint issue, not a prompting issue."
+      ]
+    },
+    {
+      "heading": "Style tokens and triggers",
+      "paragraphs": [
+        "Words like 'cinematic film still', 'photorealistic', or a LoRA trigger token behave as semantic anchors. Keep them consistent within a series to build style. Copy settings (seed, sampler, CFG) from images you like — prompt alone rarely reproduces a look exactly."
+      ],
+      "list": [
+        "Subject first, style last",
+        "Weight the critical element",
+        "Keep negatives short and specific",
+        "Save seed + sampler with every prompt"
+      ]
+    }
+  ],
+  "tags": ["prompts", "guide", "technique", "best-practices"],
+  "related": ["sdxl-parameters", "controlnet-workflows", "train-first-lora"]
+}

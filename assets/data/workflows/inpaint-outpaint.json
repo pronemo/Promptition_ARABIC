@@ -1,0 +1,54 @@
+{
+  "id": "inpaint-outpaint",
+  "ar": {
+    "name": "إعادة التعبئة والتمديد خارج اللوحة",
+    "category": "متوسط",
+    "difficulty": "متوسط",
+    "description": "رسم بياني للتحرير موجّه بالقالب. ارسم قالبًا فوق المنطقة المراد إعادة توليدها (إعادة التعبئة) أو ارسم شريطًا فارغًا خارج حافة اللوحة (التمديد خارجها)؛ يولّد جهاز أخذ العينات داخل المنطقة المقنعة فقط.",
+    "steps": [
+      { "title": "تحميل الصورة والقالب", "description": "تُرجع LoadImage البكسلات وقالبًا. ارسم المنطقة المراد تعديلها باللون الأبيض وأبقِ الباقي بالأسود." },
+      { "title": "ضبط المساحة الكامنة", "description": "تطبّق SetLatentNoiseMask القالب بحيث يؤثر أخذ العينات على المنطقة المحددة فقط." },
+      { "title": "اختيار وضع إعادة التعبئة", "description": "لإعادة التعبئة استخدم ترميزًا مقنّعًا أو اضبط المساحة الكامنة عبر VAEEncodeForInpaint؛ وللتمديد خارج اللوحة وسّع EmptyLatentImage إلى ما بعد المصدر." },
+      { "title": "مطالبة التعبئة", "description": "صِف ما يجب أن يكون داخل المنطقة المقنعة لتوجيه النتيجة." },
+      { "title": "التركيب", "description": "استخدم فك الترميز وSaveImage. استخدم قوة إزالة ضوضاء منخفضة للحصول على لحامات نظيفة." }
+    ],
+    "tags": ["comfyui", "إعادة التعبئة", "التمديد خارج اللوحة", "قالب", "تحرير"]
+  },
+  "name": "Inpainting & Outpainting",
+  "type": "workflow",
+  "category": "Intermediate",
+  "difficulty": "Intermediate",
+  "estimatedTime": "12 min",
+  "rating": 4.7,
+  "ratingsCount": 970,
+  "downloads": "0.6M",
+  "cover": 4,
+  "featured": false,
+  "description": "A mask-guided editing graph. Paint a mask over the region to regenerate (inpaint) or draw an empty band beyond the canvas edge (outpaint); the sampler only generates inside the masked area.",
+  "steps": [
+    { "title": "Load image and mask", "description": "LoadImage returns pixels and a mask. Paint the region to edit in white; keep the rest black." },
+    { "title": "Set the latent", "description": "SetLatentNoiseMask applies your mask so sampling only affects the selected area." },
+    { "title": "Choose inpainting mode", "description": "For inpainting use a masked-encode or set the latent via VAEEncodeForInpaint; for outpainting, expand EmptyLatentImage beyond the source." },
+    { "title": "Prompt the fill", "description": "Describe what belongs in the masked region to steer the result." },
+    { "title": "Composite", "description": "Decode and SaveImage. Use a low denoise for clean seams." }
+  ],
+  "requiredExtensions": [],
+  "compatibleNodes": ["SetLatentNoiseMask", "VAEEncodeForInpaint"],
+  "compatibleModels": ["sdxl-base", "sd-1-5", "flux-1-dev"],
+  "tags": ["comfyui", "inpaint", "outpaint", "mask", "editing"],
+  "download": { "filename": "inpaint-outpaint.json", "sizeKb": 51 },
+  "workflowJson": {
+    "nodes": [
+      { "id": 1, "type": "LoadImage", "title": "Image + Mask" },
+      { "id": 2, "type": "VAEEncode", "title": "Encode" },
+      { "id": 3, "type": "SetLatentNoiseMask", "title": "Apply Mask" },
+      { "id": 4, "type": "CheckpointLoaderSimple", "title": "Load Checkpoint" },
+      { "id": 5, "type": "CLIPTextEncode", "title": "Fill Prompt" },
+      { "id": 6, "type": "KSampler", "title": "KSampler (denoise 0.8)" },
+      { "id": 7, "type": "VAEDecode", "title": "VAE Decode" },
+      { "id": 8, "type": "SaveImage", "title": "Save Image" }
+    ],
+    "links": [[1, 0, 2, 0], [2, 0, 3, 0], [1, 1, 3, 1], [3, 0, 6, 3], [4, 0, 6, 0], [5, 0, 6, 1], [6, 0, 7, 0], [4, 2, 7, 1], [7, 0, 8, 0]]
+  },
+  "related": ["img2img-refine", "txt2img-basic", "controlnet-pose"]
+}

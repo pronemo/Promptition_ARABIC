@@ -1,0 +1,63 @@
+{
+  "id": "fooocus",
+  "ar": {
+    "name": "Fooocus",
+    "category": "سطح مكتب",
+    "description": "Fooocus مولّد صور مجاني يعمل دون اتصال مستوحى من سهولة استخدام Midjourney. يهيّئ تلقائيًا أفضل أجهزة أخذ العينات والدقات ومراحل التحسين خلف الكواليس، ليتمكن المبتدئون من إنتاج صور مصقولة دون لمس أي إعداد.",
+    "features": [
+      "توليد بدون أي إعدادات",
+      "تحسين تلقائي لجودة الصور",
+      "تجربة استخدام وإعدادات جاهزة بنمط Midjourney",
+      "دعم الأنماط و LoRA وإعادة التلوين",
+      "يعمل بالكامل دون اتصال وبخصوصية تامة",
+      "مثبّتات محمولة بنقرة واحدة"
+    ],
+    "requirements": {
+      "os": ["ويندوز", "لينكس", "ماك"],
+      "gpu": "إنفيديا CUDA / AMD / سيليكون آبل",
+      "minVram": "4 جيجابايت",
+      "python": "3.10+",
+      "cuda": "11.8+"
+    },
+    "license": "GPL-3.0",
+    "tags": ["سطح مكتب", "مبتدئ", "نمط midjourney", "دون اتصال", "بدون إعدادات"]
+  },
+  "name": "Fooocus",
+  "type": "tool",
+  "category": "Desktop",
+  "publisher": "lllyasviel",
+  "version": "2.5.0",
+  "license": "GPL-3.0",
+  "rating": 4.6,
+  "ratingsCount": 980,
+  "released": "2023-11",
+  "cover": 5,
+  "featured": false,
+  "description": "Fooocus is a free, offline image generator inspired by Midjourney's ease of use. It automatically configures optimal samplers, resolutions and refiner passes behind the scenes so beginners produce polished images without touching a single setting.",
+  "features": [
+    "Zero-configuration generation",
+    "Automatic image quality optimization",
+    "Midjourney-style UX and presets",
+    "Styles, LoRA and inpainting support",
+    "Fully offline and private",
+    "One-click portable installers"
+  ],
+  "requirements": {
+    "os": ["Windows", "Linux", "macOS"],
+    "gpu": "NVIDIA CUDA / AMD / Apple Silicon",
+    "minVram": "4 GB",
+    "python": "3.10+",
+    "cuda": "11.8+"
+  },
+  "supportedModels": ["sdxl-base", "sd-1-5"],
+  "supportedFormats": ["safetensors", "ckpt", "lora"],
+  "links": {
+    "website": "https://github.com/lllyasviel/Fooocus",
+    "github": "https://github.com/lllyasviel/Fooocus",
+    "download": "https://github.com/lllyasviel/Fooocus/releases"
+  },
+  "screenshots": [5, 8],
+  "tags": ["desktop", "beginner", "midjourney-style", "offline", "zero-config"],
+  "downloads": { "monthly": "1.1M", "stars": "42k" },
+  "related": ["automatic1111", "comfyui", "forge-webui"]
+}

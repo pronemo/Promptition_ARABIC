@@ -1,0 +1,110 @@
+{
+  "id": "flux-vs-sdxl",
+  "ar": {
+    "title": "FLUX.1 ضد SDXL: اختيار نقطة التحقق الصحيحة",
+    "category": "أدلة",
+    "difficulty": "متوسط",
+    "summary": "جيلان من النماذج مفتوحة المصدر، ومقايضتان مختلفتان تمامًا. هذا دليل عملي لتقرير ما إذا كان FLUX.1 أو SDXL يستحق أن يكون نقطة التحقق الافتراضية لديك — بناءً على الأجهزة وسير العمل ونوع الصور التي تصنعها فعلًا.",
+    "content": [
+      {
+        "heading": "إنهما ليسا من نوع النموذج نفسه",
+        "paragraphs": [
+          "SDXL نموذج انتشار كامن من نوع UNet يضم 3.5 مليار معلمة ويعود إلى 2023. أما FLUX.1 dev فهو محوّل تدفق مصحح يضم 12 مليار معلمة ويعود إلى 2024. يبدأ الاسمان بكلمة 'diffusion'، لكن المعماريات وترميزات النص وطرق أخذ العينات عائلات مختلفة تمامًا.",
+          "هذا الاختلاف هو جذر كل شيء آخر في هذا المقال. إن UNet بـ 3.5 مليار معلمة ومحوّلًا بـ 12 مليار معلمة لا يتنافسان في ساحة المعركة نفسها — إنهما أداتان لقيود مختلفة وأهداف مختلفة."
+        ]
+      },
+      {
+        "heading": "الجودة: حيث يفوز FLUX بوضوح",
+        "paragraphs": [
+          "ينتج FLUX.1 dev تشريحًا أنظف، وتكوينًا أغنى، ونصوصًا وطباعة أفضل بدرجة كبيرة. إنه يتعامل مع المشاهد المعقدة متعددة الموضوعات التي تجعل SDXL يستنجد بإعداد CFG. إذا كان عملك يتضمن لافتات مقروءة أو أيادي دقيقة أو مشاهد كثيفة بعدة موضوعات، فـ FLUX هو الافتراضي الأقوى.",
+          "التزامه بالبرومبت أفضل نوعيًا أيضًا. غالبًا ما يحتاج SDXL إلى إعادة ترتيب دقيقة للبرومبت ووسوم جودة ورموز أسلوب ليحسن سلوكه؛ بينما يقبل FLUX جملة بسيطة وينفذ ما تقوله في أغلب الأحيان."
+        ],
+        "list": [
+          "الطباعة والنص المقروء: FLUX بفارق كبير",
+          "التشريح والأيادي: FLUX",
+          "التكوين المعقد متعدد الموضوعات: FLUX",
+          "المظاهر الزخرفية والرسمية: غالبًا SDXL، بفضل نقاط التحقق في النظام البيئي"
+        ]
+      },
+      {
+        "heading": "الأجهزة: القيد الصريح",
+        "paragraphs": [
+          "هنا تنقلب الكفة في الاتجاه الآخر. نسخة bf16 من FLUX.1 dev تزن 24 جيجابايت؛ وحتى البناء المكمَّم بـ fp8 يحتاج إلى 12 جيجابايت مريحة، بينما ينضغط بناء nf4 أو GGUF-q4 إلى حوالي 7 جيجابايت مع بعض الصبر. يتسع SDXL الأساسي في 6 جيجابايت عند fp16 ويكون مريحًا على بطاقة 12 جيجابايت بدقة 1024px الأصلية.",
+          "ذاكرة VRAM ليست التكلفة الوحيدة. ترميز النص T5-XXL في FLUX وحده يلتهم عدة جيجابايتات، ووقت التوليد عند 28 خطوة أبطأ بشكل ملحوظ من SDXL عند 30. على بطاقة 8 جيجابايت، الفرق بين 'ممكن تشغيله' و'خيارك اليومي' حقيقي."
+        ]
+      },
+      {
+        "heading": "عامل النظام البيئي",
+        "paragraphs": [
+          "يرسي SDXL أكبر نظام بيئي للضبط الدقيق في الانتشار مفتوح المصدر: آلاف نقاط التحقق المجتمعية مثل DreamShaper XL و Juggernaut XL، بالإضافة إلى LoRAs وترميزات مضمنة وكل أداة تدعم SDXL بشكل مباشر. أما FLUX فلديه خيارات أقل وأحدث وما زالت تنمو.",
+          "إذا كان الأسلوب أو الشخصية أو سير العمل الذي تعتمد عليه موجودًا فقط كـ LoRA خاص بـ SDXL، فإن التوافق هو العامل الحاسم بغض النظر عن الجودة الخام. أدوات مثل ComfyUI تعامل الاثنين بشكل متزايد كمواطنين من الدرجة الأولى، لكن وزن المجتمع ما زال يقف مع SDXL."
+        ]
+      },
+      {
+        "heading": "إطار قرار عملي",
+        "paragraphs": [
+          "ابدأ ببطاقة الرسوميات وموضوعك. إذا كنت تعمل بـ 12 جيجابايت أو أكثر وعملك يشمل الطباعة أو الواقعية أو المشاهد المعقدة، اجعل FLUX خيارك الأساسي وأبقِ SDXL للمهام المثقلة بـ LoRA. إذا كنت على 6–8 جيجابايت، أو كانت مكتبتك الكاملة من الأساليب والشخصيات مبنية على SDXL، فإن FLUX نموذج 'أحيانًا'، وليس بديلًا.",
+          "الاثنان مكملان، وليسا عدوين. كثير من سير العمل الآن يربط بينهما: SDXL لأسلوب أو شخصية معروفة، وFLUX للمرور النهائي النظيف حيث تهم دقة البرومبت. الاختيار لا يعني بالضرورة الالتزام."
+        ]
+      }
+    ],
+    "tags": ["flux", "sdxl", "نماذج", "مقارنة", "دليل"]
+  },
+  "title": "FLUX.1 vs SDXL: Choosing the Right Checkpoint",
+  "type": "article",
+  "category": "Guides",
+  "author": "Ibrahim Iel-Khatub",
+  "published": "2026-08-01",
+  "readTime": "13 min",
+  "difficulty": "Intermediate",
+  "rating": 4.8,
+  "ratingsCount": 0,
+  "cover": 8,
+  "featured": true,
+  "summary": "Two generations of open models, two very different trade-offs. This is a practical guide to deciding whether FLUX.1 or SDXL deserves to be your default checkpoint — based on hardware, workflow and the kind of images you actually make.",
+  "content": [
+    {
+      "heading": "They are not the same kind of model",
+      "paragraphs": [
+        "SDXL is a 3.5-billion-parameter UNet latent diffusion model from 2023. FLUX.1 dev is a 12-billion-parameter rectified flow transformer from 2024. The names both start with 'diffusion', but the architectures, text encoders and sampling methods are entirely different families.",
+        "That difference is the root of everything else in this article. A 3.5B UNet and a 12B transformer do not compete on the same battlefield — they are tools for different constraints and different goals."
+      ]
+    },
+    {
+      "heading": "Quality: where FLUX clearly wins",
+      "paragraphs": [
+        "FLUX.1 dev produces cleaner anatomy, richer composition and dramatically better text and typography. It handles complex multi-subject scenes that make SDXL reach for its CFG. If your work involves readable signage, accurate hands, or dense scenes with several subjects, FLUX is the stronger default.",
+        "Its prompt adherence is also qualitatively better. SDXL often needs careful prompt reordering, quality tags and style tokens to behave; FLUX accepts a plain sentence and does what it says more often than not."
+      ],
+      "list": [
+        "Typography and readable text: FLUX by a wide margin",
+        "Anatomy and hands: FLUX",
+        "Complex multi-subject composition: FLUX",
+        "Stylized and painterly looks: often SDXL, thanks to ecosystem checkpoints"
+      ]
+    },
+    {
+      "heading": "Hardware: the honest constraint",
+      "paragraphs": [
+        "Here the scales tip the other way. A bf16 FLUX.1 dev is 24 GB; even the fp8 quantized build needs a comfortable 12 GB, and an nf4 or GGUF-q4 build squeezes onto roughly 7 GB with patience. SDXL base fits in 6 GB at fp16 and is comfortable on a 12 GB card at native 1024px.",
+        "VRAM is not the only cost. FLUX's T5-XXL text encoder alone eats several gigabytes, and generation time at 28 steps is noticeably slower than SDXL at 30. On an 8 GB card the difference between 'workable' and 'daily driver' is real."
+      ]
+    },
+    {
+      "heading": "The ecosystem factor",
+      "paragraphs": [
+        "SDXL anchors the largest fine-tune ecosystem in open diffusion: thousands of community checkpoints like DreamShaper XL and Juggernaut XL, plus LoRAs, embeddings and every tool supporting SDXL out of the box. FLUX has fewer, younger and still-growing options.",
+        "If a style, character or workflow you rely on exists only as an SDXL LoRA, then compatibility is the deciding factor regardless of raw quality. Tools like ComfyUI increasingly treat both as first-class, but the community weight still sits with SDXL."
+      ]
+    },
+    {
+      "heading": "A practical decision framework",
+      "paragraphs": [
+        "Start with your GPU and your subject. If you run 12 GB or more and your work involves typography, realism or complex scenes, make FLUX your primary and keep SDXL for LoRA-heavy tasks. If you are on 6–8 GB, or your whole library of styles and characters is SDXL-native, FLUX is a 'sometimes' model, not a replacement.",
+        "The two are complements, not enemies. Many workflows now chain them: SDXL for a recognizable style or character, FLUX for the final clean pass where prompt precision matters. Choosing does not have to mean committing."
+      ]
+    }
+  ],
+  "tags": ["flux", "sdxl", "models", "comparison", "guide"],
+  "related": ["comfyui-mental-model", "sdxl-parameters", "flux-on-8gb"]
+}

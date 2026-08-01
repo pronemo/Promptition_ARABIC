@@ -1,0 +1,138 @@
+/* ==========================================================================
+   Promptition — Badges, Tags & Pills
+   Components: badges.css
+   ========================================================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.28rem 0.6rem;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.badge-default {
+  background: var(--bg-soft);
+  color: var(--text-soft);
+}
+.badge-brand {
+  background: var(--brand-50);
+  color: var(--brand-700);
+}
+:root[data-theme="dark"] .badge-brand,
+:root:not([data-theme="light"]) .badge-brand {
+  background: rgba(124, 92, 252, 0.16);
+  color: var(--brand-300);
+}
+.badge-accent {
+  background: rgba(34, 211, 238, 0.14);
+  color: var(--accent-600);
+}
+:root[data-theme="dark"] .badge-accent,
+:root:not([data-theme="light"]) .badge-accent {
+  color: var(--accent-300);
+}
+.badge-success {
+  background: rgba(22, 163, 74, 0.12);
+  color: var(--success);
+}
+.badge-warning {
+  background: rgba(217, 119, 6, 0.12);
+  color: var(--warning);
+}
+.badge-danger {
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--danger);
+}
+.badge-info {
+  background: rgba(2, 132, 199, 0.12);
+  color: var(--info);
+}
+
+/* On dark / cover surfaces */
+.badge-glass {
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.badge .icon {
+  width: 13px;
+  height: 13px;
+}
+
+/* Difficulty / license pills */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  background: var(--bg-soft);
+  color: var(--text-soft);
+}
+.pill .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: var(--radius-full);
+  background: var(--text-faint);
+}
+.pill-beginner .dot {
+  background: var(--success);
+}
+.pill-intermediate .dot {
+  background: var(--warning);
+}
+.pill-advanced .dot {
+  background: var(--danger);
+}
+
+/* Clickable tag chips */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--text-soft);
+  background: var(--bg-soft);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color var(--dur) var(--ease),
+    color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.chip:hover {
+  color: var(--brand-600);
+  background: var(--brand-50);
+  border-color: var(--brand-200);
+}
+:root[data-theme="dark"] .chip:hover,
+:root:not([data-theme="light"]) .chip:hover {
+  background: rgba(124, 92, 252, 0.16);
+  color: var(--brand-300);
+  border-color: transparent;
+}
+.chip.is-active {
+  color: #fff;
+  background: var(--brand-500);
+  border-color: var(--brand-500);
+}
+.chip .icon {
+  width: 13px;
+  height: 13px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}

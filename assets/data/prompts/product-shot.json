@@ -1,0 +1,56 @@
+{
+  "id": "product-shot",
+  "ar": {
+    "name": "لقطة منتج بسيطة",
+    "category": "منتج",
+    "description": "تصيير منتج في الاستوديو على خلفية متدرجة سلسة مع انعكاسات حادة. مصمم لنماذج التجارة الإلكترونية والإعلانات.",
+    "positive": "تصوير منتجات بسيط، سماعة لاسلكية سوداء غير لامعة تطفو على خلفية متدرجة ناعمة من البيج الفاتح إلى الرمادي الدافئ، إضاءة استوديو ناعمة، انعكاس خفيف بالأسفل، تكوين نظيف، المنتج في المنتصف، أسلوب إعلان تجاري، إضاءة عالية، حدة فائقة، 8k",
+    "negative": "خلفية مزدحمة، ظلال قاسية، تشبع مفرط، كرتوني، تصيير ثلاثي الأبعاد، علامة مائية، نص، شعار، دعامات، جودة منخفضة، ضبابي، شكل مشوه",
+    "settings": {
+      "width": 1024,
+      "height": 1024,
+      "steps": 32,
+      "cfg": 5.0,
+      "sampler": "dpmpp_2m",
+      "model": "SDXL",
+      "aspect": "1:1"
+    },
+    "tags": ["منتج", "استوديو", "تجاري", "بسيط", "تجارة إلكترونية"],
+    "examples": [
+      {
+        "title": "زجاجة مستحضرات تجميل",
+        "positive": "لقطة استوديو بسيطة لزجاجة سيروم زجاجية كهرمانية على خلفية متدرجة باللون البيج، انعكاس ناعم، تجاري، حدة فائقة"
+      }
+    ]
+  },
+  "name": "Minimalist Product Shot",
+  "type": "prompt",
+  "category": "Product",
+  "rating": 4.6,
+  "ratingsCount": 690,
+  "usedBy": "110k",
+  "cover": 5,
+  "featured": false,
+  "description": "A studio product render on a seamless gradient backdrop with crisp reflections. Built for e-commerce and advertising mockups.",
+  "positive": "minimalist product photography, a matte black wireless speaker floating on a soft gradient background from light beige to warm gray, soft studio lighting, subtle reflection beneath, clean composition, centered subject, commercial advertising style, high key, ultra sharp, 8k",
+  "negative": "cluttered background, harsh shadows, oversaturated, cartoon, 3d render, watermark, text, logo, props, low quality, blurry, distorted shape",
+  "settings": {
+    "width": 1024,
+    "height": 1024,
+    "steps": 32,
+    "cfg": 5.0,
+    "sampler": "dpmpp_2m",
+    "model": "SDXL",
+    "aspect": "1:1"
+  },
+  "tags": ["product", "studio", "commercial", "minimal", "e-commerce"],
+  "compatibleModels": ["playground-v25", "juggernaut-xl", "sdxl-base"],
+  "compatibleLoras": ["detail-tweaker-xl", "epi-noise-offset"],
+  "examples": [
+    {
+      "title": "Cosmetic bottle",
+      "positive": "minimalist studio shot of an amber glass serum bottle on a beige gradient backdrop, soft reflection, commercial, ultra sharp"
+    }
+  ],
+  "related": ["food-photography", "architecture-exterior", "abstract-art"]
+}

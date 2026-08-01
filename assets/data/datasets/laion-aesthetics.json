@@ -1,0 +1,46 @@
+{
+  "id": "laion-aesthetics",
+  "ar": {
+    "name": "LAION Aesthetics v2 6.5+",
+    "category": "انتقاء البيانات",
+    "license": "CC-BY-NC",
+    "description": "المجموعة الفرعية من LAION-5B المصنفة جماليًا التي تضم الصور الحاصلة على 6.5+ وفق مُقدِّر الجماليات الخاص بـ LAION. استُخدم هذا الأساس الانتقائي في تدريب Stable Diffusion XL، وما زال يشكّل الأساس لآلاف النماذج المجتمعية.",
+    "features": [
+      "600 مليون سجل صورة مُقيَّم جماليًا",
+      "شرائح عليا خاضعة للمراجعة البشرية",
+      "تعليقات بأكثر من 100 لغة",
+      "أساس قياسي لتدريب SDXL",
+      "جاهز للتجميع مع تمثيلات محسوبة مسبقًا"
+    ],
+    "uses": [
+      "تدريب مسبق من النص إلى الصورة",
+      "ضبط النماذج المرجعية بدقة",
+      "دراسات جودة التعليقات"
+    ],
+    "tags": ["laion", "انتقاء", "مُلتقط من الويب", "تدريب"],
+    "source": "https://laion.ai"
+  },
+  "name": "LAION Aesthetics v2 6.5+",
+  "type": "dataset",
+  "category": "Curation",
+  "samples": "600M",
+  "sizeGb": 1800,
+  "format": "Parquet metadata + image URLs",
+  "license": "CC-BY-NC",
+  "rating": 4.8,
+  "usedBy": "SDXL",
+  "cover": 1,
+  "featured": true,
+  "source": "https://laion.ai",
+  "description": "The aesthetic-scored subset of LAION-5B containing images rated 6.5+ on the LAION aesthetic predictor. This curation backbone was used to train Stable Diffusion XL and remains the foundation for thousands of community checkpoints.",
+  "features": [
+    "600M aesthetic-scored image records",
+    "Human-audited top slices",
+    "Captions in 100+ languages",
+    "Standard backbone for SDXL training",
+    "Cluster-ready with precomputed embeddings"
+  ],
+  "uses": ["Text-to-image pretraining", "Checkpoint fine-tuning", "Caption quality studies"],
+  "tags": ["laion", "curation", "web-scraped", "training"],
+  "related": ["journey-db", "vision-aesthetics", "open-images"]
+}

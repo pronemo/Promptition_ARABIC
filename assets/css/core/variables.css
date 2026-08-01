@@ -1,0 +1,193 @@
+/* ==========================================================================
+   Promptition — Design Tokens
+   Core: variables.css
+   ========================================================================== */
+
+:root {
+  /* Brand */
+  --brand-50: #f3f1ff;
+  --brand-100: #e9e4ff;
+  --brand-200: #d5ccff;
+  --brand-300: #b9a8ff;
+  --brand-400: #9b7eff;
+  --brand-500: #7c5cfc;
+  --brand-600: #6a3ef0;
+  --brand-700: #5a2fd4;
+  --brand-800: #4b27ab;
+  --brand-900: #3d2484;
+
+  --accent-300: #67e8f9;
+  --accent-400: #22d3ee;
+  --accent-500: #06b6d4;
+  --accent-600: #0891b2;
+
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --info: #0284c7;
+
+  /* Typography */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", "Cascadia Code", "JetBrains Mono", Consolas,
+    "Liberation Mono", Menlo, monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.9375rem;
+  --fs-md: 1.0625rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 1.875rem;
+  --fs-3xl: 2.375rem;
+  --fs-4xl: 3rem;
+
+  --lh-tight: 1.2;
+  --lh-base: 1.55;
+
+  /* Spacing */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+
+  /* Layout */
+  --container: 1200px;
+  --container-narrow: 840px;
+  --header-h: 68px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+
+  /* Elevation */
+  --shadow-xs: 0 1px 2px rgba(17, 20, 45, 0.06);
+  --shadow-sm: 0 2px 6px rgba(17, 20, 45, 0.07);
+  --shadow-md: 0 8px 24px rgba(17, 20, 45, 0.1);
+  --shadow-lg: 0 16px 48px rgba(17, 20, 45, 0.14);
+  --shadow-glow: 0 8px 32px rgba(124, 92, 252, 0.32);
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur: 160ms;
+  --dur-slow: 320ms;
+
+  /* Z-index */
+  --z-header: 100;
+  --z-modal: 300;
+  --z-toast: 400;
+}
+
+/* Light theme (default) */
+:root,
+:root[data-theme="light"] {
+  --bg: #f6f7fb;
+  --bg-elev: #ffffff;
+  --bg-soft: #eef0f8;
+  --bg-strong: #e6e8f3;
+  --surface: #ffffff;
+  --surface-hover: #fafbff;
+  --surface-glass: rgba(255, 255, 255, 0.82);
+
+  --text: #171a2e;
+  --text-soft: #3f4360;
+  --text-muted: #697099;
+  --text-faint: #98a0bf;
+
+  --border: #e5e7f2;
+  --border-strong: #d6d9e9;
+  --border-focus: #9b7eff;
+
+  --input-bg: #ffffff;
+
+  --hero-text: #171a2e;
+
+  --skeleton-base: #eceef7;
+  --skeleton-glow: #ffffff;
+
+  --header-bg: rgba(246, 247, 251, 0.86);
+  --footer-bg: #10122a;
+  --footer-text: #c3c6e6;
+  --footer-heading: #ffffff;
+}
+
+/* Dark theme */
+:root[data-theme="dark"] {
+  --bg: #0b0d1a;
+  --bg-elev: #11142a;
+  --bg-soft: #161936;
+  --bg-strong: #1c1f42;
+  --surface: #12152d;
+  --surface-hover: #181b38;
+  --surface-glass: rgba(18, 21, 45, 0.82);
+
+  --text: #eef0ff;
+  --text-soft: #c6cae8;
+  --text-muted: #969cc6;
+  --text-faint: #6b71a0;
+
+  --border: #262a4e;
+  --border-strong: #323761;
+  --border-focus: #9b7eff;
+
+  --input-bg: #0f1226;
+
+  --hero-text: #eef0ff;
+
+  --skeleton-base: #1a1d3e;
+  --skeleton-glow: #262a55;
+
+  --header-bg: rgba(11, 13, 26, 0.82);
+  --footer-bg: #080a16;
+  --footer-text: #9095bd;
+  --footer-heading: #e6e8ff;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b0d1a;
+    --bg-elev: #11142a;
+    --bg-soft: #161936;
+    --bg-strong: #1c1f42;
+    --surface: #12152d;
+    --surface-hover: #181b38;
+    --surface-glass: rgba(18, 21, 45, 0.82);
+
+    --text: #eef0ff;
+    --text-soft: #c6cae8;
+    --text-muted: #969cc6;
+    --text-faint: #6b71a0;
+
+    --border: #262a4e;
+    --border-strong: #323761;
+    --border-focus: #9b7eff;
+
+    --input-bg: #0f1226;
+
+    --hero-text: #eef0ff;
+
+    --skeleton-base: #1a1d3e;
+    --skeleton-glow: #262a55;
+
+    --header-bg: rgba(11, 13, 26, 0.82);
+    --footer-bg: #080a16;
+    --footer-text: #9095bd;
+    --footer-heading: #e6e8ff;
+
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
+  }
+}

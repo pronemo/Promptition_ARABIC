@@ -1,0 +1,114 @@
+{
+  "id": "controlnet-workflows",
+  "ar": {
+    "title": "5 سير عمل لـ ControlNet تغيّر كل شيء",
+    "category": "ComfyUI",
+    "difficulty": "متقدم",
+    "summary": "الوضعية، والعمق، وCanny، وLineart، وIPAdapter — خمسة سير عمل تحبس التكوين وتحوّل التحويل من نص إلى صورة من لعبة حظ إلى عملية موجّهة.",
+    "content": [
+      {
+        "heading": "لماذا يهم ControlNet",
+        "paragraphs": [
+          "لا يمكن للنص وحده وضع ثلاث شخصيات بشكل موثوق، أو محاكاة وضعية معينة، أو تثبيت زاوية كاميرا دقيقة. يضيف ControlNet إشارة توجيه — هياكل وضعية، وخرائط عمق، وكشف الحواف — تُقيّد المكان الذي يرسم فيه النموذج. ثم يحدد البرومبت النصي الأسلوب والمحتوى داخل هذا الهيكل."
+        ]
+      },
+      {
+        "heading": "1. الوضعية (OpenPose)",
+        "paragraphs": [
+          "استخرج هيكلًا عظميًا من صورة مرجعية (أو ابنِه يدويًا في محرر) وغذِّه عبر ControlNet مع معالجة مسبقة 'openpose'. اضبط قوة التحكم بين 0.7–0.9. النتيجة: لغة جسد متطابقة مع أي أسلوب في البرومبت. أمر أساسي لثبات الشخصيات."
+        ]
+      },
+      {
+        "heading": "2. العمق (MiDaS / Zoe)",
+        "paragraphs": [
+          "تعطي خريطة العمق للنموذج التخطيط المكاني للمشهد. استخدمها للحفاظ على علاقات المقدمة والخلفية مع تغيير الأسلوب الفني تمامًا. إنها ألطف أدوات ControlNet — قوة 0.5 غالبًا ما تُقرأ كتكوين طبيعي وليس كقيد مرئي."
+        ]
+      },
+      {
+        "heading": "3. حواف Canny",
+        "paragraphs": [
+          "يكتشف Canny الحواف الحادة ويُجبر النموذج على الرسم على طولها. هذا هو الوضع الأكثر صرامة: يحافظ جيدًا على بنية العمارة والمركبات ولكنه قد يصطدم بالأساليب اللينة الرسمية. فضّله للتعديلات المقيدة بالخطوط وصور المنتجات."
+        ]
+      },
+      {
+        "heading": "4. Lineart",
+        "paragraphs": [
+          "Lineart (أو 'lineart_anime') هو خيار الرسامين: يحوّل المرجع إلى خطوط نظيفة ويلوّن النموذج من داخلها. ادمجه مع LoRA للأسلوب لنتائج مانغا وكوميكس مذهلة. قوة 0.8 هي نقطة انطلاق جيدة."
+        ]
+      },
+      {
+        "heading": "5. أسلوب IPAdapter",
+        "paragraphs": [
+          "IPAdapter ليس ControlNet، لكنه ينتمي إلى صندوق الأدوات نفسه. يضمّن صورة مرجعية وينقل أسلوبها أو موضوعها مباشرة. استخدم نوع وزن 'style transfer' بقوة 0.5 لاستعارة لوحة ألوان وملمس دون نسخ التكوين."
+        ],
+        "list": [
+          "Pose: ثبات الشخصيات",
+          "Depth: إعادة تصميم التخطيط المكاني",
+          "Canny: بنية صارمة",
+          "Lineart: تلوين الرسوم التوضيحية",
+          "IPAdapter: نقل الأسلوب والموضوع"
+        ]
+      }
+    ],
+    "tags": ["controlnet", "سير عمل", "comfyui", "تكوين"]
+  },
+  "title": "5 ControlNet Workflows That Change Everything",
+  "type": "article",
+  "category": "ComfyUI",
+  "author": "Maya Torres",
+  "published": "2026-01-18",
+  "readTime": "16 min",
+  "difficulty": "Advanced",
+  "rating": 4.7,
+  "ratingsCount": 568,
+  "cover": 6,
+  "featured": false,
+  "summary": "Pose, depth, canny, lineart and IPAdapter — five composition-locking workflows that turn text-to-image from a lottery into a directed process.",
+  "content": [
+    {
+      "heading": "Why ControlNet matters",
+      "paragraphs": [
+        "Text alone cannot reliably place three characters, mirror a pose or hold an exact camera angle. ControlNet adds a conditioning signal — pose skeletons, depth maps, edge detection — that constrains where the model draws. The text prompt then decides the style and content inside that scaffold."
+      ]
+    },
+    {
+      "heading": "1. Pose (OpenPose)",
+      "paragraphs": [
+        "Extract a skeleton from a reference image (or build one manually in an editor) and feed it through ControlNet with 'openpose' preprocessing. Set control strength 0.7–0.9. Result: identical body language with any style in the prompt. Essential for character consistency."
+      ]
+    },
+    {
+      "heading": "2. Depth (MiDaS / Zoe)",
+      "paragraphs": [
+        "A depth map gives the model the scene's spatial layout. Use it to keep foreground/background relationships while completely changing the art style. It is the gentlest ControlNet — strength 0.5 often reads as natural composition rather than visible constraint."
+      ]
+    },
+    {
+      "heading": "3. Canny edges",
+      "paragraphs": [
+        "Canny detects hard edges and the model is forced to paint along them. This is the strictest mode: it preserves structure like architecture and vehicles very well but can fight soft painterly styles. Prefer it for line-locked edits and product shots."
+      ]
+    },
+    {
+      "heading": "4. Lineart",
+      "paragraphs": [
+        "Lineart (or 'lineart_anime') is the illustrator's choice: it converts the reference to clean linework and the model colors inside it. Combine with a style LoRA for striking comic and anime results. Strength 0.8 is a good starting point."
+      ]
+    },
+    {
+      "heading": "5. IPAdapter style",
+      "paragraphs": [
+        "IPAdapter is not ControlNet, but it belongs in the same toolbox. It embeds a reference image and transfers its style or subject directly. Use 'style transfer' weight type with strength 0.5 to borrow a palette and texture without copying composition."
+      ],
+      "list": [
+        "Pose: character consistency",
+        "Depth: spatial layout restyle",
+        "Canny: strict structure",
+        "Lineart: illustration colorization",
+        "IPAdapter: style and subject transfer"
+      ]
+    }
+  ],
+  "tags": ["controlnet", "workflows", "comfyui", "composition"],
+  "related": ["comfyui-beginners", "prompt-engineering-guide", "sdxl-parameters"]
+}

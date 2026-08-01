@@ -1,0 +1,112 @@
+{
+  "id": "comfyui-mental-model",
+  "ar": {
+    "title": "مخطط العُقد، مشروحًا: نموذج ذهني لـ ComfyUI",
+    "category": "أدلة",
+    "difficulty": "مبتدئ",
+    "summary": "قبل أن تتعلم أي زر تضغطه، تعلم كيف تفكر. مخطط العُقد في ComfyUI ليس متاهة — بل خط إنتاج يُعرض بشفافية. بمجرد أن تستقر فكرة النموذج الذهني في ذهنك، تصبح كل سير العمل في هذا النظام البيئي مفهومًا.",
+    "content": [
+      {
+        "heading": "المخطط هو مجرد خط إنتاج، مرسوم بالعرض",
+        "paragraphs": [
+          "كل صورة مولَّدة تبدأ بالطريقة نفسها: تُحمَّل الأوزان، ويتحول النص إلى أرقام، وتُأخذ عينات من الضوضاء لتتحول إلى بنية، وتُفكّ ترميز البكسلات. لا يخترع ComfyUI عملية جديدة — بل يرفض إخفاء العملية القائمة. كل صندوق هو خطوة في تلك العملية، وكل سلك هو بيانات تنتقل من خطوة إلى التالية.",
+          "هذه هي الحيلة كلها. توقف عن قراءة اللوحة على أنها جدار من الصناديق المربكة، واقرأها كسيرٍ ناقلٍ يتحرك من اليسار إلى اليمين. توفر العقد الموجودة في أقصى اليسار المكونات الخام: نقطة التحقق، والنص، واللوحة الفارغة. وتحوّل العقد الوسطى تلك المكونات. أما العقد الموجودة في أقصى اليمين فتحوّل النتيجة إلى شيء يمكنك النظر إليه وحفظه."
+        ]
+      },
+      {
+        "heading": "المكونات الخمسة التي تدور حولها كل سير عمل تقريبًا",
+        "paragraphs": [
+          "جرّد الإضافات الفاخرة وستختصر تقريبًا كل سير عمل أساسي إلى الأدوار الخمسة نفسها: أداة تحميل نقطة التحقق، وترميزا نصوص، وعينة (سامبلر)، وفك ترميز، وحافظ للصور. تندرج الإضافات مثل ControlNet أو IPAdapter ضمن هذا الهيكل العظمي؛ فهي لا تستبدله.",
+          "بمجرد أن تتمكن من تحديد تلك الأدوار الخمسة في سير عمل غير مألوف، يمكنك توقع ما يفعله المخطط قبل قراءة اسم عقدة واحدة. هذه المهارة هي ما يفصل بين نسخ سير العمل وبين فهمه."
+        ],
+        "list": [
+          "Checkpoint loader — يزوّد النموذج وترميز النص وVAE",
+          "Positive/negative text encoders — تحوّل البرومبتات إلى ناقلات توجيه",
+          "Sampler — حلقة إزالة الضوضاء الأساسية",
+          "Decoder — يعيد شبكة الكامن إلى بكسلات",
+          "Saver — يكتب الصورة على القرص"
+        ]
+      },
+      {
+        "heading": "الكامنات هي الطبقة الوسطى التي لا يراها أحد",
+        "paragraphs": [
+          "بين النص والصورة النهائية توجد تمثيل مضغوط يُسمى الكامن. وهو أصغر من الدقة النهائية، وهذا هو السبب بالضبط في أن نماذج الانتشار سريعة بما يكفي لتعمل على بطاقات الرسوميات الاستهلاكية. يعمل العينة (السامبلر) على هذه الشبكة المدمجة؛ ويقوم فك الترميز «بترقية» حجمها لتعود إلى بكسلات بالدقة الكاملة.",
+          "هذا يفسر عدة مفاجآت شائعة. إنه السبب في أن توليد 1024x1024 ما زال يُحمَّل بسرعة، وسبب أن عقدة الكامن الفارغ تتحكم في حجم المخرجات، وسبب أن فك الترميز هو العقدة التي تُلام عندما تبدو المخرجات متكتلة بدلًا من أن تكون ناعمة."
+        ]
+      },
+      {
+        "heading": "اقرأ الأسلاك، لا الأسماء فقط",
+        "paragraphs": [
+          "عناوين العقد تساعد، لكن الأسلاك تحكي القصة الحقيقية. العقدة المتصلة بمدخل النموذج في السامبلر هي التي توفر النموذج. والعقدة التي تغذي المدخل الإيجابي هي الشيء الذي يوجّه الصورة. إذا أردت تغيير ما يفعله سير العمل، فاتبع السلك الذي يحمل الشيء الذي تهتم به واستبدل مصدره.",
+          "لهذا أيضًا يعد حفظ سير العمل كصورة أمرًا قويًا: ملف JSON مضمّن، والتخطيط مرئي، ويستطيع أي غريب إعادة بناء ما أنتج صورة معينة بالضبط. إمكانية إعادة الإنتاج هي القوة الخارقة الهادئة لمخطط العُقد."
+        ]
+      },
+      {
+        "heading": "ابدأ بالقراءة، ثم التعديل، ثم البناء",
+        "paragraphs": [
+          "يرتكب المبتدئون خطأ محاولة بناء سير عمل من لوحة فارغة في اليوم الأول. الطريق الأسرع هو الهندسة العكسية. حمّل سير عمل افتراضيًا، وتابع كل سلك، وغيّر قيمة واحدة، ولاحظ ما يحدث. كل تغيير هو فرضية؛ والصورة المقدَّمة هي الجواب.",
+          "خلال بضع جلسات ستبدأ في رؤية الهيكل العظمي خلف كل سير عمل تقابله. تلك هي اللحظة التي يتوقف فيها ComfyUI عن كونه تشابكًا ويبدأ في كونه صندوق أدوات."
+        ]
+      }
+    ],
+    "tags": ["comfyui", "عُقد", "مفاهيم", "مبتدئ", "دليل"]
+  },
+  "title": "The Node Graph, Explained: A Mental Model for ComfyUI",
+  "type": "article",
+  "category": "Guides",
+  "author": "Ibrahim Iel-Khatub",
+  "published": "2026-07-31",
+  "readTime": "11 min",
+  "difficulty": "Beginner",
+  "rating": 4.8,
+  "ratingsCount": 0,
+  "cover": 7,
+  "featured": true,
+  "summary": "Before you learn which button to press, learn how to think. ComfyUI's node graph is not a maze — it is a pipeline shown honestly. Once the mental model clicks, every workflow in the ecosystem becomes readable.",
+  "content": [
+    {
+      "heading": "A graph is just a pipeline, drawn sideways",
+      "paragraphs": [
+        "Every generative image begins the same way: weights are loaded, text becomes numbers, noise is sampled into structure, and pixels are decoded. ComfyUI does not invent a new process — it refuses to hide the existing one. Each box is a step in that process, and each wire is data moving from one step to the next.",
+        "This is the whole trick. Stop reading the canvas as a wall of confusing boxes and read it as a left-to-right conveyor belt. Leftmost nodes provide raw ingredients: the checkpoint, the text, the empty canvas. Middle nodes transform those ingredients. Rightmost nodes turn the result into something you can look at and save."
+      ]
+    },
+    {
+      "heading": "The five ingredients of almost every workflow",
+      "paragraphs": [
+        "Strip away the fancy extensions and nearly every basic workflow reduces to the same five roles: a checkpoint loader, two text encoders, a sampler, a decoder and an image saver. Extensions like ControlNet or IPAdapter slot into this skeleton; they do not replace it.",
+        "Once you can identify those five roles in an unfamiliar workflow, you can predict what the graph does before reading a single node name. That skill is what separates copying workflows from understanding them."
+      ],
+      "list": [
+        "Checkpoint loader — supplies the model, text encoder and VAE",
+        "Positive/negative text encoders — turn prompts into guidance vectors",
+        "Sampler — the core denoising loop",
+        "Decoder — turns the latent grid back into pixels",
+        "Saver — writes the image to disk"
+      ]
+    },
+    {
+      "heading": "Latents are the middle layer nobody sees",
+      "paragraphs": [
+        "Between the text and the final image sits a compressed representation called the latent. It is smaller than the final resolution, which is exactly why diffusion models are fast enough to run on consumer GPUs. The sampler works on this compact grid; the decoder 'upscales' it back into full-resolution pixels.",
+        "This explains several common surprises. It is why a 1024x1024 generation still loads quickly, why the empty-latent node controls output size and why the decoder is the node to blame when output looks blocky rather than soft."
+      ]
+    },
+    {
+      "heading": "Read wires, not just names",
+      "paragraphs": [
+        "Node titles help, but the wires tell the real story. A node connected to the sampler's model input is providing the model. A node feeding the positive input is the thing guiding the image. If you want to change what a workflow does, follow the wire that carries the thing you care about and replace its source.",
+        "This is also why saving workflows as images is powerful: the JSON is embedded, the layout is visual, and a stranger can reconstruct exactly what produced a given picture. Reproducibility is the quiet superpower of the node graph."
+      ]
+    },
+    {
+      "heading": "Start by reading, then modify, then build",
+      "paragraphs": [
+        "Beginners make the mistake of trying to build workflows from a blank canvas on day one. The faster path is reverse engineering. Load a default workflow, follow each wire, change one value, and watch what happens. Every change is a hypothesis; the rendered image is the answer.",
+        "Within a few sessions you will start to see the skeleton behind every workflow you meet. That is the moment ComfyUI stops feeling like a tangle and starts feeling like a toolkit."
+      ]
+    }
+  ],
+  "tags": ["comfyui", "nodes", "concepts", "beginner", "guide"],
+  "related": ["comfyui-beginners", "sdxl-parameters", "controlnet-workflows"]
+}

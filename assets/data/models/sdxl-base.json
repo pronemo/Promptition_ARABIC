@@ -1,0 +1,95 @@
+{
+  "id": "sdxl-base",
+  "ar": {
+    "name": "Stable Diffusion XL Base",
+    "category": "نص إلى صورة",
+    "subcategory": "انتشار كامن",
+    "architecture": "UNet مع مشفّري النصوص OpenCLIP-ViT/G و OpenCLIP-ViT/bigG",
+    "license": "CreativeML Open RAIL++-M",
+    "description": "Stable Diffusion XL هو النموذج الأساسي بدقة 1024 بكسل الذي يرتكز عليه أكبر نظام بيئي للنماذج المضيَّبة. يجمع بين شبكة UNet بـ 3.5 مليار معلمة ومشفّري نصين (OpenCLIP ViT-bigG و CLIP ViT-L) للحصول على دلالات مفصلة وجودة جمالية عبر كل نمط وموضوع تقريبًا.",
+    "features": [
+      "إخراج أصلي بدقة 1024×1024",
+      "شروط عبر مشفّري نصين",
+      "منظومة ضخمة من نماذج LoRA ونقاط الفحص والتمثيلات الضمنية",
+      "مرحلة تنقية لتحسين التفاصيل الدقيقة",
+      "دعم واسع من أدوات المجتمع"
+    ],
+    "quantizations": [
+      { "name": "bf16", "sizeGb": 6.9, "quality": "مرجع" },
+      { "name": "fp16", "sizeGb": 6.9, "quality": "مرجع" },
+      { "name": "fp8", "sizeGb": 3.5, "quality": "شبه ضائع" }
+    ],
+    "requirements": {
+      "minVram": "6 جيجابايت (fp16، VAE مقسّم)",
+      "recommendedVram": "12 جيجابايت",
+      "minRam": "16 جيجابايت",
+      "cuda": "11.8+",
+      "python": "3.9+"
+    },
+    "examples": [
+      {
+        "prompt": "حديقة يابانية هادئة في الربيع، أزهار الكرز تتساقط، بركة كوي، ضوء صباحي ناعم، تفاصيل عالية الدقة",
+        "width": 1024,
+        "height": 1024,
+        "steps": 30,
+        "cfg": 6.0,
+        "seed": 2024
+      }
+    ],
+    "tags": ["sdxl", "أساسي", "1024px", "منظومة"]
+  },
+  "name": "Stable Diffusion XL Base",
+  "type": "model",
+  "category": "Text-to-Image",
+  "subcategory": "Latent Diffusion",
+  "publisher": "Stability AI",
+  "architecture": "UNet with OpenCLIP-ViT/G and OpenCLIP-ViT/bigG text encoders",
+  "params": "3.5B",
+  "released": "2023-07-26",
+  "version": "1.0",
+  "license": "CreativeML Open RAIL++-M",
+  "rating": 4.6,
+  "ratingsCount": 2210,
+  "downloads": "26.7M",
+  "cover": 1,
+  "featured": true,
+  "description": "Stable Diffusion XL is the 1024px foundation model that anchors the largest fine-tune ecosystem in the ecosystem. It pairs a 3.5B UNet with two text encoders (OpenCLIP ViT-bigG and CLIP ViT-L) for detailed semantics and aesthetic quality across virtually every style and subject.",
+  "features": [
+    "Native 1024x1024 output",
+    "Dual text encoder conditioning",
+    "Huge ecosystem of LoRAs, checkpoints and embeddings",
+    "Refiner stage for enhanced fine detail",
+    "Broad community tooling support"
+  ],
+  "quantizations": [
+    { "name": "bf16", "sizeGb": 6.9, "quality": "Reference" },
+    { "name": "fp16", "sizeGb": 6.9, "quality": "Reference" },
+    { "name": "fp8", "sizeGb": 3.5, "quality": "Near-lossless" }
+  ],
+  "formats": ["safetensors", "ckpt"],
+  "requirements": {
+    "minVram": "6 GB (fp16, tiled VAE)",
+    "recommendedVram": "12 GB",
+    "minRam": "16 GB",
+    "cuda": "11.8+",
+    "python": "3.9+"
+  },
+  "links": {
+    "website": "https://stability.ai",
+    "download": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+    "github": "https://github.com/Stability-AI/generative-models"
+  },
+  "examples": [
+    {
+      "prompt": "A serene Japanese garden in spring, cherry blossoms falling, koi pond, soft morning light, highly detailed",
+      "width": 1024,
+      "height": 1024,
+      "steps": 30,
+      "cfg": 6.0,
+      "seed": 2024
+    }
+  ],
+  "tags": ["sdxl", "base", "1024px", "ecosystem"],
+  "compatibleTools": ["comfyui", "automatic1111", "invokeai", "forge-webui", "fooocus", "sd-next"],
+  "related": ["dreamshaper-xl", "juggernaut-xl", "flux-1-dev"]
+}

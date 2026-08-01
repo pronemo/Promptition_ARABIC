@@ -1,0 +1,46 @@
+{
+  "id": "was-node-suite",
+  "ar": {
+    "name": "WAS Node Suite",
+    "category": "أدوات مساعدة",
+    "description": "WAS Node Suite هو مجموعة شاملة من عقد الصور والنصوص والفيديو والأدوات المساعدة — من تصحيح الألوان والأقنعة إلى معالجة الملفات — تسد الفجوات في ComfyUI الأساسي.",
+    "features": [
+      "مئات العقد المساعدة",
+      "أدوات معالجة الصور والألوان",
+      "مساعدات النصوص والتلميحات",
+      "أدوات الفيديو والدفعات",
+      "عقد المنطق الشرطي"
+    ],
+    "installation": "ثبّت عبر ComfyUI Manager، أو استنسخ داخل custom_nodes ثم شغّل requirements.txt.",
+    "inputs": ["يختلف حسب العقدة"],
+    "outputs": ["يختلف حسب العقدة"],
+    "requirements": ["ComfyUI", "ffmpeg (لعقد الفيديو)"],
+    "tags": ["أدوات-مساعدة", "معالجة-صور", "نص", "فيديو"]
+  },
+  "name": "WAS Node Suite",
+  "type": "node",
+  "package": "ComfyUI-WAS-Node-Suite",
+  "category": "Utilities",
+  "author": "WASasquatch",
+  "version": "v2.0",
+  "license": "GPL-3.0",
+  "rating": 4.5,
+  "stars": "3.0k",
+  "cover": 7,
+  "featured": false,
+  "github": "https://github.com/WASasquatch/ComfyUI-WAS-Node-Suite",
+  "description": "WAS Node Suite is a broad collection of image, text, video and utility nodes — from color grading and masking to file handling — that fills the gaps of vanilla ComfyUI.",
+  "features": [
+    "Hundreds of utility nodes",
+    "Image processing and color tools",
+    "Text and prompt helpers",
+    "Video and batch utilities",
+    "Conditional logic nodes"
+  ],
+  "installation": "Install via ComfyUI Manager, or clone into custom_nodes and run requirements.txt.",
+  "inputs": ["varies by node"],
+  "outputs": ["varies by node"],
+  "requirements": ["ComfyUI", "ffmpeg (for video nodes)"],
+  "tags": ["utilities", "image-processing", "text", "video"],
+  "related": ["comfyui-inspire-pack", "comfyui-impact-pack", "comfyui-easy-use"]
+}

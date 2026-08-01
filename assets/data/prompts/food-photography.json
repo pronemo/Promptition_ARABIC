@@ -1,0 +1,56 @@
+{
+  "id": "food-photography",
+  "ar": {
+    "name": "تصوير طعام تحريري",
+    "category": "طعام",
+    "description": "لقطة طعام تحريرية نظيفة بضوء طبيعي ناعم وتنسيق تجاري. مثالية لفنون قوائم الطعام والمحتوى الاجتماعي مع نماذج الواقعية.",
+    "positive": "تصوير طعام تحريري، لقطة من الأعلى لطاولة إفطار ريفية مع خبز الأفوكادو والبيض المسلوق والأعشاب الطازجة على طبق سيراميك، ضوء نافذة ناعم من اليسار، سطح طاولة خشبي، عمق ميدان ضحل، بخار متصاعد، مكونات طازجة مبعثرة حولها، تنسيق طعام تجاري، تفاصيل فائقة، 8k",
+    "negative": "ضبابي، تشبع مفرط، طعام ذو مظهر بلاستيكي، كرتوني، علامة مائية، نص، شعار، جودة منخفضة، إضاءة مسطحة، خلفية مزدحمة",
+    "settings": {
+      "width": 1024,
+      "height": 1024,
+      "steps": 30,
+      "cfg": 6.0,
+      "sampler": "euler_a",
+      "model": "SDXL",
+      "aspect": "1:1"
+    },
+    "tags": ["طعام", "تحريري", "استوديو", "تجاري", "من الأعلى"],
+    "examples": [
+      {
+        "title": "لقطة المعكرونة الرئيسية",
+        "positive": "صورة تحريرية من الأعلى لتاجلياتيلي طازجة مع ريحان وجبنة بارميزان، طاولة ريفية، ضوء ناعم، تنسيق تجاري، تفاصيل فائقة"
+      }
+    ]
+  },
+  "name": "Editorial Food Photography",
+  "type": "prompt",
+  "category": "Food",
+  "rating": 4.7,
+  "ratingsCount": 740,
+  "usedBy": "92k",
+  "cover": 4,
+  "featured": false,
+  "description": "A clean editorial food shot with soft natural light and commercial styling. Great for menu art and social content with photoreal checkpoints.",
+  "positive": "editorial food photography, overhead shot of a rustic brunch spread with avocado toast, poached eggs and fresh herbs on a ceramic plate, soft window light from the left, wooden table surface, shallow depth of field, steam rising, fresh ingredients scattered around, commercial food styling, ultra detailed, 8k",
+  "negative": "blurry, oversaturated, plastic looking food, cartoon, watermark, text, logo, low quality, flat lighting, cluttered background",
+  "settings": {
+    "width": 1024,
+    "height": 1024,
+    "steps": 30,
+    "cfg": 6.0,
+    "sampler": "euler_a",
+    "model": "SDXL",
+    "aspect": "1:1"
+  },
+  "tags": ["food", "editorial", "studio", "commercial", "overhead"],
+  "compatibleModels": ["juggernaut-xl", "realistic-vision-v6", "playground-v25"],
+  "compatibleLoras": ["detail-tweaker-xl", "film-grain"],
+  "examples": [
+    {
+      "title": "Pasta hero shot",
+      "positive": "overhead editorial photo of fresh tagliatelle with basil and parmesan, rustic table, soft light, commercial styling, ultra detailed"
+    }
+  ],
+  "related": ["product-shot", "photorealistic-portrait", "architecture-exterior"]
+}

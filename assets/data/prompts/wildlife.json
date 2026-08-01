@@ -1,0 +1,56 @@
+{
+  "id": "wildlife",
+  "ar": {
+    "name": "تصوير الحياة البرية",
+    "category": "طبيعة",
+    "description": "لقطة حياة برية بعدسة تليفوتوغرافي مع منظور مضغوط وتركيز حاد على العينين. قوية مع نماذج الواقعية.",
+    "positive": "تصوير حياة برية، نمر الثلوج يستريح على نتوء صخري في جبال الهيمالايا، عدسة تليفوتوغرافي 600mm، خلفية مضغوطة، تركيز حاد على العينين الكهرمانيتين، تفاصيل فراء ناعمة، ضباب الصباح الباكر، ضوء شمس ذهبي، موطن طبيعي، أسلوب ناشونال جيوغرافيك، تفاصيل فائقة، 8k",
+    "negative": "ضبابي، خارج نطاق التركيز، كرتوني، رسم، حديقة حيوانات، سياج، قفص، علامة مائية، نص، جودة منخفضة، تشبع مفرط، حيوان مشوه",
+    "settings": {
+      "width": 1024,
+      "height": 1024,
+      "steps": 32,
+      "cfg": 6.0,
+      "sampler": "euler_a",
+      "model": "SDXL",
+      "aspect": "1:1"
+    },
+    "tags": ["حياة برية", "طبيعة", "تليفوتوغرافي", "حيوانات", "تصوير"],
+    "examples": [
+      {
+        "title": "ثعلب الغابة",
+        "positive": "صورة حياة برية لثعلب أحمر في غابة خريفية، عدسة 600mm، بوكيه ناعم، تركيز حاد على العينين، ضوء ذهبي، تفاصيل فائقة"
+      }
+    ]
+  },
+  "name": "Wildlife Photography",
+  "type": "prompt",
+  "category": "Nature",
+  "rating": 4.7,
+  "ratingsCount": 680,
+  "usedBy": "84k",
+  "cover": 10,
+  "featured": false,
+  "description": "A telephoto wildlife shot with compressed perspective and razor-sharp eye focus. Strong with photoreal checkpoints.",
+  "positive": "wildlife photography, a snow leopard resting on a rocky outcrop in the Himalayas, telephoto 600mm lens, compressed background, sharp focus on the amber eyes, soft fur detail, early morning mist, golden sunlight, natural habitat, national geographic style, ultra detailed, 8k",
+  "negative": "blurry, out of focus, cartoon, painting, zoo, fence, cage, watermark, text, low quality, oversaturated, deformed animal",
+  "settings": {
+    "width": 1024,
+    "height": 1024,
+    "steps": 32,
+    "cfg": 6.0,
+    "sampler": "euler_a",
+    "model": "SDXL",
+    "aspect": "1:1"
+  },
+  "tags": ["wildlife", "nature", "telephoto", "animals", "photography"],
+  "compatibleModels": ["realistic-vision-v6", "juggernaut-xl", "majicmix-realistic"],
+  "compatibleLoras": ["detail-tweaker-xl", "epi-noise-offset"],
+  "examples": [
+    {
+      "title": "Forest fox",
+      "positive": "wildlife photo of a red fox in an autumn forest, 600mm telephoto, soft bokeh, sharp eye focus, golden light, ultra detailed"
+    }
+  ],
+  "related": ["fantasy-landscape", "photorealistic-portrait", "architecture-exterior"]
+}

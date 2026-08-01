@@ -1,0 +1,58 @@
+{
+  "id": "controlnet-pose",
+  "ar": {
+    "name": "تحكم في الوضعية والتركيب بـ ControlNet",
+    "category": "متقدم",
+    "difficulty": "متقدم",
+    "description": "ثبّت التركيب باستخدام ControlNet. توجّه خريطة وضعية أو عمق جهاز أخذ العينات بحيث تتبع الصورة المولّدة هندسة المرجع تمامًا بينما تتحكم المطالبة النصية في النمط والمحتوى.",
+    "steps": [
+      { "title": "تثبيت ControlNet", "description": "أضف حزمة ComfyUI ControlNet الرسمية وحمّل نموذج controlnet لـ SDXL (وضعية أو عمق أو canny)." },
+      { "title": "تحميل المرجع", "description": "استخدم LoadImage لمصدر الوضعية/العمق. يمكنك اختياريًا تشغيل Auto-Processor لاستخراج نقاط الوضعية الرئيسية." },
+      { "title": "تطبيق ControlNet", "description": "تحقن عُقد ControlNetApply التوجيه في مدخل النموذج الخاص بجهاز أخذ العينات." },
+      { "title": "ضبط القوة", "description": "control_strength بين 0.5–0.9. القيم الأعلى تثبّت الشكل الهندسي؛ والأدنى تمنح النموذج حرية تفسير أكبر." },
+      { "title": "التوليد", "description": "شغّل الرسم بمطالبة نمطية. يحافظ الناتج على وضعية المرجع مع الأسلوب الجمالي الذي اخترته." }
+    ],
+    "tags": ["comfyui", "controlnet", "وضعية", "عمق", "متقدم"]
+  },
+  "name": "ControlNet Pose & Composition",
+  "type": "workflow",
+  "category": "Advanced",
+  "difficulty": "Advanced",
+  "estimatedTime": "15 min",
+  "rating": 4.8,
+  "ratingsCount": 1290,
+  "downloads": "0.7M",
+  "cover": 5,
+  "featured": true,
+  "description": "Lock composition with ControlNet. A pose or depth map conditions the sampler so the generated image follows the reference geometry exactly while the text prompt controls style and content.",
+  "steps": [
+    { "title": "Install ControlNet", "description": "Add the official ComfyUI ControlNet pack and download an SDXL controlnet model (pose, depth or canny)." },
+    { "title": "Load the reference", "description": "LoadImage for the pose/depth source. Optionally run Auto-Processor to extract pose keypoints." },
+    { "title": "Apply ControlNet", "description": "ControlNetApply nodes inject the conditioning into the sampler's model input." },
+    { "title": "Tune strength", "description": "control_strength 0.5–0.9. Higher locks geometry; lower lets the model interpret more freely." },
+    { "title": "Generate", "description": "Run with a style prompt. The output keeps the reference pose with your chosen aesthetic." }
+  ],
+  "requiredExtensions": [
+    { "name": "ComfyUI-ControlNet", "url": "https://github.com/Fannovel16/comfyui_controlnet_aux" },
+    { "name": "ComfyUI Manager", "url": "https://github.com/ltdrdata/ComfyUI-Manager" }
+  ],
+  "compatibleNodes": ["ControlNetLoader", "ControlNetApplyAdvanced", "AIO_Preprocessor"],
+  "compatibleModels": ["sdxl-base", "flux-1-dev", "sd-1-5"],
+  "tags": ["comfyui", "controlnet", "pose", "depth", "advanced"],
+  "download": { "filename": "controlnet-pose.json", "sizeKb": 68 },
+  "workflowJson": {
+    "nodes": [
+      { "id": 1, "type": "LoadImage", "title": "Pose Source" },
+      { "id": 2, "type": "AIO_Preprocessor", "title": "Extract Pose" },
+      { "id": 3, "type": "ControlNetLoader", "title": "Load ControlNet" },
+      { "id": 4, "type": "ControlNetApplyAdvanced", "title": "Apply Conditioning" },
+      { "id": 5, "type": "CheckpointLoaderSimple", "title": "Load Checkpoint" },
+      { "id": 6, "type": "CLIPTextEncode", "title": "Style Prompt" },
+      { "id": 7, "type": "KSampler", "title": "KSampler" },
+      { "id": 8, "type": "VAEDecode", "title": "VAE Decode" },
+      { "id": 9, "type": "SaveImage", "title": "Save Image" }
+    ],
+    "links": [[1, 0, 2, 0], [2, 0, 4, 0], [3, 0, 4, 1], [5, 0, 7, 0], [6, 0, 4, 2], [4, 0, 7, 1], [7, 0, 8, 0], [5, 2, 8, 1], [8, 0, 9, 0]]
+  },
+  "related": ["ipadapter-style", "txt2img-basic", "inpaint-outpaint"]
+}

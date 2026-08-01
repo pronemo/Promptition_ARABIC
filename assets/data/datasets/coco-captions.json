@@ -1,0 +1,46 @@
+{
+  "id": "coco-captions",
+  "ar": {
+    "name": "COCO Captions 2017",
+    "category": "الموسومة",
+    "license": "CC-BY-4.0",
+    "description": "يُعد COCO Captions المعيار المرجعي الفعلي لتقييم التعليق على الصور. تحمل كل صورة من صوره البالغة 330 ألفًا خمسة تعليقات بشرية مستقلة وأقنعة كثيفة للكائنات عبر 80 صنفًا، ما يجعله بيئة الاختبار القياسية لجودة التعليق على الصور.",
+    "features": [
+      "5 تعليقات بشرية لكل صورة",
+      "80 صنفًا من الكائنات مع أقنعة",
+      "تقسيم تقييم قياسي",
+      "دعم واسع من الأدوات",
+      "تنزيل مضغوط"
+    ],
+    "uses": [
+      "معايير التعليق على الصور",
+      "التحقق من مُعلّق BLIP/WD",
+      "تقييم تحديد المناطق"
+    ],
+    "tags": ["تعليقات", "معيار مرجعي", "تقييم", "قياسي"],
+    "source": "https://cocodataset.org"
+  },
+  "name": "COCO Captions 2017",
+  "type": "dataset",
+  "category": "Labeled",
+  "samples": "330K",
+  "sizeGb": 25,
+  "format": "JSON annotations + images",
+  "license": "CC-BY-4.0",
+  "rating": 4.4,
+  "usedBy": "Caption evaluation",
+  "cover": 5,
+  "featured": false,
+  "source": "https://cocodataset.org",
+  "description": "COCO Captions is the de facto evaluation benchmark for image captioning. Each of its 330K images carries five independent human captions and dense object masks across 80 categories, making it the standard test bed for captioning quality.",
+  "features": [
+    "5 human captions per image",
+    "80 object categories with masks",
+    "Standard evaluation split",
+    "Widely supported by tooling",
+    "Compact download"
+  ],
+  "uses": ["Captioning benchmarks", "BLIP/WD captioner validation", "Region grounding eval"],
+  "tags": ["captions", "benchmark", "evaluation", "standard"],
+  "related": ["open-images", "laion-aesthetics", "vision-aesthetics"]
+}

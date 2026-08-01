@@ -1,0 +1,95 @@
+{
+  "id": "flux-1-schnell",
+  "ar": {
+    "name": "FLUX.1 schnell",
+    "category": "نص إلى صورة",
+    "subcategory": "محوّل الانتشار",
+    "architecture": "محوّل التدفق المصحح (DiT، مقطّر)",
+    "license": "Apache-2.0",
+    "description": "FLUX.1 schnell هو النموذج المقطّر من FLUX.1 dev والمرخّص برخصة Apache-2.0. وهو مُحسَّن لتوليد سريع وفعال في عدد الخطوات (عادةً من 1 إلى 4 خطوات) مع الحفاظ على التزام قوي بالأوامر وجودة FLUX المميزة في النصوص والتركيب.",
+    "features": [
+      "توليد في 1 إلى 4 خطوات بسرعة تفاعلية",
+      "أوزان مرخّصة بالكامل برخصة Apache-2.0",
+      "نفس بنية المحوّلات الهجينة بـ 12 مليار معلمة كنسخة dev",
+      "مثالي للتطبيقات اللحظية وخطوط المعالجة المجمّعة",
+      "إخراج مباشر بدقة 1024 بكسل دون VAE خارجي"
+    ],
+    "quantizations": [
+      { "name": "bf16", "sizeGb": 23.8, "quality": "مرجع" },
+      { "name": "fp8", "sizeGb": 12.1, "quality": "شبه ضائع" },
+      { "name": "gguf-q4", "sizeGb": 7.0, "quality": "جيد لذاكرة منخفضة" }
+    ],
+    "requirements": {
+      "minVram": "12 جيجابايت (fp8)",
+      "recommendedVram": "24 جيجابايت (bf16)",
+      "minRam": "32 جيجابايت",
+      "cuda": "11.8+",
+      "python": "3.10+"
+    },
+    "examples": [
+      {
+        "prompt": "رسم توضيحي لثعلب يرتدي بدلة فضائية يطفو في سديم، ألوان نابضة بالحياة، خطوتان",
+        "width": 1024,
+        "height": 1024,
+        "steps": 4,
+        "cfg": 0.0,
+        "seed": 7
+      }
+    ],
+    "tags": ["flux", "سريع", "مقطّر", "apache", "نص إلى صورة"]
+  },
+  "name": "FLUX.1 schnell",
+  "type": "model",
+  "category": "Text-to-Image",
+  "subcategory": "Diffusion Transformer",
+  "publisher": "Black Forest Labs",
+  "architecture": "Rectified Flow Transformer (DiT, distilled)",
+  "params": "12B",
+  "released": "2024-08-01",
+  "version": "1.0",
+  "license": "Apache-2.0",
+  "rating": 4.7,
+  "ratingsCount": 918,
+  "downloads": "8.1M",
+  "cover": 4,
+  "featured": true,
+  "description": "FLUX.1 schnell is the distilled, Apache-2.0 licensed sibling of FLUX.1 dev. It is optimized for fast, step-efficient generation (typically 1 to 4 steps) while retaining strong prompt adherence and the hallmark FLUX typography and composition quality.",
+  "features": [
+    "1–4 step generation at interactive speed",
+    "Fully Apache-2.0 licensed weights",
+    "Same 12B hybrid transformer architecture as dev",
+    "Ideal for real-time apps and batch pipelines",
+    "Direct 1024px output without an external VAE"
+  ],
+  "quantizations": [
+    { "name": "bf16", "sizeGb": 23.8, "quality": "Reference" },
+    { "name": "fp8", "sizeGb": 12.1, "quality": "Near-lossless" },
+    { "name": "gguf-q4", "sizeGb": 7.0, "quality": "Good for low VRAM" }
+  ],
+  "formats": ["safetensors", "gguf"],
+  "requirements": {
+    "minVram": "12 GB (fp8)",
+    "recommendedVram": "24 GB (bf16)",
+    "minRam": "32 GB",
+    "cuda": "11.8+",
+    "python": "3.10+"
+  },
+  "links": {
+    "website": "https://blackforestlabs.ai",
+    "download": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+    "github": "https://github.com/black-forest-labs/flux"
+  },
+  "examples": [
+    {
+      "prompt": "An illustration of a fox wearing a space suit, floating in a nebula, vibrant colors, 2 steps",
+      "width": 1024,
+      "height": 1024,
+      "steps": 4,
+      "cfg": 0.0,
+      "seed": 7
+    }
+  ],
+  "tags": ["flux", "fast", "distilled", "apache", "text-to-image"],
+  "compatibleTools": ["comfyui", "automatic1111", "forge-webui"],
+  "related": ["flux-1-dev", "pixart-sigma", "sdxl-base"]
+}

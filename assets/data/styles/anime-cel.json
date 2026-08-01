@@ -1,0 +1,31 @@
+{
+  "id": "anime-cel",
+  "ar": {
+    "name": "أنمي سيل",
+    "category": "رسم توضيحي",
+    "mood": ["حيوي", "جريء", "نظيف"],
+    "palette": ["تشبع عالٍ", "درجات ظلال مسطحة", "لمسات ساطعة"],
+    "description": "يُنتج تظليل سيل الأنمي خطوطًا فنية نظيفة مع أشكال ظلال مسطحة جريئة ولوحات ألوان واضحة. مثالي لفن الشخصيات والصور الرئيسية ومشاريع الرسم التوضيحي على أي نقطة تفتيش حديثة.",
+    "promptSuffix": "رسم أنمي تحفة فنية، خطوط فنية نظيفة، تظليل سيل جريء، ألوان مسطحة، تكوين ديناميكي، ألوان نابضة، خلفية مفصلة، جودة عالية",
+    "negativeSuffix": "واقعي فوتوغرافي، تصيير ثلاثي الأبعاد، أسلوب رسم فني، تظليل ناعم، خطوط ضبابية، ألوان موحلة، علامة مائية، نص، جودة منخفضة",
+    "tags": ["أنمي", "cel-shading", "رسم توضيحي", "line-art"]
+  },
+  "name": "Anime Cel Shading",
+  "type": "style",
+  "category": "Illustration",
+  "rating": 4.8,
+  "ratingsCount": 1350,
+  "usedBy": "186k",
+  "cover": 2,
+  "featured": true,
+  "mood": ["Energetic", "Bold", "Clean"],
+  "palette": ["High saturation", "Flat shadow tones", "Bright accents"],
+  "description": "Anime Cel Shading produces clean line art with bold, flat shadow shapes and readable color palettes. Ideal for character art, key visuals and illustration projects on any modern checkpoint.",
+  "promptSuffix": "masterpiece anime illustration, clean line art, bold cel shading, flat colors, dynamic composition, vibrant colors, detailed background, high quality",
+  "negativeSuffix": "photorealistic, 3d render, painterly, soft shading, blurry lines, muddy colors, watermark, text, low quality",
+  "strength": 0.85,
+  "tags": ["anime", "cel-shading", "illustration", "line-art"],
+  "compatibleModels": ["sdxl-base", "dreamshaper-xl", "flux-1-dev"],
+  "compatibleLoras": ["character-design"],
+  "related": ["watercolor", "dark-fantasy", "minimalist"]
+}

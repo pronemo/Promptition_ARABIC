@@ -1,0 +1,67 @@
+{
+  "id": "film-grain",
+  "ar": {
+    "name": "Film Grain",
+    "category": "ملمس",
+    "license": "CC0",
+    "triggerWords": ["35mm film grain", "grainy analog photography"],
+    "description": "Film Grain يعيد إنتاج بنية الحبيبات العضوية والهالة الدقيقة والنعومة الطفيفة لفيلم 35 ملم التناظري. وعند دمجه مع تدرج لوني دافئ فهو أسرع طريقة لجعل النتائج الرقمية تبدو كتصوير فوتوغرافي قديم.",
+    "effects": [
+      "بنية حبيبات فيلم 35 ملم أصيلة",
+      "هالة خفيفة حول المناطق المضيئة",
+      "يقلل المظهر البلاستيكي للنتائج",
+      "يتناغم جيدًا مع التدرج اللوني الدافئ"
+    ],
+    "trainedOn": ["مسوحات ضوئية لفيلم 35 ملم تناظري مرخصة بـ CC0"],
+    "settings": {
+      "steps": 7000,
+      "networkDim": 16,
+      "learningRate": "1e-4 cosine",
+      "scheduler": "constant"
+    },
+    "tags": ["فيلم", "حبيبات", "تناظري", "تصوير", "ملمس"],
+    "examples": [
+      {
+        "prompt": "بورتريه بحبيبات فيلم 35 ملم لزوجين على شاطئ الثمانينيات، هالة ناعمة، لوحة ألوان كوداك",
+        "strength": 0.4
+      }
+    ]
+  },
+  "name": "Film Grain",
+  "type": "lora",
+  "category": "Texture",
+  "baseModel": "SDXL",
+  "publisher": "Sizigi Studios",
+  "recommendedStrength": 0.4,
+  "range": [0.0, 0.8],
+  "sizeMb": 66,
+  "license": "CC0",
+  "rating": 4.5,
+  "ratingsCount": 720,
+  "downloads": "0.9M",
+  "cover": 4,
+  "featured": false,
+  "triggerWords": ["35mm film grain", "grainy analog photography"],
+  "description": "Film Grain recreates the organic grain structure, subtle halation and slight softness of analog 35mm film. Combined with warm color grading it is the quickest way to make digital renders feel like vintage photography.",
+  "effects": [
+    "Authentic 35mm grain structure",
+    "Subtle halation around highlights",
+    "Reduces the plastic look of renders",
+    "Pairs well with warm grading"
+  ],
+  "trainedOn": ["Analog 35mm film scans, CC0 licensed"],
+  "settings": {
+    "steps": 7000,
+    "networkDim": 16,
+    "learningRate": "1e-4 cosine",
+    "scheduler": "constant"
+  },
+  "tags": ["film", "grain", "analog", "photography", "texture"],
+  "examples": [
+    {
+      "prompt": "35mm film grain portrait of a couple at a 1980s beach, soft halation, kodak color palette",
+      "strength": 0.4
+    }
+  ],
+  "related": ["detail-tweaker-xl", "cinematic-style", "epi-noise-offset"]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "swarmui",
+  "ar": {
+    "name": "SwarmUI",
+    "category": "واجهة ويب",
+    "description": "SwarmUI واجهة ويب حديثة معيارية تجمع بين تجربة مستخدم سهلة للمبتدئين وتحكمات متقدمة قوية. يمكنها تشغيل ComfyUI أو نظامها الخلفي الخاص، ويكشف شريط التمرير من مبتدئ إلى متقدم تدريجيًا عن الرسم البياني لسير العمل الكامن تحته.",
+    "features": [
+      "واجهة نظيفة سهلة للمبتدئين",
+      "رسم بياني مرئي لسير العمل في الوضع المتقدم",
+      "دعم النظام الخلفي ComfyUI",
+      "إدارة مدمجة للنماذج والإضافات",
+      "أدوات تحرير صور موجهة للتصوير الفوتوغرافي",
+      "واجهة محلية للأتمتة"
+    ],
+    "requirements": {
+      "os": ["ويندوز", "لينكس", "ماك"],
+      "gpu": "إنفيديا CUDA / AMD / سيليكون آبل",
+      "minVram": "4 جيجابايت",
+      "python": "3.10+",
+      "cuda": "11.8+"
+    },
+    "license": "GPL-3.0",
+    "tags": ["واجهة ويب", "معياري", "سير عمل", "أنظمة خلفية", "مبتدئ"]
+  },
+  "name": "SwarmUI",
+  "type": "tool",
+  "category": "Web UI",
+  "publisher": "mcmonkeyprojects",
+  "version": "0.9",
+  "license": "GPL-3.0",
+  "rating": 4.3,
+  "ratingsCount": 350,
+  "released": "2024-01",
+  "cover": 10,
+  "featured": false,
+  "description": "SwarmUI is a modern, modular web interface that pairs an approachable beginner UX with powerful advanced controls. It can drive ComfyUI or its own backend, and its beginner-to-advanced slider progressively reveals the workflow graph underneath.",
+  "features": [
+    "Beginner-friendly clean UI",
+    "Visual workflow graph on advanced mode",
+    "ComfyUI backend support",
+    "Built-in model and extension management",
+    "Photography-oriented image editing tools",
+    "Local API for automation"
+  ],
+  "requirements": {
+    "os": ["Windows", "Linux", "macOS"],
+    "gpu": "NVIDIA CUDA / AMD / Apple Silicon",
+    "minVram": "4 GB",
+    "python": "3.10+",
+    "cuda": "11.8+"
+  },
+  "supportedModels": ["sdxl-base", "sd-1-5", "flux-1-dev", "flux-1-schnell"],
+  "supportedFormats": ["safetensors", "ckpt", "lora", "gguf"],
+  "links": {
+    "website": "https://github.com/mcmonkeyprojects/SwarmUI",
+    "github": "https://github.com/mcmonkeyprojects/SwarmUI",
+    "download": "https://github.com/mcmonkeyprojects/SwarmUI/releases"
+  },
+  "screenshots": [10, 2],
+  "tags": ["webui", "modular", "workflows", "backends", "beginner"],
+  "downloads": { "monthly": "0.15M", "stars": "4k" },
+  "related": ["comfyui", "automatic1111", "invokeai"]
+}

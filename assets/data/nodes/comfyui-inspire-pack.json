@@ -1,0 +1,46 @@
+{
+  "id": "comfyui-inspire-pack",
+  "ar": {
+    "name": "ComfyUI Inspire Pack",
+    "category": "سير عمل",
+    "description": "يجلب Inspire Pack إلى ComfyUI التلميح الإقليمي وجدولة التلميحات ومجموعة كبيرة من العقد المساعدة. إنها عدة المستخدمين المحترفين لإنشاء عمليات إنتاج معقدة ومتعددة الطبقات.",
+    "features": [
+      "تلميح إقليمي عبر الأقنعة",
+      "جدولة التلميحات عبر الخطوات",
+      "أدوات للضوضاء وأخذ العينات والكمون",
+      "مساعدات تكييف متقدمة",
+      "إدارة المخططات والقوالب الجاهزة"
+    ],
+    "installation": "ثبّت عبر ComfyUI Manager، أو استنسخ داخل custom_nodes ثم شغّل requirements.txt.",
+    "inputs": ["تكييف", "قناع", "تلميح"],
+    "outputs": ["تكييف"],
+    "requirements": ["ComfyUI"],
+    "tags": ["تلميح-إقليمي", "جدولة", "أدوات-مساعدة", "متقدم"]
+  },
+  "name": "ComfyUI Inspire Pack",
+  "type": "node",
+  "package": "ComfyUI-Inspire-Pack",
+  "category": "Workflow",
+  "author": "ltdrdata",
+  "version": "v1.9",
+  "license": "GPL-3.0",
+  "rating": 4.6,
+  "stars": "1.8k",
+  "cover": 6,
+  "featured": false,
+  "github": "https://github.com/ltdrdata/ComfyUI-Inspire-Pack",
+  "description": "Inspire Pack brings regional prompting, prompt scheduling and a large collection of utility nodes to ComfyUI. It is the power-user kit for complex, layered generations.",
+  "features": [
+    "Regional prompting via masking",
+    "Prompt scheduling over steps",
+    "Noise, sampler and latent utilities",
+    "Advanced conditioning helpers",
+    "Blueprint and preset management"
+  ],
+  "installation": "Install via ComfyUI Manager, or clone into custom_nodes and run requirements.txt.",
+  "inputs": ["conditioning", "mask", "prompt"],
+  "outputs": ["conditioning"],
+  "requirements": ["ComfyUI"],
+  "tags": ["regional-prompting", "scheduling", "utilities", "advanced"],
+  "related": ["comfyui-impact-pack", "was-node-suite", "comfyui-controlnet-aux"]
+}

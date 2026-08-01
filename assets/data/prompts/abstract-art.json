@@ -1,0 +1,56 @@
+{
+  "id": "abstract-art",
+  "ar": {
+    "name": "فن تجريدي سائل",
+    "category": "تجريدي",
+    "description": "فن تجريدي بحبر سائل وأوراق ذهبية مع أشكال انسيابية أنيقة. جرّب رمز لوحة الألوان للحصول على تنويعات لا نهائية.",
+    "positive": "فن تجريدي سائل، حبر سائل دوّار بأزرق الياقوت العميق وأخضر الزمرد ولمسات أوراق ذهبية، أشكال رخامية انسيابية أنيقة، تباين عالٍ، إضاءة درامية، تفاصيل ماكرو، ملمس فاخر، جودة معرض فني، تفاصيل فائقة",
+    "negative": "ضبابي، ألوان موحلة، تباين منخفض، مسطح، كرتوني، علامة مائية، نص، توقيع، جودة منخفضة، أخطاء JPEG، ضجيج فوضوي",
+    "settings": {
+      "width": 1024,
+      "height": 1024,
+      "steps": 35,
+      "cfg": 7.0,
+      "sampler": "dpmpp_2m",
+      "model": "SDXL",
+      "aspect": "1:1"
+    },
+    "tags": ["تجريدي", "سائل", "فني", "ملمس", "فاخر"],
+    "examples": [
+      {
+        "title": "سكب الأورورا",
+        "positive": "سكب تجريدي سائل من البنفسجي والتركواز والنحاسي، دوامات رخامية، تفاصيل ماكرو، إضاءة معرض، تفاصيل فائقة"
+      }
+    ]
+  },
+  "name": "Fluid Abstract Art",
+  "type": "prompt",
+  "category": "Abstract",
+  "rating": 4.5,
+  "ratingsCount": 420,
+  "usedBy": "58k",
+  "cover": 8,
+  "featured": false,
+  "description": "Liquid ink and gold-leaf abstract art with elegant flowing forms. Experiment with the color palette token for endless variations.",
+  "positive": "fluid abstract art, swirling liquid ink in deep sapphire blue, emerald green and gold leaf accents, elegant flowing marbled forms, high contrast, dramatic lighting, macro detail, luxurious texture, gallery quality, ultra detailed",
+  "negative": "blurry, muddy colors, low contrast, flat, cartoon, watermark, text, signature, low quality, jpeg artifacts, chaotic noise",
+  "settings": {
+    "width": 1024,
+    "height": 1024,
+    "steps": 35,
+    "cfg": 7.0,
+    "sampler": "dpmpp_2m",
+    "model": "SDXL",
+    "aspect": "1:1"
+  },
+  "tags": ["abstract", "fluid", "artistic", "texture", "luxury"],
+  "compatibleModels": ["sdxl-base", "dreamshaper-xl", "flux-1-dev"],
+  "compatibleLoras": ["detail-tweaker-xl", "epi-noise-offset"],
+  "examples": [
+    {
+      "title": "Aurora pour",
+      "positive": "fluid abstract pour of violet, teal and copper, marbled swirls, macro detail, gallery lighting, ultra detailed"
+    }
+  ],
+  "related": ["retro-80s", "product-shot", "fantasy-landscape"]
+}

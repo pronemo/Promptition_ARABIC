@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="og" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1120"/>
+      <stop offset="0.55" stop-color="#241a45"/>
+      <stop offset="1" stop-color="#0b3a47"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og)"/>
+  <g opacity="0.14" stroke="#8b5cf6">
+    <path d="M0 100h1200M0 200h1200M0 300h1200M0 400h1200M0 500h1200M100 0v630M200 0v630M300 0v630M400 0v630M500 0v630M600 0v630M700 0v630M800 0v630M900 0v630M1000 0v630M1100 0v630"/>
+  </g>
+  <circle cx="1000" cy="140" r="180" fill="url(#acc)" opacity="0.18"/>
+  <circle cx="1000" cy="140" r="120" fill="none" stroke="url(#acc)" stroke-width="1.5" opacity="0.5"/>
+  <rect x="90" y="240" width="150" height="150" rx="28" fill="url(#acc)"/>
+  <path d="M130 350V262h16l34 56v-56h16v88h-16l-34-56v56z" fill="#fff"/>
+  <text x="130" y="140" fill="#fff" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="10">PROMPTITION</text>
+  <text x="132" y="190" fill="#b8b3d6" font-family="Segoe UI, Arial, sans-serif" font-size="24" letter-spacing="2">The AI Resource Library</text>
+  <text x="440" y="345" fill="#fff" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="600">Models · Prompts · Workflows</text>
+  <text x="440" y="395" fill="#cfcbe8" font-family="Segoe UI, Arial, sans-serif" font-size="26">Curated tools, styles, LoRAs and guides for the diffusion ecosystem.</text>
+</svg>

@@ -1,0 +1,67 @@
+{
+  "id": "landscape-breathtaking",
+  "ar": {
+    "name": "Breathtaking Landscape",
+    "category": "منظر طبيعي",
+    "license": "مجتمعي",
+    "triggerWords": ["breathtaking landscape", "majestic scenery"],
+    "description": "Breathtaking Landscape يعزز المشاهد الطبيعية بسماء درامية ومنظور جوي وأوراق شجر بريشة تشبه اللوحات. يدفع SDXL نحو التصوير الطبيعي الملحمي وجودة رسم الخلفيات السينمائية، خاصةً بنسب العرض الواسعة.",
+    "effects": [
+      "سماء وتشكيلات سحب درامية",
+      "عمق جوي وضباب",
+      "أوراق شجر وتضاريس بريشة تشبه اللوحات",
+      "الأفضل بنسب العرض الواسعة (16:9 و21:9)"
+    ],
+    "trainedOn": ["التصوير الطبيعي ولوحات المناظر الخلفية السينمائية"],
+    "settings": {
+      "steps": 13000,
+      "networkDim": 32,
+      "learningRate": "7e-5 cosine",
+      "scheduler": "cosine"
+    },
+    "tags": ["منظر طبيعي", "طبيعة", "أجواء", "مشهد خلاب", "matte-painting"],
+    "examples": [
+      {
+        "prompt": "منظر طبيعي خلاب، وادٍ جبلي ضبابي عند الفجر، أشعة ضوء عبر أشجار الصنوبر، مقياس ملحمي",
+        "strength": 0.7
+      }
+    ]
+  },
+  "name": "Breathtaking Landscape",
+  "type": "lora",
+  "category": "Landscape",
+  "baseModel": "SDXL",
+  "publisher": "Civitai Community",
+  "recommendedStrength": 0.7,
+  "range": [0.3, 1.0],
+  "sizeMb": 129,
+  "license": "Community",
+  "rating": 4.7,
+  "ratingsCount": 860,
+  "downloads": "1.5M",
+  "cover": 7,
+  "featured": false,
+  "triggerWords": ["breathtaking landscape", "majestic scenery"],
+  "description": "Breathtaking Landscape enhances natural scenery with dramatic skies, atmospheric perspective and painterly foliage. It pushes SDXL toward epic nature photography and matte-painting quality, especially at wide aspect ratios.",
+  "effects": [
+    "Dramatic sky and cloud formations",
+    "Atmospheric depth and haze",
+    "Painterly foliage and terrain",
+    "Best at wide (16:9, 21:9) ratios"
+  ],
+  "trainedOn": ["Nature photography and landscape matte paintings"],
+  "settings": {
+    "steps": 13000,
+    "networkDim": 32,
+    "learningRate": "7e-5 cosine",
+    "scheduler": "cosine"
+  },
+  "tags": ["landscape", "nature", "atmosphere", "scenic", "matte-painting"],
+  "examples": [
+    {
+      "prompt": "breathtaking landscape, misty alpine valley at dawn, god rays through pines, epic scale",
+      "strength": 0.7
+    }
+  ],
+  "related": ["epi-noise-offset", "cinematic-style", "detail-tweaker-xl"]
+}

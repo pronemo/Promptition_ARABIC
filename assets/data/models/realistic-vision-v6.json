@@ -1,0 +1,91 @@
+{
+  "id": "realistic-vision-v6",
+  "ar": {
+    "name": "Realistic Vision V6.0",
+    "category": "نقطة فحص",
+    "subcategory": "UNet مضبوط بدقة على SD 1.5",
+    "architecture": "ضبط دقيق على أساس SD 1.5",
+    "license": "مجتمع",
+    "description": "Realistic Vision V6 هو المعيار للواقعية الفوتوغرافية الراسخة على بنية SD 1.5. يقدّم ملمس بشرة طبيعيًا وإضاءة قابلة للتصديق ودرجات ألوان متوازنة مع عدد أقل بكثير من الآثار مقارنة بالدمج الواقعي الأقدم.",
+    "features": [
+      "عرض طبيعي للبشرة خالٍ من الآثار",
+      "معالجة قوية للإضاءة والألوان الفوتوغرافية",
+      "يعمل بدقة أصلية 512 بكسل ويرفع الدقة جيدًا",
+      "دعم مجتمعي نشط للضبط الدقيق",
+      "يعمل على بطاقات الرسوميات منخفضة الذاكرة"
+    ],
+    "quantizations": [
+      { "name": "fp16", "sizeGb": 1.9, "quality": "مرجع" }
+    ],
+    "requirements": {
+      "minVram": "4 جيجابايت",
+      "recommendedVram": "8 جيجابايت",
+      "minRam": "8 جيجابايت",
+      "cuda": "11.6+",
+      "python": "3.8+"
+    },
+    "examples": [
+      {
+        "prompt": "صورة بورتريه احترافية لامرأة ذات نمش، ضوء نافذة طبيعي، عدسة 50 مم، عمق ميداني ضحل، تفاصيل بشرة واقعية",
+        "width": 640,
+        "height": 640,
+        "steps": 25,
+        "cfg": 6.0,
+        "seed": 44
+      }
+    ],
+    "tags": ["واقعي", "بورتريه", "sd1.5", "مجتمع"]
+  },
+  "name": "Realistic Vision V6.0",
+  "type": "model",
+  "category": "Checkpoint",
+  "subcategory": "SD 1.5 Fine-Tune",
+  "publisher": "SG161222",
+  "architecture": "SD 1.5 Fine-Tune",
+  "params": "0.98B",
+  "released": "2024-05-15",
+  "version": "6.0",
+  "license": "Community",
+  "rating": 4.7,
+  "ratingsCount": 1788,
+  "downloads": "9.6M",
+  "cover": 7,
+  "featured": false,
+  "description": "Realistic Vision V6 is the benchmark for grounded photorealism on the SD 1.5 architecture. It delivers natural skin texture, believable lighting and balanced color grading with dramatically fewer artifacts than earlier realistic merges.",
+  "features": [
+    "Natural, artifact-free skin rendering",
+    "Strong photographic light and color handling",
+    "Works at 512px native and upscales well",
+    "Active community fine-tune support",
+    "Runs on low-VRAM GPUs"
+  ],
+  "quantizations": [
+    { "name": "fp16", "sizeGb": 1.9, "quality": "Reference" }
+  ],
+  "formats": ["safetensors", "ckpt"],
+  "requirements": {
+    "minVram": "4 GB",
+    "recommendedVram": "8 GB",
+    "minRam": "8 GB",
+    "cuda": "11.6+",
+    "python": "3.8+"
+  },
+  "links": {
+    "website": "https://civitai.com",
+    "download": "https://civitai.com/models/4201",
+    "github": null
+  },
+  "examples": [
+    {
+      "prompt": "professional portrait photo of a woman with freckles, natural window light, 50mm lens, shallow depth of field, photorealistic skin detail",
+      "width": 640,
+      "height": 640,
+      "steps": 25,
+      "cfg": 6.0,
+      "seed": 44
+    }
+  ],
+  "tags": ["photoreal", "portrait", "sd1.5", "community"],
+  "compatibleTools": ["comfyui", "automatic1111", "sd-next"],
+  "related": ["majicmix-realistic", "sd-1-5", "juggernaut-xl"]
+}

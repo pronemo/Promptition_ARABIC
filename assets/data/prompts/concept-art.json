@@ -1,0 +1,56 @@
+{
+  "id": "concept-art",
+  "ar": {
+    "name": "فن مفاهيمي فانتازيا داكنة",
+    "category": "فن مفاهيمي",
+    "description": "رسم مفاهيمي لفانتازيا داكنة بجوّ حالم مع إضاءة حافة درامية وتفاصيل معقدة. قوي لأعمال الإطارات الرئيسية وبناء العوالم.",
+    "positive": "فن مفاهيمي فانتازيا داكنة، كاتدرائية قوطية شامخة منحوتة في جرف بركاني، سلالم متعرجة بمشاعل، سحب عاصفة أرجوانية، إضاءة حافة درامية على الجرغول، رماد يتساقط في الهواء، تفاصيل معمارية معقدة، ضربات فرشاة فنية، تكوين سينمائي، رائج على ArtStation، تفاصيل فائقة",
+    "negative": "ضبابي، تفاصيل منخفضة، إضاءة ساطعة مبهجة، كرتوني، عمارة حديثة، علامة مائية، نص، توقيع، تشبع مفرط، جودة منخفضة، خلفية عادية",
+    "settings": {
+      "width": 1216,
+      "height": 832,
+      "steps": 35,
+      "cfg": 6.5,
+      "sampler": "dpmpp_2m",
+      "model": "SDXL",
+      "aspect": "3:2"
+    },
+    "tags": ["فن مفاهيمي", "فانتازيا", "داكن", "رسم", "بناء عوالم"],
+    "examples": [
+      {
+        "title": "معقل موبوء",
+        "positive": "فن مفاهيمي فانتازيا داكنة لمعقل موبوء على بحيرة متجمدة، ألوان زرقاء، نوافذ مضاءة بالمشاعل، فني، درامي، تفاصيل فائقة"
+      }
+    ]
+  },
+  "name": "Dark Fantasy Concept Art",
+  "type": "prompt",
+  "category": "Concept Art",
+  "rating": 4.8,
+  "ratingsCount": 830,
+  "usedBy": "145k",
+  "cover": 12,
+  "featured": false,
+  "description": "Moody dark-fantasy concept painting with dramatic rim lighting and intricate detail. Strong for keyframe and world-building work.",
+  "positive": "dark fantasy concept art, a towering gothic cathedral carved into a volcanic cliff, winding staircases with torches, purple storm clouds, dramatic rim lighting on gargoyles, ash falling through the air, intricate architectural detail, painterly brushwork, cinematic composition, artstation trending, ultra detailed",
+  "negative": "blurry, low detail, bright cheerful lighting, cartoon, modern architecture, watermark, text, signature, oversaturated, low quality, plain background",
+  "settings": {
+    "width": 1216,
+    "height": 832,
+    "steps": 35,
+    "cfg": 6.5,
+    "sampler": "dpmpp_2m",
+    "model": "SDXL",
+    "aspect": "3:2"
+  },
+  "tags": ["concept-art", "fantasy", "dark", "painting", "worldbuilding"],
+  "compatibleModels": ["dreamshaper-xl", "flux-1-dev", "sdxl-base"],
+  "compatibleLoras": ["character-design", "landscape-breathtaking", "epi-noise-offset"],
+  "examples": [
+    {
+      "title": "Blighted keep",
+      "positive": "dark fantasy concept art of a blighted keep on a frozen lake, blue tones, torchlight windows, painterly, dramatic, ultra detailed"
+    }
+  ],
+  "related": ["fantasy-landscape", "anime-style", "cinematic-portrait"]
+}

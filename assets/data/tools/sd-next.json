@@ -1,0 +1,63 @@
+{
+  "id": "sd-next",
+  "ar": {
+    "name": "SD.Next",
+    "category": "واجهة ويب",
+    "description": "SD.Next نسخة مشتقة مُحدَّثة باستمرار من WebUI الخاصة بـ AUTOMATIC1111 تركّز على الأداء. تحدّث قاعدة الكود وتضيف دعمًا قويًا متعدد المنصات وخطوط أنابيب أسرع ودعمًا مدمجًا للمعماريات الأحدث، مع بقائها متوافقة تمامًا مع إضافات A1111.",
+    "features": [
+      "متوافق تمامًا مع إضافات A1111",
+      "خطوط أنابيب محسّنة لوحدة المعالجة المركزية والرسومية",
+      "دعم أصلي لـ SDXL و Flux و SD3 و Cascade",
+      "مثبّتات متعددة المنصات",
+      "فحص وإدارة نماذج مدمجة",
+      "صيانة نشطة وكود نظيف"
+    ],
+    "requirements": {
+      "os": ["ويندوز", "لينكس", "ماك"],
+      "gpu": "إنفيديا CUDA / AMD / سيليكون آبل",
+      "minVram": "4 جيجابايت",
+      "python": "3.10+",
+      "cuda": "11.8+"
+    },
+    "license": "AGPL-3.0",
+    "tags": ["واجهة ويب", "مُحدَّث", "أداء", "متعدد المنصات", "نسخة مشتقة"]
+  },
+  "name": "SD.Next",
+  "type": "tool",
+  "category": "Web UI",
+  "publisher": "Vladmandic",
+  "version": "v8.0",
+  "license": "AGPL-3.0",
+  "rating": 4.5,
+  "ratingsCount": 620,
+  "released": "2022-10",
+  "cover": 6,
+  "featured": false,
+  "description": "SD.Next is a maintained, performance-focused fork of AUTOMATIC1111's WebUI. It modernizes the codebase, adds strong cross-platform support, faster pipelines and built-in support for newer architectures, while staying drop-in compatible with A1111 extensions.",
+  "features": [
+    "Drop-in compatible with A1111 extensions",
+    "Optimized CPU/GPU pipelines",
+    "Native support for SDXL, Flux, SD3 and Cascade",
+    "Cross-platform installers",
+    "Built-in model scanning and management",
+    "Active maintenance and clean code"
+  ],
+  "requirements": {
+    "os": ["Windows", "Linux", "macOS"],
+    "gpu": "NVIDIA CUDA / AMD / Apple Silicon",
+    "minVram": "4 GB",
+    "python": "3.10+",
+    "cuda": "11.8+"
+  },
+  "supportedModels": ["sdxl-base", "sd-1-5", "flux-1-dev", "flux-1-schnell"],
+  "supportedFormats": ["safetensors", "ckpt", "lora", "gguf"],
+  "links": {
+    "website": "https://github.com/vladmandic/automatic",
+    "github": "https://github.com/vladmandic/automatic",
+    "download": "https://github.com/vladmandic/automatic/releases"
+  },
+  "screenshots": [6, 4],
+  "tags": ["webui", "maintained", "performance", "cross-platform", "fork"],
+  "downloads": { "monthly": "0.3M", "stars": "9k" },
+  "related": ["automatic1111", "forge-webui", "comfyui"]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "danbooru",
+  "ar": {
+    "name": "Danbooru 2021",
+    "category": "الرسوم التوضيحية",
+    "license": "مخصص (انظر شروط Danbooru)",
+    "description": "يُعد Danbooru 2021 مجموعة البيانات المرجعية لتدريب الأنمي والرسوم التوضيحية. تحمل كل صورة وسمًا متعددًا وكثيفًا ومنتقًى يغطي الشخصيات والأوضاع والإعدادات وأسلوب الفن، ما يجعله مثاليًا للنماذج المعتمدة على الوسوم.",
+    "features": [
+      "3.8 مليون رسم موسم",
+      "تسلسل هرمي دقيق للوسوم",
+      "وسوم الشخصيات والفنانين",
+      "قياسي لنماذج الأنمي LoRA والنماذج المرجعية",
+      "لقطة بتاريخ 2021"
+    ],
+    "uses": [
+      "تدريب النماذج المرجعية للأنمي",
+      "تدريب LoRA القائم على الوسوم",
+      "دراسات الأسلوب والشخصيات"
+    ],
+    "tags": ["أنمي", "رسوم توضيحية", "وسوم", "تدريب"],
+    "source": "https://www.gwern.net/Danbooru2021"
+  },
+  "name": "Danbooru 2021",
+  "type": "dataset",
+  "category": "Illustration",
+  "samples": "3.8M",
+  "sizeGb": 410,
+  "format": "Images + tag metadata",
+  "license": "Custom (see danbooru terms)",
+  "rating": 4.7,
+  "usedBy": "Anime checkpoints",
+  "cover": 4,
+  "featured": false,
+  "source": "https://www.gwern.net/Danbooru2021",
+  "description": "Danbooru 2021 is the reference dataset for anime and illustration training. Each image carries dense, curated multi-tag annotations covering characters, poses, settings and art style, making it ideal for tag-conditioned models.",
+  "features": [
+    "3.8M tagged illustrations",
+    "Fine-grained tag hierarchy",
+    "Character and artist tags",
+    "Standard for anime LoRAs and checkpoints",
+    "Snapshot dated 2021"
+  ],
+  "uses": ["Anime checkpoint training", "Tag-based LoRA training", "Style and character studies"],
+  "tags": ["anime", "illustration", "tags", "training"],
+  "related": ["journey-db", "vision-aesthetics", "laion-aesthetics"]
+}

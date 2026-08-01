@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Promptition — Arabic / RTL Support
+   rtl.css
+   ========================================================================== */
+
+/* Arabic-friendly type stack (applied when the document is RTL). */
+html[lang="ar"] {
+  --font-sans: "Cairo", "Segoe UI", "Tajawal", Tahoma, "Noto Naskh Arabic",
+    "Geeza Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    sans-serif;
+  font-size: 16.5px;
+  letter-spacing: 0;
+}
+
+html[lang="ar"] body {
+  letter-spacing: 0;
+}
+
+html[lang="ar"] .brand span,
+html[lang="ar"] .brand-accent,
+html[lang="ar"] .brand-logo {
+  letter-spacing: normal;
+}
+
+/* Language toggle button in the header. */
+.lang-toggle .lang-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-soft, inherit);
+}
+
+html[dir="rtl"] .lang-toggle .lang-label {
+  font-family: var(--font-sans);
+}
+
+/* ---------- Logical direction helpers ---------- */
+html[dir="rtl"] .header-inner,
+html[dir="rtl"] .footer-top,
+html[dir="rtl"] .footer-bottom,
+html[dir="rtl"] .page-hero-inner,
+html[dir="rtl"] .hero-inner,
+html[dir="rtl"] .toolbar,
+html[dir="rtl"] .collection-layout,
+html[dir="rtl"] .detail-head,
+html[dir="rtl"] .gallery-detail-grid {
+  text-align: start;
+}
+
+/* Flip direction-only icons (arrows, chevrons, etc.). */
+html[dir="rtl"] .icon,
+html[dir="rtl"] svg.icon {
+  transform: none;
+}
+
+html[dir="rtl"] [data-arrow] .icon,
+html[dir="rtl"] .card-action .icon,
+html[dir="rtl"] .style-match-rank,
+html[dir="rtl"] .pagination-arrow .icon,
+html[dir="rtl"] .compare-strip .icon,
+html[dir="rtl"] .breadcrumbs .sep,
+html[dir="rtl"] .sd-item .icon {
+  transform: scaleX(-1);
+}
+
+/* Breadcrumb separators read naturally in RTL when mirrored. */
+html[dir="rtl"] .breadcrumbs .sep {
+  display: inline-block;
+  transform: rotate(180deg) scaleX(-1);
+}
+
+/* ---------- RTL margin/padding mirrors ---------- */
+html[dir="rtl"] .card-actions {
+  right: auto;
+  left: 0.75rem;
+}
+
+html[dir="rtl"] .card-fav {
+  left: auto;
+  right: 0.75rem;
+}
+
+html[dir="rtl"] .header-search {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .input-wrap svg.icon:first-child,
+html[dir="rtl"] .hero-search svg.icon,
+html[dir="rtl"] .input-wrap > svg.icon {
+  right: 0.9rem;
+  left: auto;
+}
+
+html[dir="rtl"] .input-wrap.has-clear .input,
+html[dir="rtl"] .input-wrap .input,
+html[dir="rtl"] .hero-search input,
+html[dir="rtl"] .header-search input {
+  padding-right: 2.5rem;
+  padding-left: 0.9rem;
+}
+
+html[dir="rtl"] .input-clear {
+  right: auto;
+  left: 0.5rem;
+}
+
+/* ---------- Grid/flex are direction-agnostic but verify ---------- */
+html[dir="rtl"] .nav {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+html[dir="rtl"] .header-actions {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+/* ---------- Scroll top / toast position are side-anchored ---------- */
+html[dir="rtl"] .scroll-top {
+  right: auto;
+  left: 1.5rem;
+}
+
+html[dir="rtl"] .toast {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Numeric data stays LTR even inside RTL pages. */
+html[dir="rtl"] .spec-value,
+html[dir="rtl"] .card-meta,
+html[dir="rtl"] .meta-item,
+html[dir="rtl"] .rating,
+html[dir="rtl"] .gallery-card-meta,
+html[dir="rtl"] .count,
+html[dir="rtl"] .toolbar-count,
+html[dir="rtl"] .badge-count {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Pre/code blocks and prompts stay LTR. */
+html[dir="rtl"] pre,
+html[dir="rtl"] code,
+html[dir="rtl"] .code-block,
+html[dir="rtl"] .prompt-box pre,
+html[dir="rtl"] .prompt-box {
+  direction: ltr;
+  text-align: left;
+}

@@ -1,0 +1,56 @@
+{
+  "id": "anime-style",
+  "ar": {
+    "name": "رسم أنمي مفصّل",
+    "category": "أنمي",
+    "description": "رسم أنمي غني بخطوط نظيفة وتظليل خلوي وخلفية جوية مفصلة. عنصر أساسي لنماذج وأدوات LoRA بأسلوب الأنمي.",
+    "positive": "رسم أنمي تحفة، بطلة شابة عازمة بشعر فضي وعيون كهرمانية متوهجة، وضعية ديناميكية، كاتانا مزخرفة في يدها، تظليل خلوي مفصّل، خطوط نظيفة، خلفية نابضة بمعبد أزهار الكرز المتفتحة عند الغروب، سماء درامية، جزيئات متوهجة، تباين عالٍ، حائز على جوائز، تفاصيل فائقة",
+    "negative": "ضبابي، جودة منخفضة، تشريح خاطئ، أيدي مشوهة، أصابع زائدة، علامة مائية، نص، توقيع، قبيح، خلفية عادية، ألوان مسطحة، محتوى غير لائق",
+    "settings": {
+      "width": 768,
+      "height": 1152,
+      "steps": 30,
+      "cfg": 7.0,
+      "sampler": "euler_a",
+      "model": "SDXL",
+      "aspect": "2:3"
+    },
+    "tags": ["أنمي", "رسم توضيحي", "تظليل خلوي", "شخصية", "خيالي"],
+    "examples": [
+      {
+        "title": "طيار ميكا",
+        "positive": "رسم أنمي لطيار ميكا شاب داخل قمرة القيادة، شاشات متوهجة، تظليل خلوي، إضاءة درامية، تفاصيل فائقة"
+      }
+    ]
+  },
+  "name": "Detailed Anime Illustration",
+  "type": "prompt",
+  "category": "Anime",
+  "rating": 4.8,
+  "ratingsCount": 1405,
+  "usedBy": "230k",
+  "cover": 6,
+  "featured": true,
+  "description": "A rich anime illustration with clean line art, cel shading and a detailed atmospheric background. A staple for anime-style checkpoints and LoRAs.",
+  "positive": "masterpiece anime illustration, a determined young heroine with silver hair and glowing amber eyes, dynamic pose, ornate katana in hand, detailed cel shading, clean line art, vibrant background of a blooming cherry blossom temple at sunset, dramatic sky, glowing particles, high contrast, award winning, ultra detailed",
+  "negative": "blurry, low quality, bad anatomy, deformed hands, extra fingers, watermark, text, signature, ugly, plain background, flat colors, nsfw",
+  "settings": {
+    "width": 768,
+    "height": 1152,
+    "steps": 30,
+    "cfg": 7.0,
+    "sampler": "euler_a",
+    "model": "SDXL",
+    "aspect": "2:3"
+  },
+  "tags": ["anime", "illustration", "cel-shading", "character", "fantasy"],
+  "compatibleModels": ["sdxl-base", "dreamshaper-xl", "flux-1-dev"],
+  "compatibleLoras": ["character-design", "detail-tweaker-xl"],
+  "examples": [
+    {
+      "title": "Mecha pilot",
+      "positive": "anime illustration of a young mecha pilot in a cockpit, glowing screens, cel shading, dramatic lighting, ultra detailed"
+    }
+  ],
+  "related": ["concept-art", "cinematic-portrait", "fantasy-landscape"]
+}

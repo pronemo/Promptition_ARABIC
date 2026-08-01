@@ -1,0 +1,183 @@
+{
+  "type": "tutorials",
+  "updated": "2026-08-01",
+  "count": 8,
+  "items": [
+    {
+      "id": "comfyui-beginners",
+      "ar": {
+        "title": "ComfyUI للمبتدئين المطلقين",
+        "category": "ComfyUI",
+        "difficulty": "مبتدئ",
+        "description": "ثبّت ComfyUI، وافهم مخطط العُقد، وأنتج أول صورة لك في أقل من خمس عشرة دقيقة.",
+        "tags": ["comfyui", "مبتدئ", "إعداد", "عُقد"]
+      },
+      "title": "ComfyUI for Absolute Beginners",
+      "type": "tutorial",
+      "category": "ComfyUI",
+      "author": "Maya Torres",
+      "published": "2026-06-12",
+      "readTime": "12 min",
+      "difficulty": "Beginner",
+      "rating": 4.9,
+      "description": "Install ComfyUI, understand the node graph and produce your first image in under fifteen minutes.",
+      "tags": ["comfyui", "beginner", "setup", "nodes"],
+      "cover": 1,
+      "featured": true
+    },
+    {
+      "id": "sdxl-parameters",
+      "ar": {
+        "title": "معلمات SDXL مشروحة: عدد الخطوات وCFG والسامبلرات",
+        "category": "تقنية",
+        "difficulty": "متوسط",
+        "description": "ماذا تفعل الخطوات وCFG والسامبلرات فعلًا، مع مقارنات ملموسة قبل وبعد خاصة بـ SDXL.",
+        "tags": ["sdxl", "معلمات", "سامبلر", "cfg"]
+      },
+      "title": "SDXL Parameters Explained: Step Count, CFG & Samplers",
+      "type": "tutorial",
+      "category": "Technique",
+      "author": "Daniel Reyes",
+      "published": "2026-05-28",
+      "readTime": "9 min",
+      "difficulty": "Intermediate",
+      "rating": 4.8,
+      "description": "What steps, CFG and samplers actually do, with concrete before-and-after comparisons for SDXL.",
+      "tags": ["sdxl", "parameters", "sampler", "cfg"],
+      "cover": 2,
+      "featured": true
+    },
+    {
+      "id": "train-first-lora",
+      "ar": {
+        "title": "درّب أول LoRA لك (SDXL)",
+        "category": "تدريب",
+        "difficulty": "متقدم",
+        "description": "دليل خطوة بخطوة مع kohya_ss من تجهيز مجموعة البيانات إلى LoRA مفاهيمي يعمل لصور عشر صور.",
+        "tags": ["lora", "تدريب", "kohya", "sdxl"]
+      },
+      "title": "Train Your First LoRA (SDXL)",
+      "type": "tutorial",
+      "category": "Training",
+      "author": "Maya Torres",
+      "published": "2026-04-15",
+      "readTime": "25 min",
+      "difficulty": "Advanced",
+      "rating": 4.9,
+      "description": "A step-by-step kohya_ss walkthrough from dataset prep to a working 10-image concept LoRA.",
+      "tags": ["lora", "training", "kohya", "sdxl"],
+      "cover": 3,
+      "featured": true
+    },
+    {
+      "id": "flux-on-8gb",
+      "ar": {
+        "title": "تشغيل FLUX.1 على بطاقة رسوميات بسعة 8 جيجابايت",
+        "category": "الأجهزة",
+        "difficulty": "متوسط",
+        "description": "كمّمة وGGUF وحيل التقسيم التي تجعل محولًا بـ 12 مليار معلمة يعمل مريحًا على 8 جيجابايت من VRAM.",
+        "tags": ["flux", "كمّمة", "vram", "gguf"]
+      },
+      "title": "Running FLUX.1 on an 8 GB GPU",
+      "type": "tutorial",
+      "category": "Hardware",
+      "author": "Priya Nair",
+      "published": "2026-03-30",
+      "readTime": "11 min",
+      "difficulty": "Intermediate",
+      "rating": 4.7,
+      "description": "Quantization, GGUF and tiling tricks that make a 12B transformer fit comfortably on 8 GB of VRAM.",
+      "tags": ["flux", "quantization", "vram", "gguf"],
+      "cover": 4,
+      "featured": false
+    },
+    {
+      "id": "prompt-engineering-guide",
+      "ar": {
+        "title": "الدليل العملي لهندسة البرومبتات",
+        "category": "أدلة",
+        "difficulty": "جميع المستويات",
+        "description": "البنية، والأوزان، والمساحة السلبية، ورموز الأسلوب — إطار عمل مجرَّب ميدانيًا لبرومبتات أفضل.",
+        "tags": ["برومبتات", "دليل", "تقنية", "أفضل الممارسات"]
+      },
+      "title": "The Practical Prompt Engineering Guide",
+      "type": "article",
+      "category": "Guides",
+      "author": "Daniel Reyes",
+      "published": "2026-02-20",
+      "readTime": "14 min",
+      "difficulty": "All Levels",
+      "rating": 4.8,
+      "description": "Structure, weighting, negative space and style tokens — a field-tested framework for better prompts.",
+      "tags": ["prompts", "guide", "technique", "best-practices"],
+      "cover": 5,
+      "featured": true
+    },
+    {
+      "id": "controlnet-workflows",
+      "ar": {
+        "title": "5 سير عمل لـ ControlNet تغيّر كل شيء",
+        "category": "ComfyUI",
+        "difficulty": "متقدم",
+        "description": "الوضعية، والعمق، وCanny، وLineart، وIPAdapter — خمسة سير عمل تحبس التكوين ويمكنك نسخها اليوم.",
+        "tags": ["controlnet", "سير عمل", "comfyui", "تكوين"]
+      },
+      "title": "5 ControlNet Workflows That Change Everything",
+      "type": "article",
+      "category": "ComfyUI",
+      "author": "Maya Torres",
+      "published": "2026-01-18",
+      "readTime": "16 min",
+      "difficulty": "Advanced",
+      "rating": 4.7,
+      "description": "Pose, depth, canny, lineart and IPAdapter — five composition-locking workflows you can copy today.",
+      "tags": ["controlnet", "workflows", "comfyui", "composition"],
+      "cover": 6,
+      "featured": false
+    },
+    {
+      "id": "comfyui-mental-model",
+      "ar": {
+        "title": "مخطط العُقد، مشروحًا: نموذج ذهني لـ ComfyUI",
+        "category": "أدلة",
+        "difficulty": "مبتدئ",
+        "description": "قبل أن تتعلم أي زر تضغطه، تعلم كيف تفكر. جولة مفاهيمية في مخطط عُقد ComfyUI بوصفه خط إنتاج مقروءًا.",
+        "tags": ["comfyui", "عُقد", "مفاهيم", "مبتدئ", "دليل"]
+      },
+      "title": "The Node Graph, Explained: A Mental Model for ComfyUI",
+      "type": "article",
+      "category": "Guides",
+      "author": "Ibrahim Iel-Khatub",
+      "published": "2026-07-31",
+      "readTime": "11 min",
+      "difficulty": "Beginner",
+      "rating": 4.8,
+      "description": "Before you learn which button to press, learn how to think. A conceptual walkthrough of ComfyUI's node graph as a readable pipeline.",
+      "tags": ["comfyui", "nodes", "concepts", "beginner", "guide"],
+      "cover": 7,
+      "featured": true
+    },
+    {
+      "id": "flux-vs-sdxl",
+      "ar": {
+        "title": "FLUX.1 ضد SDXL: اختيار نقطة التحقق الصحيحة",
+        "category": "أدلة",
+        "difficulty": "متوسط",
+        "description": "جيلان من النماذج مفتوحة المصدر، ومقايضتان مختلفتان تمامًا. دليل عملي للاختيار بين FLUX.1 وSDXL بناءً على الأجهزة وسير العمل.",
+        "tags": ["flux", "sdxl", "نماذج", "مقارنة", "دليل"]
+      },
+      "title": "FLUX.1 vs SDXL: Choosing the Right Checkpoint",
+      "type": "article",
+      "category": "Guides",
+      "author": "Ibrahim Iel-Khatub",
+      "published": "2026-08-01",
+      "readTime": "13 min",
+      "difficulty": "Intermediate",
+      "rating": 4.8,
+      "description": "Two generations of open models, two very different trade-offs. A practical guide to choosing between FLUX.1 and SDXL based on hardware and workflow.",
+      "tags": ["flux", "sdxl", "models", "comparison", "guide"],
+      "cover": 8,
+      "featured": true
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+/* ==========================================================================
+   Promptition — Header
+   Components: header.css
+   ========================================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  height: var(--header-h);
+  background: var(--header-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-weight: 800;
+  font-size: var(--fs-lg);
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+.brand-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+.brand-accent {
+  color: var(--brand-500);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-1);
+  margin-left: var(--sp-2);
+}
+
+.nav-link {
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: var(--fs-sm);
+  color: var(--text-soft);
+  transition: background-color var(--dur) var(--ease),
+    color var(--dur) var(--ease);
+}
+.nav-link:hover {
+  color: var(--text);
+  background: var(--bg-soft);
+}
+.nav-link[aria-current="page"] {
+  color: var(--brand-600);
+  background: var(--brand-50);
+}
+.nav-link.is-active {
+  color: var(--brand-600);
+  background: var(--brand-50);
+}
+
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+/* Icon buttons */
+.icon-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  color: var(--text-soft);
+  border: 1px solid transparent;
+  transition: background-color var(--dur) var(--ease),
+    color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.icon-btn:hover {
+  color: var(--text);
+  background: var(--bg-soft);
+  border-color: var(--border);
+}
+.icon-btn .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-btn .badge-count {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--brand-500);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--surface-glass);
+}
+
+/* Search trigger inside header */
+.header-search {
+  width: 240px;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .header-search {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .nav {
+    position: fixed;
+    inset: var(--header-h) 0 auto 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--sp-1);
+    padding: var(--sp-4);
+    background: var(--surface-glass);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-8px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--dur-slow) var(--ease),
+      transform var(--dur-slow) var(--ease);
+    margin-left: 0;
+  }
+  .nav.is-open {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+  .nav-link {
+    padding-block: var(--sp-3);
+    font-size: var(--fs-base);
+  }
+  .nav-toggle {
+    display: inline-flex;
+  }
+  .nav-label {
+    display: none;
+  }
+}

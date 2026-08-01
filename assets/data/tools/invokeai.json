@@ -1,0 +1,63 @@
+{
+  "id": "invokeai",
+  "ar": {
+    "name": "InvokeAI",
+    "category": "استوديو",
+    "description": "InvokeAI استوديو صور احترافي مبني على واجهة React حديثة. تدمج لوحة العمل الموحدة تحويل النص إلى صورة والصورة إلى صورة وإعادة التلوين والتوسيع في سطح واحد، مع طبقات تحكم ورسوم بيانية للعُقد وأدوات معالجة دفعات لخطوط الإنتاج.",
+    "features": [
+      "لوحة عمل موحدة لكل أوضاع التوليد",
+      "طبقات تحكم مع أقنعة وفرش إعادة التلوين",
+      "محرر سير عمل قائم على العُقد",
+      "مدير للنماذج و LoRA والتضمينات",
+      "أتمتة الدفعات وواجهات برمجة التطبيقات",
+      "تنظيم الأصول القائم على اللوحات"
+    ],
+    "requirements": {
+      "os": ["ويندوز", "لينكس", "ماك"],
+      "gpu": "إنفيديا CUDA / AMD / سيليكون آبل",
+      "minVram": "6 جيجابايت",
+      "python": "3.10+",
+      "cuda": "11.8+"
+    },
+    "license": "Apache-2.0",
+    "tags": ["استوديو", "لوحة عمل", "إعادة تلوين", "احترافي", "طبقات تحكم"]
+  },
+  "name": "InvokeAI",
+  "type": "tool",
+  "category": "Studio",
+  "publisher": "Invoke AI",
+  "version": "5.6",
+  "license": "Apache-2.0",
+  "rating": 4.6,
+  "ratingsCount": 740,
+  "released": "2022-12",
+  "cover": 4,
+  "featured": false,
+  "description": "InvokeAI is a professional image studio built on a modern React frontend. Its unified canvas merges text-to-image, image-to-image, inpainting and outpainting into a single surface, with control layers, node graphs and batch tooling for production pipelines.",
+  "features": [
+    "Unified canvas for all generation modes",
+    "Control layers with masks and inpaint brushes",
+    "Node-based workflow editor",
+    "Model, LoRA and embedding manager",
+    "Batch and API automation",
+    "Board-based asset organization"
+  ],
+  "requirements": {
+    "os": ["Windows", "Linux", "macOS"],
+    "gpu": "NVIDIA CUDA / AMD / Apple Silicon",
+    "minVram": "6 GB",
+    "python": "3.10+",
+    "cuda": "11.8+"
+  },
+  "supportedModels": ["sdxl-base", "sd-1-5", "flux-1-dev", "flux-1-schnell"],
+  "supportedFormats": ["safetensors", "ckpt", "lora", "pt"],
+  "links": {
+    "website": "https://invoke-ai.github.io",
+    "github": "https://github.com/invoke-ai/InvokeAI",
+    "download": "https://github.com/invoke-ai/InvokeAI/releases"
+  },
+  "screenshots": [4, 6, 7],
+  "tags": ["studio", "canvas", "inpainting", "professional", "control-layers"],
+  "downloads": { "monthly": "0.4M", "stars": "24k" },
+  "related": ["comfyui", "automatic1111", "kohya-ss"]
+}

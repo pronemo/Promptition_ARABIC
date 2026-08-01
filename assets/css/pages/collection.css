@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Promptition — Collection Pages (models, tools, loras, ...)
+   Pages: collection.css
+   ========================================================================== */
+
+.collection-results {
+  min-height: 320px;
+}
+
+.results-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+  flex-wrap: wrap;
+}
+.results-count {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+.results-count strong {
+  color: var(--text);
+}
+
+/* View mode toggle handled by btn-group */
+
+/* Compare drawer button fixed bottom-right? keep simple: inline */
+.compare-strip {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-top: var(--sp-4);
+  flex-wrap: wrap;
+}
+.compare-strip.is-empty {
+  display: none;
+}
+.compare-strip .list {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+  flex: 1;
+}
+.compare-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--text-soft);
+}
+.compare-tag button {
+  color: var(--text-faint);
+  display: inline-flex;
+}
+.compare-tag button:hover {
+  color: var(--danger);
+}
+.compare-tag .icon {
+  width: 12px;
+  height: 12px;
+}

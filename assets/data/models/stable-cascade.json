@@ -1,0 +1,93 @@
+{
+  "id": "stable-cascade",
+  "ar": {
+    "name": "Stable Cascade",
+    "category": "نص إلى صورة",
+    "subcategory": "سلسلة Würstchen",
+    "architecture": "Würstchen (3 مراحل)",
+    "license": "رخصة مجتمع Stability AI",
+    "description": "يضغط Stable Cascade الصور إلى فضاء كامن مضغوط من 42 رمزًا، مما يتيح لمرحلة B صغيرة وسريعة أن تنجز معظم عمل التوليد. والنتيجة سلسلة عالية الكفاءة بمستوى بحثي تعمل بسرعة على الأجهزة المتواضعة.",
+    "features": [
+      "فضاء كامن مضغوط من 42 رمزًا",
+      "خط أنابيب توليد فعال متعدد المراحل",
+      "أصغر وأسرع من النماذج المماثلة",
+      "التزام قوي بالأوامر في المرحلة الكامنة",
+      "دقتان: نسخ 1024 بكسل و 2048 بكسل"
+    ],
+    "quantizations": [
+      { "name": "bf16", "sizeGb": 6.6, "quality": "مرجع (B)" },
+      { "name": "fp16", "sizeGb": 6.6, "quality": "مرجع (B)" }
+    ],
+    "requirements": {
+      "minVram": "8 جيجابايت (مكمّمة)",
+      "recommendedVram": "16 جيجابايت",
+      "minRam": "16 جيجابايت",
+      "cuda": "11.8+",
+      "python": "3.9+"
+    },
+    "examples": [
+      {
+        "prompt": "داخلية دفيئة خصبة بنباتات استوائية وإضاءة سماوية دافئة، بأسلوب رسم نباتي، تفاصيل معقدة",
+        "width": 1024,
+        "height": 1024,
+        "steps": 20,
+        "cfg": 4.0,
+        "seed": 77
+      }
+    ],
+    "tags": ["سلسلة", "فعال", "كامن", "تجريبي"]
+  },
+  "name": "Stable Cascade",
+  "type": "model",
+  "category": "Text-to-Image",
+  "subcategory": "Würstchen Cascade",
+  "publisher": "Stability AI",
+  "architecture": "Würstchen 3-Stage Cascade",
+  "params": "3.9B (stages A+B)",
+  "released": "2024-02-12",
+  "version": "1.0",
+  "license": "Stability AI Community License",
+  "rating": 4.3,
+  "ratingsCount": 388,
+  "downloads": "0.9M",
+  "cover": 11,
+  "featured": false,
+  "description": "Stable Cascade compresses images into a compact 42-token latent space, allowing a small, fast stage B to do most of the generative work. The result is a highly efficient, research-grade cascade that runs quickly on modest hardware.",
+  "features": [
+    "Compact 42-token latent space",
+    "Efficient multi-stage generation pipeline",
+    "Smaller and faster than comparable models",
+    "Strong prompt adherence in the latent stage",
+    "Two resolutions: 1024px and 2048px variants"
+  ],
+  "quantizations": [
+    { "name": "bf16", "sizeGb": 6.6, "quality": "Reference (B)" },
+    { "name": "fp16", "sizeGb": 6.6, "quality": "Reference (B)" }
+  ],
+  "formats": ["safetensors", "ckpt"],
+  "requirements": {
+    "minVram": "8 GB (quantized)",
+    "recommendedVram": "16 GB",
+    "minRam": "16 GB",
+    "cuda": "11.8+",
+    "python": "3.9+"
+  },
+  "links": {
+    "website": "https://stability.ai",
+    "download": "https://huggingface.co/stabilityai/stable-cascade",
+    "github": "https://github.com/Stability-AI/generative-models"
+  },
+  "examples": [
+    {
+      "prompt": "a lush greenhouse interior with tropical plants and warm skylight, botanical illustration style, intricate detail",
+      "width": 1024,
+      "height": 1024,
+      "steps": 20,
+      "cfg": 4.0,
+      "seed": 77
+    }
+  ],
+  "tags": ["cascade", "efficient", "latent", "experimental"],
+  "compatibleTools": ["comfyui", "diffusers"],
+  "related": ["sd-3-5-large", "pixart-sigma", "flux-1-schnell"]
+}

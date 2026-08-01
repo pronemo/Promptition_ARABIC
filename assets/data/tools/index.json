@@ -1,0 +1,217 @@
+{
+  "type": "tools",
+  "updated": "2026-07-30",
+  "count": 10,
+  "items": [
+    {
+      "id": "comfyui",
+      "ar": {
+        "name": "ComfyUI",
+        "category": "منصة سير العمل",
+        "description": "محرك سير عمل نمطي قائم على العُقد لـ Stable Diffusion و Flux يمنحك تحكمًا دقيقًا في كل بكسل في كل خطوة من خطوات التوليد.",
+        "tags": ["سير عمل", "عُقد", "مفتوح المصدر", "متقدم"]
+      },
+      "name": "ComfyUI",
+      "category": "Workflow Platform",
+      "publisher": "comfyanonymous",
+      "version": "v0.3.30",
+      "license": "GPL-3.0",
+      "rating": 4.9,
+      "ratingsCount": 2210,
+      "released": "2023-01",
+      "description": "A node-based, modular workflow engine for Stable Diffusion and Flux that gives you pixel-perfect control over every step of generation.",
+      "tags": ["workflow", "nodes", "open-source", "advanced"],
+      "cover": 1,
+      "featured": true
+    },
+    {
+      "id": "automatic1111",
+      "ar": {
+        "name": "Stable Diffusion WebUI (A1111)",
+        "category": "واجهة ويب",
+        "description": "الواجهة الأكثر شهرة لـ Stable Diffusion المبنية على Gradio وتعمل بنقرة واحدة، مع نظام إضافات ضخم.",
+        "tags": ["واجهة ويب", "gradio", "مبتدئ", "إضافات"]
+      },
+      "name": "Stable Diffusion WebUI (A1111)",
+      "category": "Web UI",
+      "publisher": "AUTOMATIC1111",
+      "version": "1.10.1",
+      "license": "AGPL-3.0",
+      "rating": 4.8,
+      "ratingsCount": 3410,
+      "released": "2022-08",
+      "description": "The most popular one-click Gradio interface for Stable Diffusion with an enormous extension ecosystem.",
+      "tags": ["webui", "gradio", "beginner", "extensions"],
+      "cover": 2,
+      "featured": true
+    },
+    {
+      "id": "forge-webui",
+      "ar": {
+        "name": "Stable Diffusion WebUI Forge",
+        "category": "واجهة ويب",
+        "description": "نسخة مشتقة من A1111 تركّز على الأداء مع تحسين الذاكرة وتسريع أخذ العينات ودعم أصلي لـ Flux.",
+        "tags": ["واجهة ويب", "سريع", "flux", "ذاكرة منخفضة"]
+      },
+      "name": "Stable Diffusion WebUI Forge",
+      "category": "Web UI",
+      "publisher": "lllyasviel",
+      "version": "v2024.10",
+      "license": "AGPL-3.0",
+      "rating": 4.7,
+      "ratingsCount": 1290,
+      "released": "2024-01",
+      "description": "A performance-focused fork of A1111 with memory optimization, faster sampling and native Flux support.",
+      "tags": ["webui", "fast", "flux", "low-vram"],
+      "cover": 3,
+      "featured": false
+    },
+    {
+      "id": "invokeai",
+      "ar": {
+        "name": "InvokeAI",
+        "category": "استوديو",
+        "description": "استوديو صور احترافي بلوحة عمل موحدة وطبقات تحكم وأدوات معالجة دفعات، مبني على واجهة React حديثة.",
+        "tags": ["استوديو", "لوحة عمل", "إعادة تلوين", "احترافي"]
+      },
+      "name": "InvokeAI",
+      "category": "Studio",
+      "publisher": "Invoke AI",
+      "version": "5.6",
+      "license": "Apache-2.0",
+      "rating": 4.6,
+      "ratingsCount": 740,
+      "released": "2022-12",
+      "description": "A professional image studio with unified canvas, control layers and batch tools built on a modern React frontend.",
+      "tags": ["studio", "canvas", "inpainting", "professional"],
+      "cover": 4,
+      "featured": false
+    },
+    {
+      "id": "fooocus",
+      "ar": {
+        "name": "Fooocus",
+        "category": "سطح مكتب",
+        "description": "مولّد مجاني يعمل دون اتصال مستوحى من Midjourney، مع تحسين تلقائي وواجهة بسيطة سهلة الاستخدام.",
+        "tags": ["سطح مكتب", "مبتدئ", "نمط midjourney", "دون اتصال"]
+      },
+      "name": "Fooocus",
+      "category": "Desktop",
+      "publisher": "lllyasviel",
+      "version": "2.5.0",
+      "license": "GPL-3.0",
+      "rating": 4.6,
+      "ratingsCount": 980,
+      "released": "2023-11",
+      "description": "A free, offline Midjourney-inspired generator with automatic optimization and a minimal, user-friendly interface.",
+      "tags": ["desktop", "beginner", "midjourney-style", "offline"],
+      "cover": 5,
+      "featured": false
+    },
+    {
+      "id": "sd-next",
+      "ar": {
+        "name": "SD.Next",
+        "category": "واجهة ويب",
+        "description": "نسخة مشتقة من A1111 تُحدَّث باستمرار وتركّز على الأداء وجودة الكود ودعم المعماريات الأحدث.",
+        "tags": ["واجهة ويب", "مُحدَّث", "أداء", "متعدد المنصات"]
+      },
+      "name": "SD.Next",
+      "category": "Web UI",
+      "publisher": "Vladmandic",
+      "version": "v8.0",
+      "license": "AGPL-3.0",
+      "rating": 4.5,
+      "ratingsCount": 620,
+      "released": "2022-10",
+      "description": "A maintained fork of A1111 focused on performance, clean code, and support for newer architectures.",
+      "tags": ["webui", "maintained", "performance", "cross-platform"],
+      "cover": 6,
+      "featured": false
+    },
+    {
+      "id": "kohya-ss",
+      "ar": {
+        "name": "kohya_ss",
+        "category": "تدريب",
+        "description": "الأداة المعيارية الفعلية لتدريب LoRA و Dreambooth والتعلم النصي على نقاط فحص SD و Flux.",
+        "tags": ["تدريب", "lora", "dreambooth", "sdxl", "flux"]
+      },
+      "name": "kohya_ss",
+      "category": "Training",
+      "publisher": "kohya",
+      "version": "v31",
+      "license": "Apache-2.0",
+      "rating": 4.5,
+      "ratingsCount": 830,
+      "released": "2023-02",
+      "description": "The de facto standard trainer for LoRA, Dreambooth and textual inversion on SD and Flux checkpoints.",
+      "tags": ["training", "lora", "dreambooth", "sdxl", "flux"],
+      "cover": 7,
+      "featured": true
+    },
+    {
+      "id": "onetrainer",
+      "ar": {
+        "name": "OneTrainer",
+        "category": "تدريب",
+        "description": "أداة تدريب بواجهة رسومية غنية بالميزات مع إعدادات جاهزة لـ LoRA والتحويل النصي والضبط الدقيق الكامل، بالإضافة إلى دمج النماذج.",
+        "tags": ["تدريب", "lora", "واجهة رسومية", "إعدادات جاهزة"]
+      },
+      "name": "OneTrainer",
+      "category": "Training",
+      "publisher": "Nerogar",
+      "version": "v1.2",
+      "license": "GPL-3.0",
+      "rating": 4.4,
+      "ratingsCount": 410,
+      "released": "2023-06",
+      "description": "A feature-rich GUI trainer with presets for LoRA, text inversion and full fine-tunes, plus model merging.",
+      "tags": ["training", "lora", "gui", "presets"],
+      "cover": 8,
+      "featured": false
+    },
+    {
+      "id": "diffusers",
+      "ar": {
+        "name": "Hugging Face Diffusers",
+        "category": "مكتبة",
+        "description": "مكتبة بايثون لتشغيل وتدريب ومشاركة نماذج الانتشار، بدعم مباشر لجميع المعماريات الرئيسية.",
+        "tags": ["python", "مكتبة", "تدريب", "متطورة"]
+      },
+      "name": "Hugging Face Diffusers",
+      "category": "Library",
+      "publisher": "Hugging Face",
+      "version": "0.32",
+      "license": "Apache-2.0",
+      "rating": 4.8,
+      "ratingsCount": 1500,
+      "released": "2022-10",
+      "description": "The Python library for running, training and sharing diffusion models with first-party support for all major architectures.",
+      "tags": ["python", "library", "training", "sota"],
+      "cover": 9,
+      "featured": true
+    },
+    {
+      "id": "swarmui",
+      "ar": {
+        "name": "SwarmUI",
+        "category": "واجهة ويب",
+        "description": "واجهة ويب حديثة معيارية مع نظام سير عمل سهل التعلم، مبني على ComfyUI وأنظمة خلفية أخرى.",
+        "tags": ["واجهة ويب", "معياري", "سير عمل", "أنظمة خلفية"]
+      },
+      "name": "SwarmUI",
+      "category": "Web UI",
+      "publisher": "mcmonkeyprojects",
+      "version": "0.9",
+      "license": "GPL-3.0",
+      "rating": 4.3,
+      "ratingsCount": 350,
+      "released": "2024-01",
+      "description": "A modern modular web interface with an easy-to-learn workflow system built on top of ComfyUI and other backends.",
+      "tags": ["webui", "modular", "workflows", "backends"],
+      "cover": 10,
+      "featured": false
+    }
+  ]
+}

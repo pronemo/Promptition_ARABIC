@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Promptition — Skeleton Loaders
+   Components: skeleton.css
+   ========================================================================== */
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: var(--skeleton-base);
+  border-radius: var(--radius-sm);
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--skeleton-glow),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: skeleton-shimmer 1.4s infinite;
+}
+.skeleton-text {
+  height: 14px;
+}
+.skeleton-title {
+  height: 20px;
+  width: 70%;
+}
+.skeleton-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 0;
+  overflow: hidden;
+}
+.skeleton-card .sk-cover {
+  aspect-ratio: 16 / 10;
+  border-radius: 0;
+}
+.skeleton-card .sk-body {
+  padding: var(--sp-4);
+  display: grid;
+  gap: var(--sp-2);
+}
+.skeleton-detail-line {
+  height: 16px;
+  margin-bottom: var(--sp-2);
+}
+.skeleton-detail-line:last-child {
+  width: 60%;
+}
+
+@keyframes skeleton-shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Grid of skeletons mirrors the card grid */
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--sp-5);
+}

@@ -1,0 +1,91 @@
+{
+  "id": "pixart-sigma",
+  "ar": {
+    "name": "PixArt-Sigma",
+    "category": "نص إلى صورة",
+    "subcategory": "محوّل الانتشار",
+    "architecture": "DiT مع مشفّر النصوص T5-XXL",
+    "license": "MIT",
+    "description": "PixArt-Sigma هو محوّل انتشار مضغوط بـ 0.6 مليار معلمة يتفوق على حجمه. مع مشفّر T5-XXL يحقق جودة تنافسية ويدعم التوليد حتى 4K، وكل ذلك تحت رخصة MIT مرنة.",
+    "features": [
+      "بصمة معلمات صغيرة بـ 0.6 مليار",
+      "يدعم الإخراج من 512 بكسل حتى 4K",
+      "رخصة MIT، مفتوح بالكامل",
+      "سريع على بطاقات رسوميات المستهلك",
+      "فهم نصي قوي عبر T5-XXL"
+    ],
+    "quantizations": [
+      { "name": "fp16", "sizeGb": 1.2, "quality": "مرجع" }
+    ],
+    "requirements": {
+      "minVram": "4 جيجابايت",
+      "recommendedVram": "8 جيجابايت",
+      "minRam": "12 جيجابايت",
+      "cuda": "11.8+",
+      "python": "3.9+"
+    },
+    "examples": [
+      {
+        "prompt": "رائد فضاء يمتطي حصانًا على المريخ، تركيبة سريالية، شمس منتصف نهار ساطعة، منظر طبيعي مفصّل، أمر نصي طويل بأسلوب T5 مع واصفات غنية ولوحة ألوان نابضة",
+        "width": 1024,
+        "height": 1024,
+        "steps": 20,
+        "cfg": 4.5,
+        "seed": 5
+      }
+    ],
+    "tags": ["محوّل", "خفيف", "mit", "t5"]
+  },
+  "name": "PixArt-Sigma",
+  "type": "model",
+  "category": "Text-to-Image",
+  "subcategory": "Diffusion Transformer",
+  "publisher": "PixArt Team",
+  "architecture": "DiT with T5-XXL text encoder",
+  "params": "0.6B",
+  "released": "2024-03-05",
+  "version": "Sigma",
+  "license": "MIT",
+  "rating": 4.4,
+  "ratingsCount": 298,
+  "downloads": "1.1M",
+  "cover": 12,
+  "featured": false,
+  "description": "PixArt-Sigma is a compact 0.6B diffusion transformer that punches above its weight. With the T5-XXL encoder it achieves competitive quality and supports up to 4K generation, all under a permissive MIT license.",
+  "features": [
+    "Tiny 0.6B parameter footprint",
+    "Supports 512px up to 4K output",
+    "MIT license, fully open",
+    "Fast on consumer GPUs",
+    "Strong text understanding via T5-XXL"
+  ],
+  "quantizations": [
+    { "name": "fp16", "sizeGb": 1.2, "quality": "Reference" }
+  ],
+  "formats": ["safetensors", "ckpt"],
+  "requirements": {
+    "minVram": "4 GB",
+    "recommendedVram": "8 GB",
+    "minRam": "12 GB",
+    "cuda": "11.8+",
+    "python": "3.9+"
+  },
+  "links": {
+    "website": "https://pixart-alpha.github.io",
+    "download": "https://huggingface.co/PixArt-alpha/PixArt-Sigma-XL-2-1024-MS",
+    "github": "https://github.com/PixArt-alpha/PixArt-sigma"
+  },
+  "examples": [
+    {
+      "prompt": "an astronaut riding a horse on Mars, surreal composition, bright midday sun, detailed landscape, T5-style long prompt with rich descriptors and vivid color palette",
+      "width": 1024,
+      "height": 1024,
+      "steps": 20,
+      "cfg": 4.5,
+      "seed": 5
+    }
+  ],
+  "tags": ["transformer", "lightweight", "mit", "t5"],
+  "compatibleTools": ["diffusers", "comfyui"],
+  "related": ["flux-1-schnell", "stable-cascade", "sd-3-5-large"]
+}

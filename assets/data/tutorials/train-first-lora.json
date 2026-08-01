@@ -1,0 +1,96 @@
+{
+  "id": "train-first-lora",
+  "ar": {
+    "title": "درّب أول LoRA لك (SDXL)",
+    "category": "تدريب",
+    "difficulty": "متقدم",
+    "summary": "من مجلد يحوي عشر صور إلى LoRA مفاهيمي يعمل في أمسية واحدة. يستخدم هذا الدليل kohya_ss وSDXL، ويعمل مع بطاقة رسوميات واحدة بسعة 12 جيجابايت أو أكثر.",
+    "content": [
+      {
+        "heading": "اجمع صورك",
+        "paragraphs": [
+          "تحتاج إلى 10–20 صورة عالية الجودة لموضوع متسق. بالنسبة لـ LoRA للشخصيات، اختر صورًا حادة للوجه من الأمام والجانب مع بضع لقطات لكامل الجسم. قصّ كل صورة إلى نسبة أبعاد موحدة (512x768 تعمل جيدًا) واهدف إلى تنوّع في الخلفية والإضاءة — التنوع هو ما يمنع الإفراط في التكيف."
+        ]
+      },
+      {
+        "heading": "اكتب لها التسميات التوضيحية",
+        "paragraphs": [
+          "التسميات التوضيحية تعلم LoRA ما هو فريد. ضع رمز محفّز فريدًا في كل تسمية، مثل 'ohwx character'. صف فقط ما يختلف بين الصور (الخلفية، والوضعية، والإضاءة) — ولا تصف أبدًا السمات الثابتة، لأن LoRA يجب أن يتعلمها من المحفّز. أدوات مثل وسوم WD14 تؤتمت الكتابة الافتراضية."
+        ]
+      },
+      {
+        "heading": "إعداد kohya_ss",
+        "paragraphs": [
+          "اختر SDXL LoRA كإعداد جاهز. إعدادات افتراضية معقولة: بُعد الشبكة 32، وألفا الشبكة 16، ومعدل تعلم 1e-4 مع جدول جيب التمام، وحجم دفعة 1، ودقة 1024 (أو 512x768). درّب لـ 1500–2500 خطوة واحفظ نقطة تحقق كل 200 خطوة لتتمكن من اختيار الأفضل."
+        ]
+      },
+      {
+        "heading": "التقييم",
+        "paragraphs": [
+          "اختبر نقاط التحقق المحفوظة ببذرة ثابتة بقوة 0.8. ابحث عن ثلاثة أشياء: تطابق الهوية، والالتزام بالبرومبت، وغياب العيوب. إذا بدت الصور مشبعة أكثر من اللازم، فالتدريب استمر طويلًا — اختر نقطة تحقق أقدم. إذا كان الموضوع ضعيفًا، فاستمر من آخر خطوة جيدة بمعدل تعلم أقل."
+        ]
+      },
+      {
+        "heading": "قائمة التحقق النهائية",
+        "list": [
+          "10+ صور متنوعة ومقصودة جيدًا",
+          "رمز محفّز فريد في كل التسميات التوضيحية",
+          "Network dim 32 / alpha 16",
+          "1e-4 cosine، و1500-2500 خطوة",
+          "التقييم ببذرة ثابتة وقوة 0.8"
+        ]
+      }
+    ],
+    "tags": ["lora", "تدريب", "kohya", "sdxl"]
+  },
+  "title": "Train Your First LoRA (SDXL)",
+  "type": "tutorial",
+  "category": "Training",
+  "author": "Maya Torres",
+  "published": "2026-04-15",
+  "readTime": "25 min",
+  "difficulty": "Advanced",
+  "rating": 4.9,
+  "ratingsCount": 731,
+  "cover": 3,
+  "featured": true,
+  "summary": "From a folder of ten photos to a working concept LoRA in one evening. This guide uses kohya_ss and SDXL, and works with one GPU of 12 GB or more.",
+  "content": [
+    {
+      "heading": "Gather your images",
+      "paragraphs": [
+        "You need 10–20 high-quality images of a consistent subject. For a character LoRA, pick sharp, front-and-side portraits plus a few full-body shots. Crop every image to the same aspect ratio (512x768 works well) and aim for variety in background and lighting — variety is what prevents overfitting."
+      ]
+    },
+    {
+      "heading": "Caption them",
+      "paragraphs": [
+        "Captions teach the LoRA what is unique. Put a unique trigger token in every caption, like 'ohwx character'. Describe only what varies between images (background, pose, lighting) — never the constant features, because the LoRA should learn those from the trigger. Tools like WD14 tagger automate the boilerplate."
+      ]
+    },
+    {
+      "heading": "Configure kohya_ss",
+      "paragraphs": [
+        "Choose SDXL LoRA as the preset. Reasonable defaults: network dim 32, network alpha 16, 1e-4 learning rate with cosine schedule, batch size 1, resolution 1024 (or 512x768). Train for 1500–2500 steps and save a checkpoint every 200 steps so you can pick the best one."
+      ]
+    },
+    {
+      "heading": "Evaluate",
+      "paragraphs": [
+        "Test the saved checkpoints with a fixed seed at strength 0.8. Look for three things: identity match, prompt adherence, and absence of artifacts. If images look oversaturated, the training ran too long — pick an earlier checkpoint. If the subject is weak, continue from the last good step with a lower learning rate."
+      ]
+    },
+    {
+      "heading": "Final checklist",
+      "list": [
+        "10+ varied, well-cropped images",
+        "Unique trigger token in all captions",
+        "Network dim 32 / alpha 16",
+        "1e-4 cosine, 1500-2500 steps",
+        "Evaluate at fixed seed, strength 0.8"
+      ]
+    }
+  ],
+  "tags": ["lora", "training", "kohya", "sdxl"],
+  "related": ["sdxl-parameters", "flux-on-8gb", "comfyui-beginners"]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "watercolor",
+  "ar": {
+    "name": "رسم بالألوان المائية",
+    "category": "رسم توضيحي",
+    "mood": ["دقيق", "هادئ", "عضوي"],
+    "palette": ["باستيل ناعم", "غسلات صبغية", "درجات ورق دافئة"],
+    "description": "يعرض الرسم بالألوان المائية المشاهد كغسلات صبغية ناعمة مع ملمس ورق مرئي وحواف عضوية حرة واندفاع لوني لطيف — رائع لفن النباتات ومشاهد كتب القصص وبطاقات التهنئة.",
+    "promptSuffix": "رسم بالألوان المائية، غسلات صبغية ناعمة، ملمس ورق مرئي، ضربات فرشاة عضوية حرة، اندفاع لوني دقيق، لوحة باستيل، فن راقٍ، مفصّل",
+    "negativeSuffix": "رسم زيتي، تصيير ثلاثي الأبعاد، حواف حادة، واقعي فوتوغرافي، خطوط قاسية، تشبع مفرط، علامة مائية، نص، جودة منخفضة",
+    "tags": ["ألوان مائية", "رسم", "ناعم", "فني"]
+  },
+  "name": "Watercolor Painting",
+  "type": "style",
+  "category": "Illustration",
+  "rating": 4.6,
+  "ratingsCount": 620,
+  "usedBy": "74k",
+  "cover": 5,
+  "featured": false,
+  "mood": ["Delicate", "Serene", "Organic"],
+  "palette": ["Soft pastels", "Pigment washes", "Warm paper tones"],
+  "description": "Watercolor Painting renders scenes as soft pigment washes with visible paper texture, loose organic edges and gentle color bleeding — lovely for botanical art, storybook scenes and greeting cards.",
+  "promptSuffix": "watercolor painting, soft pigment washes, visible paper texture, loose organic brush strokes, delicate color bleeding, pastel palette, fine art, detailed",
+  "negativeSuffix": "oil painting, 3d render, sharp edges, photorealistic, harsh lines, oversaturated, watermark, text, low quality",
+  "strength": 0.8,
+  "tags": ["watercolor", "painting", "soft", "artistic"],
+  "compatibleModels": ["sdxl-base", "dreamshaper-xl", "flux-1-dev"],
+  "compatibleLoras": ["detail-tweaker-xl"],
+  "related": ["anime-cel", "minimalist", "dark-fantasy"]
+}

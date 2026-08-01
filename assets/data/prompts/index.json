@@ -1,0 +1,223 @@
+{
+  "type": "prompts",
+  "updated": "2026-07-30",
+  "count": 12,
+  "items": [
+    {
+      "id": "cinematic-portrait",
+      "ar": {
+        "name": "بورتريه شخصية سينمائي",
+        "category": "بورتريه",
+        "description": "بورتريه درامي بإضاءة منخفضة وإضاءة أنامورفية وتدرج لوني بين التركواز والبرتقالي للحصول على لقطات شخصيات سينمائية فورية.",
+        "tags": ["بورتريه", "سينمائي", "فيلم", "شخصية"]
+      },
+      "name": "Cinematic Character Portrait",
+      "category": "Portrait",
+      "rating": 4.9,
+      "ratingsCount": 1320,
+      "usedBy": "214k",
+      "description": "Dramatic low-key portrait with anamorphic lighting and teal-orange grade for instant film-still character shots.",
+      "tags": ["portrait", "cinematic", "film", "character"],
+      "cover": 1,
+      "featured": true
+    },
+    {
+      "id": "fantasy-landscape",
+      "ar": {
+        "name": "منظر طبيعي خيالي ملحمي",
+        "category": "منظر طبيعي",
+        "description": "منظر طبيعي بانورامي بأسلوب الرسم المطفي مع أشعة ضوئية حجمية وأودية ضبابية وتفاصيل فنية ريشية.",
+        "tags": ["منظر طبيعي", "خيالي", "رسم مطفي", "طبيعة"]
+      },
+      "name": "Epic Fantasy Landscape",
+      "category": "Landscape",
+      "rating": 4.8,
+      "ratingsCount": 980,
+      "usedBy": "176k",
+      "description": "Sweeping matte-painting landscape with volumetric god rays, misty valleys and painterly detail.",
+      "tags": ["landscape", "fantasy", "matte-painting", "nature"],
+      "cover": 2,
+      "featured": true
+    },
+    {
+      "id": "cyberpunk-city",
+      "ar": {
+        "name": "شارع مدينة سايبربانك",
+        "category": "خيال علمي",
+        "description": "شارع سايبربانك مغمور بالنيون ليلاً مع أسفلت لامع بالمطر وضباب جوي كثيف.",
+        "tags": ["سايبربانك", "خيال علمي", "نيون", "مدينة"]
+      },
+      "name": "Cyberpunk City Street",
+      "category": "Sci-Fi",
+      "rating": 4.8,
+      "ratingsCount": 1150,
+      "usedBy": "198k",
+      "description": "Neon-drenched cyberpunk street at night with rain-slicked asphalt and dense atmospheric haze.",
+      "tags": ["cyberpunk", "sci-fi", "neon", "city"],
+      "cover": 3,
+      "featured": false
+    },
+    {
+      "id": "food-photography",
+      "ar": {
+        "name": "تصوير طعام تحريري",
+        "category": "طعام",
+        "description": "لقطة طعام استوديو نظيفة وشهية مع ضوء نافذة ناعم ولمسات تنسيق تجاري.",
+        "tags": ["طعام", "تحريري", "استوديو", "تجاري"]
+      },
+      "name": "Editorial Food Photography",
+      "category": "Food",
+      "rating": 4.7,
+      "ratingsCount": 740,
+      "usedBy": "92k",
+      "description": "Clean, appetizing studio food shot with soft window light and commercial styling cues.",
+      "tags": ["food", "editorial", "studio", "commercial"],
+      "cover": 4,
+      "featured": false
+    },
+    {
+      "id": "product-shot",
+      "ar": {
+        "name": "لقطة منتج بسيطة",
+        "category": "منتج",
+        "description": "تصيير منتج في الاستوديو على خلفية متدرجة سلسة مع انعكاسات حادة ولمسة نهائية تجارية.",
+        "tags": ["منتج", "استوديو", "تجاري", "بسيط"]
+      },
+      "name": "Minimalist Product Shot",
+      "category": "Product",
+      "rating": 4.6,
+      "ratingsCount": 690,
+      "usedBy": "110k",
+      "description": "Studio product render on a seamless gradient backdrop with crisp reflections and commercial polish.",
+      "tags": ["product", "studio", "commercial", "minimal"],
+      "cover": 5,
+      "featured": false
+    },
+    {
+      "id": "anime-style",
+      "ar": {
+        "name": "رسم أنمي مفصّل",
+        "category": "أنمي",
+        "description": "رسم أنمي غني بخطوط نظيفة وتظليل خلوي وخلفية جوية نابضة بالحياة.",
+        "tags": ["أنمي", "رسم توضيحي", "تظليل خلوي", "شخصية"]
+      },
+      "name": "Detailed Anime Illustration",
+      "category": "Anime",
+      "rating": 4.8,
+      "ratingsCount": 1405,
+      "usedBy": "230k",
+      "description": "Rich anime illustration with clean line art, cel shading and a vibrant atmospheric background.",
+      "tags": ["anime", "illustration", "cel-shading", "character"],
+      "cover": 6,
+      "featured": true
+    },
+    {
+      "id": "photorealistic-portrait",
+      "ar": {
+        "name": "بورتريه واقعي فائق",
+        "category": "تصوير",
+        "description": "صورة شخصية احترافية بإضاءة طبيعية مع نسيج جلد واقعي وعمق ميدان ضحل مقنع.",
+        "tags": ["واقعي فائق", "بورتريه", "صورة شخصية", "بشرة"]
+      },
+      "name": "Photorealistic Headshot",
+      "category": "Photography",
+      "rating": 4.9,
+      "ratingsCount": 1600,
+      "usedBy": "289k",
+      "description": "Natural-light professional headshot with realistic skin texture and believable shallow depth of field.",
+      "tags": ["photoreal", "portrait", "headshot", "skin"],
+      "cover": 7,
+      "featured": true
+    },
+    {
+      "id": "abstract-art",
+      "ar": {
+        "name": "فن تجريدي سائل",
+        "category": "تجريدي",
+        "description": "تكوين تجريدي بحبر سائل وأوراق ذهبية مع أشكال انسيابية أنيقة وملمس غني.",
+        "tags": ["تجريدي", "سائل", "فني", "ملمس"]
+      },
+      "name": "Fluid Abstract Art",
+      "category": "Abstract",
+      "rating": 4.5,
+      "ratingsCount": 420,
+      "usedBy": "58k",
+      "description": "Liquid ink and gold-leaf abstract composition with elegant flowing forms and rich texture.",
+      "tags": ["abstract", "fluid", "artistic", "texture"],
+      "cover": 8,
+      "featured": false
+    },
+    {
+      "id": "architecture-exterior",
+      "ar": {
+        "name": "تصيير معماري",
+        "category": "عمارة",
+        "description": "تصيير معماري خارجي واقعي في الساعة الذهبية بهندسة حديثة نظيفة ومناظر طبيعية خضراء.",
+        "tags": ["عمارة", "واجهات خارجية", "حديث", "ساعة ذهبية"]
+      },
+      "name": "Architectural Visualization",
+      "category": "Architecture",
+      "rating": 4.6,
+      "ratingsCount": 510,
+      "usedBy": "76k",
+      "description": "Photorealistic exterior architecture render at golden hour with clean modern geometry and lush landscaping.",
+      "tags": ["architecture", "exterior", "modern", "golden-hour"],
+      "cover": 9,
+      "featured": false
+    },
+    {
+      "id": "wildlife",
+      "ar": {
+        "name": "تصوير الحياة البرية",
+        "category": "طبيعة",
+        "description": "لقطة حياة برية بعدسة تليفوتوغرافي مع منظور مضغوط وموطن طبيعي وتركيز حاد على العينين.",
+        "tags": ["حياة برية", "طبيعة", "تليفوتوغرافي", "حيوانات"]
+      },
+      "name": "Wildlife Photography",
+      "category": "Nature",
+      "rating": 4.7,
+      "ratingsCount": 680,
+      "usedBy": "84k",
+      "description": "Telephoto wildlife shot with compressed perspective, natural habitat and razor-sharp eye focus.",
+      "tags": ["wildlife", "nature", "telephoto", "animals"],
+      "cover": 10,
+      "featured": false
+    },
+    {
+      "id": "retro-80s",
+      "ar": {
+        "name": "رجعية الثمانينيات سينثويف",
+        "category": "ستايل",
+        "description": "سينثويف رجعي مستقبلي مع تدرجات كروم وشمس رجعية متوهجة. مثالي للملصقات وأغلفة الألبومات وأجواء فابروويف.",
+        "tags": ["رجعي", "80s", "synthwave", "vaporwave", "ملصق"]
+      },
+      "name": "Retro 80s Synthwave",
+      "category": "Style",
+      "rating": 4.6,
+      "ratingsCount": 590,
+      "usedBy": "130k",
+      "description": "Synthwave retro-futurism with chrome gradients, checkerboard floors and a glowing retro sun.",
+      "tags": ["retro", "80s", "synthwave", "vaporwave"],
+      "cover": 11,
+      "featured": false
+    },
+    {
+      "id": "concept-art",
+      "ar": {
+        "name": "فن مفاهيمي فانتازيا داكنة",
+        "category": "فن مفاهيمي",
+        "description": "رسم مفاهيمي لفانتازيا داكنة بجوّ حالم مع إضاءة حافة درامية وتفاصيل معمارية معقدة.",
+        "tags": ["فن مفاهيمي", "فانتازيا", "داكن", "رسم"]
+      },
+      "name": "Dark Fantasy Concept Art",
+      "category": "Concept Art",
+      "rating": 4.8,
+      "ratingsCount": 830,
+      "usedBy": "145k",
+      "description": "Moody dark-fantasy concept painting with dramatic rim lighting and intricate architectural detail.",
+      "tags": ["concept-art", "fantasy", "dark", "painting"],
+      "cover": 12,
+      "featured": false
+    }
+  ]
+}

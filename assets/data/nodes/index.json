@@ -1,0 +1,167 @@
+{
+  "type": "nodes",
+  "updated": "2026-07-30",
+  "count": 8,
+  "items": [
+    {
+      "id": "comfyui-manager",
+      "ar": {
+        "name": "ComfyUI Manager",
+        "category": "مدير",
+        "description": "مدير الحزم بنقرة واحدة لـComfyUI — ثبّت العقد المخصصة وحدّثها وأصلحها من داخل الواجهة.",
+        "tags": ["مدير", "تثبيت", "تحديثات", "أساسي"]
+      },
+      "name": "ComfyUI Manager",
+      "category": "Manager",
+      "author": "ltdrdata",
+      "version": "v3.0",
+      "license": "GPL-3.0",
+      "rating": 4.9,
+      "stars": "9.2k",
+      "description": "The one-click package manager for ComfyUI — install, update and fix custom nodes from within the UI.",
+      "tags": ["manager", "install", "updates", "essential"],
+      "cover": 1,
+      "featured": true
+    },
+    {
+      "id": "comfyui-controlnet-aux",
+      "ar": {
+        "name": "ComfyUI ControlNet Aux",
+        "category": "ControlNet",
+        "description": "معالجات مسبقة للوضعية والعُمق والحواف الخطية وأكثر — كل ما تحتاجه لتغذية نماذج ControlNet.",
+        "tags": ["controlnet", "معالجات مسبقة", "وضعية", "عمق"]
+      },
+      "name": "ComfyUI ControlNet Aux",
+      "category": "ControlNet",
+      "author": "Fannovel16",
+      "version": "v0.0.9",
+      "license": "Apache-2.0",
+      "rating": 4.8,
+      "stars": "4.1k",
+      "description": "Preprocessors for pose, depth, canny, lineart and more — everything needed to feed ControlNet models.",
+      "tags": ["controlnet", "preprocessors", "pose", "depth"],
+      "cover": 2,
+      "featured": true
+    },
+    {
+      "id": "comfyui-ipadapter",
+      "ar": {
+        "name": "ComfyUI IPAdapter Plus",
+        "category": "نقل الأنماط",
+        "description": "عقد IPAdapter متقدمة لنقل الأنماط والموضوعات، والتلميح بالصور، ودعم الصور المرجعية بالدفعات.",
+        "tags": ["ipadapter", "نقل-أنماط", "مرجع", "تلميح-بالصور"]
+      },
+      "name": "ComfyUI IPAdapter Plus",
+      "category": "Style Transfer",
+      "author": "cubiq",
+      "version": "v2.5",
+      "license": "GPL-3.0",
+      "rating": 4.8,
+      "stars": "5.3k",
+      "description": "Advanced IPAdapter nodes for style and subject transfer, image prompting and batch reference support.",
+      "tags": ["ipadapter", "style-transfer", "reference", "image-prompt"],
+      "cover": 3,
+      "featured": true
+    },
+    {
+      "id": "comfyui-gguf",
+      "ar": {
+        "name": "ComfyUI GGUF",
+        "category": "الاستدلال",
+        "description": "يحمّل نقاط تفتيش مضغوطة بصيغة GGUF بحيث تعمل FLUX وSD3 على بطاقات الرسومات الاستهلاكية مع ذاكرة VRAM أقل بشكل كبير.",
+        "tags": ["gguf", "تكميم", "vram", "flux"]
+      },
+      "name": "ComfyUI GGUF",
+      "category": "Inference",
+      "author": "city96",
+      "version": "v1.0",
+      "license": "GPL-3.0",
+      "rating": 4.9,
+      "stars": "2.9k",
+      "description": "Loads GGUF-quantized checkpoints so FLUX and SD3 run on consumer GPUs with dramatically less VRAM.",
+      "tags": ["gguf", "quantization", "vram", "flux"],
+      "cover": 4,
+      "featured": true
+    },
+    {
+      "id": "comfyui-impact-pack",
+      "ar": {
+        "name": "ComfyUI Impact Pack",
+        "category": "سير عمل",
+        "description": "عقد كشف وتفصيل لإصلاح الوجوه تلقائيًا وتبديل الوجوه وتمريرات تحسين إقليمية.",
+        "tags": ["تفصيل", "وجه", "كشف", "تعبئة"]
+      },
+      "name": "ComfyUI Impact Pack",
+      "category": "Workflow",
+      "author": "ltdrdata",
+      "version": "v7.2",
+      "license": "GPL-3.0",
+      "rating": 4.7,
+      "stars": "2.4k",
+      "description": "Detectors and detailer nodes for automatic face repair, face swap and region-based refinement passes.",
+      "tags": ["detailer", "face", "detection", "inpainting"],
+      "cover": 5,
+      "featured": false
+    },
+    {
+      "id": "comfyui-inspire-pack",
+      "ar": {
+        "name": "ComfyUI Inspire Pack",
+        "category": "سير عمل",
+        "description": "تلميح إقليمي وجدولة تلميحات وعقد مساعدة تضيف تحكمًا متقدمًا إلى الرسوم البيانية القائمة.",
+        "tags": ["تلميح-إقليمي", "جدولة", "أدوات-مساعدة", "متقدم"]
+      },
+      "name": "ComfyUI Inspire Pack",
+      "category": "Workflow",
+      "author": "ltdrdata",
+      "version": "v1.9",
+      "license": "GPL-3.0",
+      "rating": 4.6,
+      "stars": "1.8k",
+      "description": "Regional prompting, prompt scheduling and utility nodes that add advanced control to existing graphs.",
+      "tags": ["regional-prompting", "scheduling", "utilities", "advanced"],
+      "cover": 6,
+      "featured": false
+    },
+    {
+      "id": "was-node-suite",
+      "ar": {
+        "name": "WAS Node Suite",
+        "category": "أدوات مساعدة",
+        "description": "مجموعة شاملة من عقد الصور والنصوص والفيديو والأدوات المساعدة تسد الفجوات في ComfyUI الأساسي.",
+        "tags": ["أدوات-مساعدة", "معالجة-صور", "نص", "فيديو"]
+      },
+      "name": "WAS Node Suite",
+      "category": "Utilities",
+      "author": "WASasquatch",
+      "version": "v2.0",
+      "license": "GPL-3.0",
+      "rating": 4.5,
+      "stars": "3.0k",
+      "description": "A swiss-army-knife of image, text, video and utility nodes that fills the gaps in vanilla ComfyUI.",
+      "tags": ["utilities", "image-processing", "text", "video"],
+      "cover": 7,
+      "featured": false
+    },
+    {
+      "id": "comfyui-easy-use",
+      "ar": {
+        "name": "ComfyUI Easy Use",
+        "category": "تجربة المستخدم",
+        "description": "مجموعة عقد مساعدة تبسّط سير العمل اليومي: منتقي صور، معاينات، آلات أخذ عينات وقوالب جاهزة.",
+        "tags": ["تجربة-المستخدم", "مساعدات", "قوالب-جاهزة", "تبسيط"]
+      },
+      "name": "ComfyUI Easy Use",
+      "category": "UX",
+      "author": "yolain",
+      "version": "v1.3",
+      "license": "GPL-3.0",
+      "rating": 4.6,
+      "stars": "2.1k",
+      "description": "A collection of helper nodes that simplify everyday workflows: image pickers, previews, samplers and presets.",
+      "tags": ["ux", "helpers", "presets", "simplify"],
+      "cover": 8,
+      "featured": false
+    }
+  ]
+}

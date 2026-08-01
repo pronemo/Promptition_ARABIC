@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="opacity:0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="Articles — Promptition">Articles — Promptition</title>
+  <meta name="description" content="Long-form guides and articles on prompt engineering, workflows and diffusion techniques." data-i18n-attr='{"content":"Long-form guides and articles on prompt engineering, workflows and diffusion techniques."}'>
+  <meta name="theme-color" content="#6a3ef0">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Articles — Promptition">
+  <meta property="og:description" content="Long-form guides and articles on prompt engineering, workflows and diffusion techniques.">
+  <link rel="canonical" href="https://promptition.example.com/articles.html">
+</head>
+<body data-page="articles">
+  <a class="skip-link" href="#main" data-i18n="Skip to content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Promptition home" data-i18n-attr='{"aria-label":"Promptition home"}'>
+        <img class="brand-logo" src="assets/icons/logo.svg" alt="" width="30" height="30">
+        <span>Prompt<span class="brand-accent">ition</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="models.html" data-i18n="Models">Models</a>
+        <a class="nav-link" href="tools.html" data-i18n="Tools">Tools</a>
+        <a class="nav-link" href="loras.html" data-i18n="LoRAs">LoRAs</a>
+        <a class="nav-link" href="prompts.html" data-i18n="Prompts">Prompts</a>
+        <a class="nav-link" href="styles.html" data-i18n="Styles">Styles</a>
+        <a class="nav-link" href="workflows.html" data-i18n="Workflows">Workflows</a>
+        <a class="nav-link" href="tutorials.html" data-i18n="Tutorials">Tutorials</a>
+        <a class="nav-link" href="datasets.html" data-i18n="Datasets">Datasets</a>
+        <a class="nav-link" href="nodes.html" data-i18n="Nodes">Nodes</a>
+      </nav>
+      <div class="header-actions">
+        <div class="header-search" data-searchbox>
+          <input type="search" placeholder="Search resources…" aria-label="Search resources" data-i18n-attr='{"placeholder":"Search resources…","aria-label":"Search resources"}'>
+        </div>
+        <a class="icon-btn" href="favorites.html" aria-label="Favorites" data-i18n-attr='{"aria-label":"Favorites"}'>
+          <svg class="icon"><use href="assets/icons/icons.svg#i-heart"></use></svg>
+          <span class="badge-count" data-favorites-count hidden>0</span>
+        </a>
+        <a class="icon-btn" href="compare.html" aria-label="Compare" data-i18n-attr='{"aria-label":"Compare"}'>
+          <svg class="icon"><use href="assets/icons/icons.svg#i-compare"></use></svg>
+        </a>
+        <a class="icon-btn" href="gallery.html" aria-label="My Library" data-i18n-attr='{"aria-label":"My Library"}'>
+          <svg class="icon"><use href="assets/icons/icons.svg#i-grid"></use></svg>
+        </a>
+        <a class="icon-btn" href="history.html" aria-label="History" data-i18n-attr='{"aria-label":"History"}'>
+          <svg class="icon"><use href="assets/icons/icons.svg#i-history"></use></svg>
+        </a>
+        <button type="button" class="icon-btn lang-toggle" data-lang-toggle aria-label="Switch language">
+          <span class="lang-label" data-lang-label>ع</span>
+        </button>
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle theme" data-i18n-attr='{"aria-label":"Toggle theme"}'>
+          <svg class="icon"><use href="assets/icons/icons.svg#i-moon"></use></svg>
+        </button>
+        <button type="button" class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Open menu" data-i18n-attr='{"aria-label":"Open menu"}'>
+          <svg class="icon"><use href="assets/icons/icons.svg#i-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main" id="main">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html"><svg class="icon"><use href="assets/icons/icons.svg#i-home"></use></svg>Promptition</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <a data-i18n="Tutorials" href="tutorials.html">Tutorials</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <span class="current" data-i18n="Articles">Articles</span>
+        </nav>
+        <h1 class="page-title" data-i18n="Articles">Articles</h1>
+        <p class="page-description" data-i18n="Long-form reading on prompt engineering, model techniques and diffusion workflows.">Long-form reading on prompt engineering, model techniques and diffusion workflows.</p>
+      </div>
+    </section>
+
+    <section class="container page">
+      <p class="search-total" data-articles-meta style="margin-bottom:1.5rem">0 articles</p>
+      <div class="state-box" data-articles-empty hidden>
+        <span class="state-icon"><svg class="icon"><use href="assets/icons/icons.svg#i-bookmark"></use></svg></span>
+        <h2 class="state-title" data-i18n="No articles yet">No articles yet</h2>
+        <p class="state-text" data-i18n="Long-form articles are on the way.">Long-form articles are on the way.</p>
+      </div>
+      <div class="grid grid-3" data-articles-list></div>
+      <div class="compare-strip" data-compare-strip></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Promptition home">
+            <img class="brand-logo" src="assets/icons/logo.svg" alt="" width="30" height="30">
+            <span>Prompt<span class="brand-accent">ition</span></span>
+          </a>
+          <p class="footer-brand-text" data-i18n="Curated models, LoRAs, prompts, styles, tools, workflows and guides for the open diffusion ecosystem.">Curated models, LoRAs, prompts, styles, tools, workflows and guides for the open diffusion ecosystem.</p>
+          <div class="footer-social">
+            <a class="icon-btn" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub" data-i18n-attr='{"aria-label":"GitHub"}'><svg class="icon"><use href="assets/icons/icons.svg#i-github"></use></svg></a>
+            <a class="icon-btn" href="https://twitter.com" target="_blank" rel="noopener" aria-label="X" data-i18n-attr='{"aria-label":"X"}'><svg class="icon"><use href="assets/icons/icons.svg#i-trending"></use></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading" data-i18n="Collections">Collections</p>
+          <div class="footer-links">
+            <a data-i18n="Models" href="models.html">Models</a>
+            <a data-i18n="LoRAs" href="loras.html">LoRAs</a>
+            <a data-i18n="Prompts" href="prompts.html">Prompts</a>
+            <a data-i18n="Styles" href="styles.html">Styles</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading" data-i18n="Resources">Resources</p>
+          <div class="footer-links">
+            <a data-i18n="Tools" href="tools.html">Tools</a>
+            <a data-i18n="Workflows" href="workflows.html">Workflows</a>
+            <a data-i18n="Datasets" href="datasets.html">Datasets</a>
+            <a data-i18n="Nodes" href="nodes.html">Nodes</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading" data-i18n="Learn">Learn</p>
+          <div class="footer-links">
+            <a data-i18n="Tutorials" href="tutorials.html">Tutorials</a>
+            <a data-i18n="Articles" href="articles.html">Articles</a>
+            <a data-i18n="Compare" href="compare.html">Compare</a>
+            <a data-i18n="Image Analyzer" href="upload.html">Image Analyzer</a>
+            <a data-i18n="My Library" href="gallery.html">My Library</a>
+            <a data-i18n="Search" href="search.html">Search</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> <strong>Promptition</strong>. Built for the diffusion community.</span>
+        <span><span data-total-items>0</span> resources indexed · <span data-updated>—</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="scroll-top" data-scroll-top aria-label="Back to top" data-i18n-attr='{"aria-label":"Back to top"}'><svg class="icon"><use href="assets/icons/icons.svg#i-arrow-up"></use></svg></button>
+
+  <script type="module" src="assets/js/pages/articles.js"></script>
+</body>
+</html>

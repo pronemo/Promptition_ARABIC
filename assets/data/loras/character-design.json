@@ -1,0 +1,67 @@
+{
+  "id": "character-design",
+  "ar": {
+    "name": "Character Design",
+    "category": "شخصية",
+    "license": "مجتمعي",
+    "triggerWords": ["character design", "oc concept"],
+    "description": "Character Design ينتج شخصيات مفهوم فني بأسلوب فني لألعاب الفيديو والمشاريع الخيالية والخيال العلمي. يفرض صورًا ظلية نظيفة وخطوطًا تعبيرية متسقة وتفاصيل أزياء متماسكة مع إفساح المجال لأساليبك الخاصة.",
+    "effects": [
+      "صور ظلية نظيفة ووضعيات تعبيرية",
+      "خطوط رسم فنية متسقة",
+      "تفاصيل قوية للأزياء والدروع",
+      "مثالي للشخصيات الأصلية وأوراق المفاهيم"
+    ],
+    "trainedOn": ["مجموعات بيانات فن المفاهيم ورسوم ألعاب الفيديو"],
+    "settings": {
+      "steps": 16000,
+      "networkDim": 64,
+      "learningRate": "6e-5 cosine",
+      "scheduler": "cosine with restarts"
+    },
+    "tags": ["شخصية", "فن المفاهيم", "خيال", "فن ألعاب", "أسلوبي"],
+    "examples": [
+      {
+        "prompt": "تصميم شخصية، حارس خيالي بدروع رونية متوهجة، عمل فني مفهومي لكامل الجسم، خلفية بيضاء",
+        "strength": 0.9
+      }
+    ]
+  },
+  "name": "Character Design",
+  "type": "lora",
+  "category": "Character",
+  "baseModel": "SDXL",
+  "publisher": "Oskarr",
+  "recommendedStrength": 0.9,
+  "range": [0.4, 1.1],
+  "sizeMb": 128,
+  "license": "Community",
+  "rating": 4.8,
+  "ratingsCount": 1130,
+  "downloads": "1.2M",
+  "cover": 6,
+  "featured": true,
+  "triggerWords": ["character design", "oc concept"],
+  "description": "Character Design produces stylized concept-art characters for fantasy, sci-fi and game projects. It enforces clean silhouettes, expressive line work and cohesive costume detailing while leaving room for your own style prompts.",
+  "effects": [
+    "Clean silhouettes and expressive poses",
+    "Consistent stylized line work",
+    "Strong costume and armor detailing",
+    "Ideal for original characters and concept sheets"
+  ],
+  "trainedOn": ["Concept art and game illustration datasets"],
+  "settings": {
+    "steps": 16000,
+    "networkDim": 64,
+    "learningRate": "6e-5 cosine",
+    "scheduler": "cosine with restarts"
+  },
+  "tags": ["character", "concept-art", "fantasy", "game-art", "stylized"],
+  "examples": [
+    {
+      "prompt": "character design, fantasy ranger with glowing runic armor, full body concept art, white background",
+      "strength": 0.9
+    }
+  ],
+  "related": ["realistic-vision-lora", "cinematic-style", "landscape-breathtaking"]
+}

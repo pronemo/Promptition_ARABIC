@@ -1,0 +1,46 @@
+{
+  "id": "comfyui-easy-use",
+  "ar": {
+    "name": "ComfyUI Easy Use",
+    "category": "تجربة المستخدم",
+    "description": "يجمع ComfyUI Easy Use عقدًا مساعدة تقلّل الاحتكاك اليومي: منتقي صور، عارضات مقارنة، مجموعات أخذ عينات مبسّطة، عقد أنماط وقوالب جاهزة، ومحمّل 'Easy' موحّد للمبتدئين.",
+    "features": [
+      "عقد تحميل وأخذ عينات موحّدة",
+      "مساعدات انتقاء الصور وعرضها",
+      "قوالب الأنماط والإعدادات الجاهزة",
+      "عارضات المقارنة والشبكات",
+      "واجهات باللغتين الصينية والإنجليزية"
+    ],
+    "installation": "ثبّت عبر ComfyUI Manager، أو استنسخ داخل custom_nodes ثم شغّل requirements.txt.",
+    "inputs": ["يختلف حسب العقدة"],
+    "outputs": ["يختلف حسب العقدة"],
+    "requirements": ["ComfyUI"],
+    "tags": ["تجربة-المستخدم", "مساعدات", "قوالب-جاهزة", "تبسيط"]
+  },
+  "name": "ComfyUI Easy Use",
+  "type": "node",
+  "package": "ComfyUI-Easy-Use",
+  "category": "UX",
+  "author": "yolain",
+  "version": "v1.3",
+  "license": "GPL-3.0",
+  "rating": 4.6,
+  "stars": "2.1k",
+  "cover": 8,
+  "featured": false,
+  "github": "https://github.com/yolain/ComfyUI-Easy-Use",
+  "description": "ComfyUI Easy Use bundles helper nodes that reduce daily friction: image pickers, comparison viewers, simplified sampler groups, style and preset nodes, and a consolidated 'Easy' loader for beginners.",
+  "features": [
+    "Consolidated loader and sampler nodes",
+    "Image picker and viewer helpers",
+    "Preset and style templates",
+    "Comparison and grid viewers",
+    "Chinese and English UI labels"
+  ],
+  "installation": "Install via ComfyUI Manager, or clone into custom_nodes and run requirements.txt.",
+  "inputs": ["varies by node"],
+  "outputs": ["varies by node"],
+  "requirements": ["ComfyUI"],
+  "tags": ["ux", "helpers", "presets", "simplify"],
+  "related": ["comfyui-manager", "was-node-suite", "comfyui-inspire-pack"]
+}

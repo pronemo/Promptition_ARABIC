@@ -1,0 +1,31 @@
+{
+  "id": "cyberpunk-neon",
+  "ar": {
+    "name": "نيون سايبربنك",
+    "category": "مستقبلي",
+    "mood": ["بائس", "كهربائي", "نوار"],
+    "palette": ["ماجنتا", "سماوي", "نيلي عميق"],
+    "description": "يغمر نيون سايبربنك المشاهد بأضواء نيون ماجنتا وسماوي على خلفية ليل نيلي عميق، مع أسطح مبللة بالمطر وضباب جوي وانعكاسات عالية التباين لمظهر بائس لا يُخطأ.",
+    "promptSuffix": "مدينة سايبربنك، أضواء نيون ماجنتا وسماوي، ليل، مطر، انعكاسات الأسفلت المبلل، ضباب جوي، تباين عالٍ، مدينة مستقبلية بائسة، سينمائي",
+    "negativeSuffix": "ضوء نهار، مشمس، مدينة نظيفة، كرتوني، إضاءة مسطحة، علامة مائية، نص، جودة منخفضة، ألوان باهتة",
+    "tags": ["سايبربنك", "نيون", "مستقبلي", "ليل"]
+  },
+  "name": "Cyberpunk Neon",
+  "type": "style",
+  "category": "Futuristic",
+  "rating": 4.7,
+  "ratingsCount": 890,
+  "usedBy": "128k",
+  "cover": 4,
+  "featured": false,
+  "mood": ["Dystopian", "Electric", "Noir"],
+  "palette": ["Magenta", "Cyan", "Deep indigo"],
+  "description": "Cyberpunk Neon bathes scenes in magenta-cyan neon against deep indigo night, with rain-slicked surfaces, atmospheric haze and high-contrast reflections for an unmistakable dystopian look.",
+  "promptSuffix": "cyberpunk city, neon lights in magenta and cyan, night, rain, wet asphalt reflections, atmospheric haze, high contrast, futuristic dystopia, cinematic",
+  "negativeSuffix": "daylight, sunny, clean city, cartoon, flat lighting, watermark, text, low quality, washed out colors",
+  "strength": 0.8,
+  "tags": ["cyberpunk", "neon", "futuristic", "night"],
+  "compatibleModels": ["juggernaut-xl", "sdxl-base", "flux-1-dev"],
+  "compatibleLoras": ["epi-noise-offset", "cinematic-style"],
+  "related": ["cinematic-film", "dark-fantasy", "retro-analog"]
+}

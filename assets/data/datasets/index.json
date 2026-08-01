@@ -1,0 +1,139 @@
+{
+  "type": "datasets",
+  "updated": "2026-07-30",
+  "count": 6,
+  "items": [
+    {
+      "id": "laion-aesthetics",
+      "ar": {
+        "name": "LAION Aesthetics v2 6.5+",
+        "category": "انتقاء البيانات",
+        "license": "CC-BY-NC",
+        "description": "المجموعة الفرعية من LAION-5B المفلترة حسب الجماليات، والمستخدمة في تدريب Stable Diffusion XL وعدد لا يحصى من النماذج المرجعية.",
+        "tags": ["laion", "انتقاء", "مُلتقط من الويب", "تدريب"]
+      },
+      "name": "LAION Aesthetics v2 6.5+",
+      "category": "Curation",
+      "samples": "600M",
+      "sizeGb": 1800,
+      "format": "Parquet + web",
+      "license": "CC-BY-NC",
+      "rating": 4.8,
+      "usedBy": "SDXL",
+      "description": "The aesthetic-filtered subset of LAION-5B used to train Stable Diffusion XL and countless checkpoints.",
+      "tags": ["laion", "curation", "web-scraped", "training"],
+      "cover": 1,
+      "featured": true
+    },
+    {
+      "id": "journey-db",
+      "ar": {
+        "name": "JourneyDB",
+        "category": "انتقاء البيانات",
+        "license": "بحث",
+        "description": "مجموعة منتقاة من 4 ملايين صورة عالية الجماليات، جرى تقطيرها لتحقيق تدريب عالي الجودة على نماذج الانتشار.",
+        "tags": ["منتقى", "الجماليات", "تدريب", "بحث"]
+      },
+      "name": "JourneyDB",
+      "category": "Curation",
+      "samples": "4M",
+      "sizeGb": 800,
+      "format": "Parquet + images",
+      "license": "Research",
+      "rating": 4.6,
+      "usedBy": "Midjourney distillation",
+      "description": "A curated set of 4M high-aesthetic images distilled for quality training on diffusion models.",
+      "tags": ["curated", "aesthetics", "training", "research"],
+      "cover": 2,
+      "featured": false
+    },
+    {
+      "id": "open-images",
+      "ar": {
+        "name": "Open Images v7",
+        "category": "الموسومة",
+        "license": "CC-BY-4.0",
+        "description": "مجموعة البيانات الضخمة من Google التي تضم أكثر من 600 صنف من الكائنات، وتُستخدم في خطوط عمل كشف الأجسام وتجزئة الصور والتعليق عليها.",
+        "tags": ["تسميات", "كشف", "تجزئة", "تعليقات"]
+      },
+      "name": "Open Images v7",
+      "category": "Labeled",
+      "samples": "9M",
+      "sizeGb": 560,
+      "format": "CSV + images",
+      "license": "CC-BY-4.0",
+      "rating": 4.5,
+      "usedBy": "Detection & captioning",
+      "description": "Google's massive dataset with 600+ object classes, used for detection, segmentation and captioning pipelines.",
+      "tags": ["labels", "detection", "segmentation", "captions"],
+      "cover": 3,
+      "featured": false
+    },
+    {
+      "id": "danbooru",
+      "ar": {
+        "name": "Danbooru 2021",
+        "category": "الرسوم التوضيحية",
+        "license": "مخصص",
+        "description": "المصدر القياسي لتدريب الأنمي والرسوم التوضيحية، مع وسوم متعددة وكثيفة لكل صورة.",
+        "tags": ["أنمي", "رسوم توضيحية", "وسوم", "تدريب"]
+      },
+      "name": "Danbooru 2021",
+      "category": "Illustration",
+      "samples": "3.8M",
+      "sizeGb": 410,
+      "format": "Images + tags",
+      "license": "Custom",
+      "rating": 4.7,
+      "usedBy": "Anime checkpoints",
+      "description": "The standard source for anime/illustration training with dense multi-tag annotations per image.",
+      "tags": ["anime", "illustration", "tags", "training"],
+      "cover": 4,
+      "featured": false
+    },
+    {
+      "id": "coco-captions",
+      "ar": {
+        "name": "COCO Captions 2017",
+        "category": "الموسومة",
+        "license": "CC-BY-4.0",
+        "description": "المعيار المرجعي الرسمي للتعليق على الصور، مع 5 تعليقات بشرية لكل صورة عبر 80 صنفًا من الكائنات.",
+        "tags": ["تعليقات", "معيار مرجعي", "تقييم", "قياسي"]
+      },
+      "name": "COCO Captions 2017",
+      "category": "Labeled",
+      "samples": "330K",
+      "sizeGb": 25,
+      "format": "JSON + images",
+      "license": "CC-BY-4.0",
+      "rating": 4.4,
+      "usedBy": "Caption evaluation",
+      "description": "The canonical image-captioning benchmark with 5 human captions per image across 80 object categories.",
+      "tags": ["captions", "benchmark", "evaluation", "standard"],
+      "cover": 5,
+      "featured": false
+    },
+    {
+      "id": "vision-aesthetics",
+      "ar": {
+        "name": "Vision Aesthetics",
+        "category": "انتقاء البيانات",
+        "license": "CC-BY",
+        "description": "مجموعة بيانات متوازنة من حيث الجماليات والمحتوى، مصممة لضبط LoRA الأسلوبية والنماذج المرجعية بدقة.",
+        "tags": ["الجماليات", "ضبط دقيق", "متوازنة", "منتقاة"]
+      },
+      "name": "Vision Aesthetics",
+      "category": "Curation",
+      "samples": "2M",
+      "sizeGb": 300,
+      "format": "Parquet + images",
+      "license": "CC-BY",
+      "rating": 4.5,
+      "usedBy": "Fine-tune LoRAs",
+      "description": "A balanced aesthetic and content-curated dataset designed for style LoRA and checkpoint fine-tuning.",
+      "tags": ["aesthetics", "fine-tune", "balanced", "curated"],
+      "cover": 6,
+      "featured": false
+    }
+  ]
+}

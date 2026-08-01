@@ -1,0 +1,31 @@
+{
+  "id": "dark-fantasy",
+  "ar": {
+    "name": "فانتازيا داكنة",
+    "category": "رسم توضيحي",
+    "mood": ["موحٍ بالغموض", "ملحمي", "قوطي"],
+    "palette": ["غير مشبعة", "بنفسجي عميق", "لمسات جمرية"],
+    "description": "تبني الفانتازيا الداكنة عوالم قوطية بإضاءة حواف درامية وظلال عميقة وملمس فني. مثالية لفن اللقطات الرئيسية وبناء العوالم ولقطات الشخصيات المليئة بالأجواء.",
+    "promptSuffix": "فن مفهوم فانتازيا داكنة، عمارة قوطية، إضاءة حواف درامية، ظلال عميقة، ملمس فني، أجواء غامضة، لمسات جمرية، تكوين ملحمي، رائج على artstation",
+    "negativeSuffix": "إضاءة ساطعة مبهجة، كرتوني، واقعي فوتوغرافي، عمارة حديثة، ألوان مسطحة، علامة مائية، نص، جودة منخفضة، تشبع مفرط",
+    "tags": ["فانتازيا", "داكن", "قوطي", "فني"]
+  },
+  "name": "Dark Fantasy",
+  "type": "style",
+  "category": "Illustration",
+  "rating": 4.8,
+  "ratingsCount": 1020,
+  "usedBy": "141k",
+  "cover": 7,
+  "featured": false,
+  "mood": ["Moody", "Epic", "Gothic"],
+  "palette": ["Desaturated", "Deep purples", "Ember accents"],
+  "description": "Dark Fantasy builds gothic worlds with dramatic rim lighting, deep shadows and painterly texture. Ideal for keyframe art, worldbuilding and atmospheric character shots.",
+  "promptSuffix": "dark fantasy concept art, gothic architecture, dramatic rim lighting, deep shadows, painterly texture, moody atmosphere, ember accents, epic composition, artstation trending",
+  "negativeSuffix": "bright cheerful lighting, cartoon, photorealistic, modern architecture, flat colors, watermark, text, low quality, oversaturated",
+  "strength": 0.8,
+  "tags": ["fantasy", "dark", "gothic", "painterly"],
+  "compatibleModels": ["dreamshaper-xl", "flux-1-dev", "sdxl-base"],
+  "compatibleLoras": ["landscape-breathtaking", "character-design"],
+  "related": ["cyberpunk-neon", "cinematic-film", "watercolor"]
+}

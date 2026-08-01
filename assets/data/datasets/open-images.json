@@ -1,0 +1,46 @@
+{
+  "id": "open-images",
+  "ar": {
+    "name": "Open Images v7",
+    "category": "الموسومة",
+    "license": "CC-BY-4.0",
+    "description": "توفر مجموعة Open Images v7 من Google تسعة ملايين صورة مع أكثر من 600 صنف هرمي من الكائنات، وتجزئة للمثيلات، ووسوم للعلاقات البصرية، وروايات موضعية — وهي حجر الزاوية لخطوط عمل التعليق الموجَّه وكشف الأجسام.",
+    "features": [
+      "9 ملايين صورة و16 مليون صندوق إحاطة",
+      "أكثر من 600 صنف من الكائنات",
+      "وسوم العلاقات البصرية",
+      "تعليقات سردية موضعية",
+      "ترخيص CC-BY-4.0"
+    ],
+    "uses": [
+      "توليد تعليقات موجَّهة",
+      "تدريب كشف الأجسام",
+      "مواءمة المنطقة مع النص"
+    ],
+    "tags": ["تسميات", "كشف", "تجزئة", "تعليقات"],
+    "source": "https://storage.googleapis.com/openimages/web/index.html"
+  },
+  "name": "Open Images v7",
+  "type": "dataset",
+  "category": "Labeled",
+  "samples": "9M",
+  "sizeGb": 560,
+  "format": "CSV annotations + images",
+  "license": "CC-BY-4.0",
+  "rating": 4.5,
+  "usedBy": "Detection & captioning",
+  "cover": 3,
+  "featured": false,
+  "source": "https://storage.googleapis.com/openimages/web/index.html",
+  "description": "Google's Open Images v7 provides 9 million images with 600+ hierarchical object classes, instance segmentation, visual relationship annotations and localized narratives — a cornerstone for grounded caption and detection pipelines.",
+  "features": [
+    "9M images, 16M bounding boxes",
+    "600+ object classes",
+    "Visual relationship annotations",
+    "Localized narrative captions",
+    "CC-BY-4.0 licensing"
+  ],
+  "uses": ["Grounded caption generation", "Object detection training", "Region–text alignment"],
+  "tags": ["labels", "detection", "segmentation", "captions"],
+  "related": ["coco-captions", "laion-aesthetics", "vision-aesthetics"]
+}

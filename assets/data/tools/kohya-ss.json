@@ -1,0 +1,63 @@
+{
+  "id": "kohya-ss",
+  "ar": {
+    "name": "kohya_ss",
+    "category": "تدريب",
+    "description": "kohya_ss هي الأداة المعيارية الفعلية للضبط الدقيق في Stable Diffusion. تدعم LoRA و Dreambooth والتحويل النصي لـ SD 1.5 و SDXL و Flux، مع خيارات متقدمة لرتبة الشبكة وجداول التعلم وتجميع مجموعات البيانات.",
+    "features": [
+      "تدريب LoRA و Dreambooth والتحويل النصي",
+      "دعم SDXL و Flux",
+      "تجميع ديناميكي لمجموعات البيانات",
+      "إعدادات جاهزة متقدمة للجداول والمحسّنات",
+      "دمج النماذج وتضمين البيانات الوصفية",
+      "تدريب بلا واجهة عبر سطر الأوامر أو الواجهة الرسومية"
+    ],
+    "requirements": {
+      "os": ["ويندوز", "لينكس"],
+      "gpu": "إنفيديا CUDA",
+      "minVram": "12 جيجابايت (SDXL LoRA)",
+      "python": "3.10.x",
+      "cuda": "11.8+"
+    },
+    "license": "Apache-2.0",
+    "tags": ["تدريب", "lora", "dreambooth", "sdxl", "flux", "معياري"]
+  },
+  "name": "kohya_ss",
+  "type": "tool",
+  "category": "Training",
+  "publisher": "kohya",
+  "version": "v31",
+  "license": "Apache-2.0",
+  "rating": 4.5,
+  "ratingsCount": 830,
+  "released": "2023-02",
+  "cover": 7,
+  "featured": true,
+  "description": "kohya_ss is the de facto standard trainer for Stable Diffusion fine-tuning. It supports LoRA, Dreambooth and textual inversion for SD 1.5, SDXL and Flux, with advanced options for network rank, learning schedules and dataset bucketing.",
+  "features": [
+    "LoRA, Dreambooth and TI training",
+    "SDXL and Flux support",
+    "Dynamic dataset bucketing",
+    "Advanced schedule and optimizer presets",
+    "Model merging and metadata embedding",
+    "Headless training via command line or GUI"
+  ],
+  "requirements": {
+    "os": ["Windows", "Linux"],
+    "gpu": "NVIDIA CUDA",
+    "minVram": "12 GB (SDXL LoRA)",
+    "python": "3.10.x",
+    "cuda": "11.8+"
+  },
+  "supportedModels": ["sdxl-base", "sd-1-5", "flux-1-dev", "flux-1-schnell"],
+  "supportedFormats": ["lora", "safetensors", "ckpt"],
+  "links": {
+    "website": "https://github.com/bmaltais/kohya_ss",
+    "github": "https://github.com/bmaltais/kohya_ss",
+    "download": "https://github.com/bmaltais/kohya_ss/releases"
+  },
+  "screenshots": [7, 9],
+  "tags": ["training", "lora", "dreambooth", "sdxl", "flux", "standard"],
+  "downloads": { "monthly": "0.5M", "stars": "11k" },
+  "related": ["onetrainer", "diffusers", "invokeai"]
+}

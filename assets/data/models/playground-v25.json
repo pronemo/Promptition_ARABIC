@@ -1,0 +1,91 @@
+{
+  "id": "playground-v25",
+  "ar": {
+    "name": "Playground v2.5",
+    "category": "نص إلى صورة",
+    "subcategory": "انتشار كامن",
+    "architecture": "UNet مع OpenCLIP-ViT/G",
+    "license": "رخصة بحث مخصصة",
+    "description": "Playground v2.5 هو نموذج انتشار كامن بدقة 1024 بكسل مُدرّب على بيانات جمالية عالية الجودة. ينتج صورًا نظيفة وجذابة بصريًا مع تفضيل قوي للتركيبات البسيطة، ما يجعله مفضلًا لتصوير المنتجات وأنماط الحياة والتصوير التحريري.",
+    "features": [
+      "جماليات نظيفة وبسيطة بالتصميم",
+      "ممتاز في صور المنتجات وأنماط الحياة",
+      "دقة أصلية 1024 بكسل",
+      "تقليل التشويش البصري في التركيبات",
+      "أداء جيد على بطاقات الرسوميات متوسطة المدى"
+    ],
+    "quantizations": [
+      { "name": "bf16", "sizeGb": 5.0, "quality": "مرجع" }
+    ],
+    "requirements": {
+      "minVram": "8 جيجابايت",
+      "recommendedVram": "12 جيجابايت",
+      "minRam": "16 جيجابايت",
+      "cuda": "11.8+",
+      "python": "3.9+"
+    },
+    "examples": [
+      {
+        "prompt": "لقطة منتج بسيطة لآلة قهوة سوداء غير لامعة على خلفية استوديو بيج، ظلال ناعمة، تصوير تجاري",
+        "width": 1024,
+        "height": 1024,
+        "steps": 35,
+        "cfg": 4.5,
+        "seed": 8
+      }
+    ],
+    "tags": ["واقعية", "منتجات", "جمالي", "تجاري"]
+  },
+  "name": "Playground v2.5",
+  "type": "model",
+  "category": "Text-to-Image",
+  "subcategory": "Latent Diffusion",
+  "publisher": "Playground AI",
+  "architecture": "UNet with OpenCLIP-ViT/G",
+  "params": "2.5B",
+  "released": "2024-02-07",
+  "version": "2.5",
+  "license": "Custom Research License",
+  "rating": 4.4,
+  "ratingsCount": 411,
+  "downloads": "1.2M",
+  "cover": 6,
+  "featured": false,
+  "description": "Playground v2.5 is a 1024px latent diffusion model tuned on high-quality aesthetic data. It produces clean, visually appealing images with a strong preference for simple compositions, making it a favourite for product, lifestyle and editorial photography.",
+  "features": [
+    "Clean, minimal aesthetics by design",
+    "Excellent at product and lifestyle imagery",
+    "1024px native resolution",
+    "Reduced visual noise in compositions",
+    "Good performance on mid-range GPUs"
+  ],
+  "quantizations": [
+    { "name": "bf16", "sizeGb": 5.0, "quality": "Reference" }
+  ],
+  "formats": ["safetensors", "ckpt"],
+  "requirements": {
+    "minVram": "8 GB",
+    "recommendedVram": "12 GB",
+    "minRam": "16 GB",
+    "cuda": "11.8+",
+    "python": "3.9+"
+  },
+  "links": {
+    "website": "https://playground.com",
+    "download": "https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic",
+    "github": "https://github.com/playgroundai/playground"
+  },
+  "examples": [
+    {
+      "prompt": "minimalist product shot of a matte black coffee machine on a beige studio background, soft shadows, commercial photography",
+      "width": 1024,
+      "height": 1024,
+      "steps": 35,
+      "cfg": 4.5,
+      "seed": 8
+    }
+  ],
+  "tags": ["photorealism", "product", "aesthetic", "commercial"],
+  "compatibleTools": ["comfyui", "automatic1111", "fooocus"],
+  "related": ["sdxl-base", "juggernaut-xl", "flux-1-dev"]
+}

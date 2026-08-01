@@ -1,0 +1,93 @@
+{
+  "id": "sd-1-5",
+  "ar": {
+    "name": "Stable Diffusion 1.5",
+    "category": "نص إلى صورة",
+    "subcategory": "انتشار كامن",
+    "architecture": "UNet مع مشفّر النصوص CLIP ViT-L/14",
+    "license": "CreativeML Open RAIL-M",
+    "description": "يظل Stable Diffusion 1.5 أكثر نماذج الصور المفتوحة تنزيلًا في التاريخ. شبكة UNet للانتشار الكامن بدقة 512 بكسل هي الأساس لمكتبة ضخمة من نماذج LoRA والانعكاسات النصية والشبكات الفائقة والدمج المجتمعي، ويعمل على أي بطاقة رسوميات تقريبًا.",
+    "features": [
+      "يعمل بذاكرة رسوميات تصل إلى 4 جيجابايت فقط",
+      "أكبر منظومة قديمة من نماذج LoRA والتمثيلات الضمنية",
+      "تشكيلة واسعة من نماذج فحص المجتمع",
+      "توافق واسع مع الأجهزة والأدوات",
+      "دقة أصلية 512 بكسل مع خطوط عمل لرفع الدقة"
+    ],
+    "quantizations": [
+      { "name": "fp16", "sizeGb": 1.9, "quality": "مرجع" },
+      { "name": "fp32", "sizeGb": 3.9, "quality": "مرجع" }
+    ],
+    "requirements": {
+      "minVram": "4 جيجابايت",
+      "recommendedVram": "8 جيجابايت",
+      "minRam": "8 جيجابايت",
+      "cuda": "11.6+",
+      "python": "3.8+"
+    },
+    "examples": [
+      {
+        "prompt": "صورة بعدسة DSLR لكلب غولدن ريتريفر يلعب بين أوراق الخريف، عمق ميداني ضحل، تفاصيل عالية",
+        "width": 512,
+        "height": 512,
+        "steps": 25,
+        "cfg": 7.0,
+        "seed": 15
+      }
+    ],
+    "tags": ["sd1.5", "512px", "قديم", "منظومة"]
+  },
+  "name": "Stable Diffusion 1.5",
+  "type": "model",
+  "category": "Text-to-Image",
+  "subcategory": "Latent Diffusion",
+  "publisher": "Stability AI",
+  "architecture": "UNet with CLIP ViT-L/14 text encoder",
+  "params": "0.98B",
+  "released": "2022-10-20",
+  "version": "1.5",
+  "license": "CreativeML Open RAIL-M",
+  "rating": 4.2,
+  "ratingsCount": 3012,
+  "downloads": "41.3M",
+  "cover": 2,
+  "featured": false,
+  "description": "Stable Diffusion 1.5 remains the most widely downloaded open image model in history. Its 512px latent diffusion UNet is the backbone of a vast legacy library of LoRAs, textual inversions, hypernetworks and community merges, and it runs on almost any GPU.",
+  "features": [
+    "Runs on as little as 4 GB VRAM",
+    "Largest legacy ecosystem of LoRAs and embeddings",
+    "Vast selection of community checkpoints",
+    "Broad hardware and tooling compatibility",
+    "512px native with upscaling workflows"
+  ],
+  "quantizations": [
+    { "name": "fp16", "sizeGb": 1.9, "quality": "Reference" },
+    { "name": "fp32", "sizeGb": 3.9, "quality": "Reference" }
+  ],
+  "formats": ["safetensors", "ckpt"],
+  "requirements": {
+    "minVram": "4 GB",
+    "recommendedVram": "8 GB",
+    "minRam": "8 GB",
+    "cuda": "11.6+",
+    "python": "3.8+"
+  },
+  "links": {
+    "website": "https://stability.ai",
+    "download": "https://huggingface.co/runwayml/stable-diffusion-v1-5",
+    "github": "https://github.com/Stability-AI/stablediffusion"
+  },
+  "examples": [
+    {
+      "prompt": "a DSLR photo of a golden retriever playing in autumn leaves, shallow depth of field, high detail",
+      "width": 512,
+      "height": 512,
+      "steps": 25,
+      "cfg": 7.0,
+      "seed": 15
+    }
+  ],
+  "tags": ["sd1.5", "512px", "legacy", "ecosystem"],
+  "compatibleTools": ["comfyui", "automatic1111", "sd-next", "invokeai"],
+  "related": ["realistic-vision-v6", "sdxl-base", "majicmix-realistic"]
+}

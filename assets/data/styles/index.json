@@ -1,0 +1,151 @@
+{
+  "type": "styles",
+  "updated": "2026-07-30",
+  "count": 8,
+  "items": [
+    {
+      "id": "cinematic-film",
+      "ar": {
+        "name": "فيلم سينمائي",
+        "category": "تصوير",
+        "description": "تأطير أنامورفي، وتدرج لوني بين الفيروزي والبرتقالي، وحبيبات فيلم تمنحك جمالية لقطات الأفلام فورًا.",
+        "tags": ["سينمائي", "فيلم", "أنامورفي", "color-grading"]
+      },
+      "name": "Cinematic Film",
+      "category": "Photography",
+      "rating": 4.9,
+      "ratingsCount": 1540,
+      "usedBy": "210k",
+      "description": "Anamorphic framing, teal-orange grading and film grain for instant movie-still aesthetics.",
+      "tags": ["cinematic", "film", "anamorphic", "color-grading"],
+      "cover": 1,
+      "featured": true
+    },
+    {
+      "id": "anime-cel",
+      "ar": {
+        "name": "أنمي سيل",
+        "category": "رسم توضيحي",
+        "description": "خطوط فنية نظيفة مع تظليل سيل جريء ولوحات ألوان مشبعة وسهلة القراءة.",
+        "tags": ["أنمي", "cel-shading", "رسم توضيحي", "line-art"]
+      },
+      "name": "Anime Cel Shading",
+      "category": "Illustration",
+      "rating": 4.8,
+      "ratingsCount": 1350,
+      "usedBy": "186k",
+      "description": "Clean line art with bold cel shading and saturated, readable palettes.",
+      "tags": ["anime", "cel-shading", "illustration", "line-art"],
+      "cover": 2,
+      "featured": true
+    },
+    {
+      "id": "photorealistic",
+      "ar": {
+        "name": "واقعي فوتوغرافي فائق",
+        "category": "تصوير",
+        "description": "واقعية فوتوغرافية متينة مع بشرة طبيعية وإضاءة صادقة وملمس مطابق للواقع.",
+        "tags": ["photoreal", "تصوير", "واقعية", "بشرة"]
+      },
+      "name": "Ultra Photorealistic",
+      "category": "Photography",
+      "rating": 4.9,
+      "ratingsCount": 1720,
+      "usedBy": "264k",
+      "description": "Grounded photographic realism with natural skin, honest lighting and true-to-life texture.",
+      "tags": ["photoreal", "photography", "realism", "skin"],
+      "cover": 3,
+      "featured": true
+    },
+    {
+      "id": "cyberpunk-neon",
+      "ar": {
+        "name": "نيون سايبربنك",
+        "category": "مستقبلي",
+        "description": "مدينة مستقبلية بائسة تغمرها أضواء النيون مع إضاءة ماجنتا وسماوي ومطر وضباب وانعكاسات عالية التباين.",
+        "tags": ["سايبربنك", "نيون", "مستقبلي", "ليل"]
+      },
+      "name": "Cyberpunk Neon",
+      "category": "Futuristic",
+      "rating": 4.7,
+      "ratingsCount": 890,
+      "usedBy": "128k",
+      "description": "Neon-lit dystopia with magenta-cyan lighting, rain, haze and high-contrast reflections.",
+      "tags": ["cyberpunk", "neon", "futuristic", "night"],
+      "cover": 4,
+      "featured": false
+    },
+    {
+      "id": "watercolor",
+      "ar": {
+        "name": "رسم بالألوان المائية",
+        "category": "رسم توضيحي",
+        "description": "غسلات صبغية ناعمة وملمس ورق وحواف عضوية حرة لفنون مرسومة بدقة.",
+        "tags": ["ألوان مائية", "رسم", "ناعم", "فني"]
+      },
+      "name": "Watercolor Painting",
+      "category": "Illustration",
+      "rating": 4.6,
+      "ratingsCount": 620,
+      "usedBy": "74k",
+      "description": "Soft pigment washes, paper texture and loose organic edges for delicate painterly art.",
+      "tags": ["watercolor", "painting", "soft", "artistic"],
+      "cover": 5,
+      "featured": false
+    },
+    {
+      "id": "minimalist",
+      "ar": {
+        "name": "بسيط ونظيف",
+        "category": "تصميم",
+        "description": "مساحات فارغة وكتل ألوان مسطحة وهندسة دقيقة لتصميم تحريري عصري.",
+        "tags": ["بسيط", "تصميم", "مسطح", "تحريري"]
+      },
+      "name": "Minimalist Clean",
+      "category": "Design",
+      "rating": 4.5,
+      "ratingsCount": 540,
+      "usedBy": "96k",
+      "description": "Negative space, flat color blocks and precise geometry for modern editorial design.",
+      "tags": ["minimal", "design", "flat", "editorial"],
+      "cover": 6,
+      "featured": false
+    },
+    {
+      "id": "dark-fantasy",
+      "ar": {
+        "name": "فانتازيا داكنة",
+        "category": "رسم توضيحي",
+        "description": "عوالم قوطية موحية بالغموض مع ضوء حواف درامي وظلال عميقة وملمس فني.",
+        "tags": ["فانتازيا", "داكن", "قوطي", "فني"]
+      },
+      "name": "Dark Fantasy",
+      "category": "Illustration",
+      "rating": 4.8,
+      "ratingsCount": 1020,
+      "usedBy": "141k",
+      "description": "Moody gothic worlds with dramatic rim light, deep shadows and painterly texture.",
+      "tags": ["fantasy", "dark", "gothic", "painterly"],
+      "cover": 7,
+      "featured": false
+    },
+    {
+      "id": "retro-analog",
+      "ar": {
+        "name": "تناظري رجعي",
+        "category": "تصوير",
+        "description": "مظهر أفلام السبعينيات مع وهج دافئ وتباين باهت وحبيبات عضوية.",
+        "tags": ["رجعي", "تناظري", "فيلم", "70s", "عتيق"]
+      },
+      "name": "Retro Analog",
+      "category": "Photography",
+      "rating": 4.6,
+      "ratingsCount": 710,
+      "usedBy": "88k",
+      "description": "1970s film look with warm halation, faded contrast and organic grain.",
+      "tags": ["retro", "analog", "film", "70s", "vintage"],
+      "cover": 8,
+      "featured": false
+    }
+  ]
+}

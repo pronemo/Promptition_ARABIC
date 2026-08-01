@@ -1,0 +1,57 @@
+{
+  "id": "ipadapter-style",
+  "ar": {
+    "name": "نقل النمط بـ IPAdapter",
+    "category": "متقدم",
+    "difficulty": "متقدم",
+    "description": "انقل النمط أو الموضوع من صورة مرجعية إلى تكوين مولّد نصيًا باستخدام IPAdapter. يُدمج المرجع كمطالبة صورة ويُمزج مع توجيه النص بوزن مضبوط.",
+    "steps": [
+      { "title": "تثبيت IPAdapter", "description": "استخدم حزمة ComfyUI-IPAdapter مع ComfyUI Manager للإعداد بنقرة واحدة." },
+      { "title": "تحميل المرجع", "description": "استخدم LoadImage لمرجع النمط. المرجع ذو النمط الواضح يعمل أفضل من المزدحم." },
+      { "title": "توصيل IPAdapter", "description": "تغذي عقدتا IPAdapterUnifiedLoader وIPAdapterAdvanced ترميز المرجع في النموذج." },
+      { "title": "مزج الأوزان", "description": "weight بين 0.4–0.8 مع weight_type 'style transfer' يحافظ على موضوع المطالبة مع اقتباس المظهر." },
+      { "title": "التوليد", "description": "يتبع الناتج مطالبتك النصية مع ألوان المرجع وملمسه ومزاجه." }
+    ],
+    "tags": ["comfyui", "ipadapter", "نقل النمط", "مرجع", "متقدم"]
+  },
+  "name": "IPAdapter Style Transfer",
+  "type": "workflow",
+  "category": "Advanced",
+  "difficulty": "Advanced",
+  "estimatedTime": "12 min",
+  "rating": 4.7,
+  "ratingsCount": 880,
+  "downloads": "0.5M",
+  "cover": 6,
+  "featured": false,
+  "description": "Transfer the style or subject of a reference image onto a text-generated composition using IPAdapter. The reference is embedded as an image prompt and blended with your text conditioning at a controlled weight.",
+  "steps": [
+    { "title": "Install IPAdapter", "description": "Use the ComfyUI-IPAdapter pack plus the ComfyUI Manager for one-click setup." },
+    { "title": "Load the reference", "description": "LoadImage for your style reference. A strong style reference works better than a busy one." },
+    { "title": "Wire IPAdapter", "description": "IPAdapterUnifiedLoader + IPAdapterAdvanced feed the reference embedding into the model." },
+    { "title": "Blend weights", "description": "weight 0.4–0.8, weight_type 'style transfer' keeps the prompt's subject while borrowing the look." },
+    { "title": "Generate", "description": "The output follows your text prompt with the reference's colors, texture and mood." }
+  ],
+  "requiredExtensions": [
+    { "name": "ComfyUI-IPAdapter_plus", "url": "https://github.com/cubiq/ComfyUI_IPAdapter_plus" },
+    { "name": "ComfyUI Manager", "url": "https://github.com/ltdrdata/ComfyUI-Manager" }
+  ],
+  "compatibleNodes": ["IPAdapterUnifiedLoader", "IPAdapterAdvanced", "CLIPVisionLoader"],
+  "compatibleModels": ["sdxl-base", "flux-1-dev", "sd-1-5"],
+  "tags": ["comfyui", "ipadapter", "style-transfer", "reference", "advanced"],
+  "download": { "filename": "ipadapter-style.json", "sizeKb": 62 },
+  "workflowJson": {
+    "nodes": [
+      { "id": 1, "type": "LoadImage", "title": "Style Reference" },
+      { "id": 2, "type": "IPAdapterUnifiedLoader", "title": "Load IPAdapter" },
+      { "id": 3, "type": "IPAdapterAdvanced", "title": "Apply Style" },
+      { "id": 4, "type": "CheckpointLoaderSimple", "title": "Load Checkpoint" },
+      { "id": 5, "type": "CLIPTextEncode", "title": "Content Prompt" },
+      { "id": 6, "type": "KSampler", "title": "KSampler" },
+      { "id": 7, "type": "VAEDecode", "title": "VAE Decode" },
+      { "id": 8, "type": "SaveImage", "title": "Save Image" }
+    ],
+    "links": [[1, 0, 3, 0], [2, 0, 3, 1], [4, 0, 6, 0], [5, 0, 3, 2], [3, 0, 6, 1], [6, 0, 7, 0], [4, 2, 7, 1], [7, 0, 8, 0]]
+  },
+  "related": ["controlnet-pose", "highres-upscale", "img2img-refine"]
+}

@@ -1,0 +1,171 @@
+/* ==========================================================================
+   Promptition — My Library (Gallery)
+   Pages: gallery.css
+   ========================================================================== */
+
+.gallery-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-5);
+}
+.gallery-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--sp-4);
+}
+
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.gallery-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--brand-500);
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-thumb {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-3) var(--sp-4) var(--sp-4);
+}
+.gallery-card-name {
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gallery-card-badge {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gallery-card-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--fs-xs);
+  color: var(--text-soft);
+}
+.gallery-card-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.gallery-card-meta .icon {
+  width: 13px;
+  height: 13px;
+}
+
+/* Detail modal */
+#gallery-modal-title {
+  font-size: var(--fs-lg);
+  letter-spacing: -0.01em;
+  word-break: break-word;
+}
+.modal-overlay .modal.gallery-modal-wide {
+  max-width: min(920px, 94vw);
+  max-height: min(88vh, 88vh);
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--sp-3);
+  right: var(--sp-3);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-soft);
+  cursor: pointer;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.modal-close:hover {
+  color: var(--text);
+  border-color: var(--brand-500);
+}
+
+.gallery-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(0, 1.2fr);
+  gap: var(--sp-5);
+}
+@media (max-width: 760px) {
+  .gallery-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-detail-media img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  display: block;
+}
+.gallery-detail-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-top: var(--sp-3);
+  flex-wrap: wrap;
+}
+
+.gallery-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  min-width: 0;
+}
+.gallery-detail-info .content-card {
+  padding: var(--sp-4);
+}
+.gallery-detail-info .content-card h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--sp-3);
+}
+.gallery-detail-info .content-card h3 .icon {
+  width: 16px;
+  height: 16px;
+  color: var(--brand-500);
+}

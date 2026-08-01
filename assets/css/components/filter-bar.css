@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Promptition — Filter Bar (sidebar + toolbar)
+   Components: filter-bar.css
+   ========================================================================== */
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-5);
+}
+
+.toolbar-search {
+  flex: 1;
+  min-width: 220px;
+}
+
+.toolbar-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-left: auto;
+}
+
+.toolbar-count {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Sidebar filter panel */
+.filter-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-5);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+.filter-group-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-soft);
+}
+.filter-group-head .clear-link {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text-faint);
+}
+.filter-group-head .clear-link:hover {
+  color: var(--brand-500);
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: var(--fs-sm);
+  color: var(--text-soft);
+  border: 1px solid transparent;
+  transition: background-color var(--dur) var(--ease),
+    color var(--dur) var(--ease);
+}
+.filter-option:hover {
+  background: var(--bg-soft);
+  color: var(--text);
+}
+.filter-option.is-active {
+  background: var(--brand-50);
+  color: var(--brand-700);
+  border-color: var(--brand-200);
+}
+:root[data-theme="dark"] .filter-option.is-active,
+:root:not([data-theme="light"]) .filter-option.is-active {
+  background: rgba(124, 92, 252, 0.16);
+  color: var(--brand-300);
+  border-color: transparent;
+}
+.filter-option .count {
+  margin-left: auto;
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+}
+.filter-option .icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Tag chips row filter */
+.tag-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+/* Mobile filter toggle */
+.filter-toggle {
+  display: none;
+}
+
+.filter-sidebar {
+  display: block;
+}
+
+@media (max-width: 960px) {
+  .filter-sidebar {
+    display: none;
+    position: fixed;
+    inset: var(--header-h) 0 0 0;
+    z-index: calc(var(--z-header) + 1);
+    overflow-y: auto;
+    padding: var(--sp-5);
+    background: var(--bg-elev);
+    border-top: 1px solid var(--border);
+  }
+  .filter-sidebar.is-open {
+    display: block;
+  }
+  .filter-toggle {
+    display: inline-flex;
+  }
+  .toolbar-controls {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "txt2img-basic",
+  "ar": {
+    "name": "نص إلى صورة (أساسي)",
+    "category": "مبتدئ",
+    "difficulty": "مبتدئ",
+    "description": "الرسم البياني الأساسي لبدء العمل مع ComfyUI. يتم ترميز مطالبة إيجابية وأخرى سلبية، ويشغّل جهاز أخذ العينات عدد خطوات ثابتًا على مساحة كامنة عشوائية، بينما يفكك VAE ترميز الصورة النهائية. كل شيء آخر هو مجرد تباين على خط الإنتاج الأساسي هذا.",
+    "steps": [
+      { "title": "تحميل نقطة التفتيش", "description": "أسقط نموذجًا (مثل SDXL أو Flux) في عقدة CheckpointLoader. توفر العقدة مراجع النموذج وCLIP وVAE." },
+      { "title": "كتابة المطالبات", "description": "اربط عُقد CLIPTextEncode للنصوص الإيجابية والسلبية بمدخلات جهاز أخذ العينات المناسبة." },
+      { "title": "تكوين جهاز أخذ العينات", "description": "اضبط البذرة والخطوات وCFG وجهاز أخذ العينات. ابدأ بـ 28 خطوة وCFG 5 لـ SDXL؛ يستخدم Flux عادة 3.5 بدون CFG." },
+      { "title": "ضبط الدقة", "description": "اجعل عرض/ارتفاع EmptyLatentImage مطابقًا لهدفك، مثل 1024×1024. استخدم الدقة الأصلية للنموذج." },
+      { "title": "التشغيل والاستمتاع", "description": "شغّل الرسم البياني. احفظ JSON الخاصة بسير العمل ليكون كل توليد قابلاً للتكرار بالكامل." }
+    ],
+    "tags": ["comfyui", "مبتدئ", "txt2img", "بدء"]
+  },
+  "name": "Basic Text-to-Image",
+  "type": "workflow",
+  "category": "Beginner",
+  "difficulty": "Beginner",
+  "estimatedTime": "5 min",
+  "rating": 4.9,
+  "ratingsCount": 2110,
+  "downloads": "1.4M",
+  "cover": 1,
+  "featured": true,
+  "description": "The canonical ComfyUI starter graph. A positive and negative prompt are encoded, the sampler runs a fixed step count over a random latent, and the VAE decodes the final image. Everything else is a variation on this core pipeline.",
+  "steps": [
+    { "title": "Load your checkpoint", "description": "Drop a model (e.g. SDXL or Flux) into the CheckpointLoader node. It provides the model, CLIP and VAE references." },
+    { "title": "Write your prompts", "description": "Connect CLIPTextEncode nodes for positive and negative text to the matching sampler inputs." },
+    { "title": "Configure the sampler", "description": "Set seed, steps, CFG and sampler. Start with 28 steps and CFG 5 for SDXL; Flux typically uses 3.5 and no CFG." },
+    { "title": "Set resolution", "description": "EmptyLatentImage width/height match your target, e.g. 1024x1024. Use the model's native resolution." },
+    { "title": "Queue and enjoy", "description": "Run the graph. Save the workflow JSON so every generation is fully reproducible." }
+  ],
+  "requiredExtensions": [],
+  "compatibleNodes": [],
+  "compatibleModels": ["sdxl-base", "flux-1-dev", "flux-1-schnell", "sd-1-5"],
+  "tags": ["comfyui", "beginner", "txt2img", "starter"],
+  "download": { "filename": "txt2img-basic.json", "sizeKb": 42 },
+  "workflowJson": {
+    "nodes": [
+      { "id": 1, "type": "CheckpointLoaderSimple", "title": "Load Checkpoint" },
+      { "id": 2, "type": "CLIPTextEncode", "title": "Positive Prompt" },
+      { "id": 3, "type": "CLIPTextEncode", "title": "Negative Prompt" },
+      { "id": 4, "type": "EmptyLatentImage", "title": "Latent Image" },
+      { "id": 5, "type": "KSampler", "title": "KSampler" },
+      { "id": 6, "type": "VAEDecode", "title": "VAE Decode" },
+      { "id": 7, "type": "SaveImage", "title": "Save Image" }
+    ],
+    "links": [[1, 0, 5, 0], [2, 0, 5, 1], [3, 0, 5, 2], [4, 0, 5, 3], [5, 0, 6, 0], [1, 2, 6, 1], [6, 0, 7, 0]]
+  },
+  "related": ["img2img-refine", "highres-upscale", "inpaint-outpaint"]
+}

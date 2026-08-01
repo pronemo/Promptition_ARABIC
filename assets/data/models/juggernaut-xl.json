@@ -1,0 +1,91 @@
+{
+  "id": "juggernaut-xl",
+  "ar": {
+    "name": "Juggernaut XL",
+    "category": "نقطة فحص",
+    "subcategory": "ضبط دقيق على SDXL",
+    "architecture": "ضبط دقيق على SDXL",
+    "license": "مجتمع",
+    "description": "Juggernaut XL هو نموذج فحص SDXL مُضبّط بشدة للواقعية الفوتوغرافية والصور السينمائية. يُعرف بتفاصيله الدقيقة الحادة وتباينه العميق ونتائجه القوية مباشرة خارج الصندوق مع إعدادات CFG معتدلة.",
+    "features": [
+      "تفاصيل فوتوغرافية حادة عالية التباين",
+      "ألوان وتدرجات سينمائية ممتازة",
+      "أداء جيد عند CFG 3 إلى 5 لخطوط عمل سريعة",
+      "يتعامل مع الوجوه والأيدي بشكل موثوق",
+      "منظومة ضخمة من الإعدادات المسبقة المجتمعية"
+    ],
+    "quantizations": [
+      { "name": "bf16", "sizeGb": 6.9, "quality": "مرجع" }
+    ],
+    "requirements": {
+      "minVram": "6 جيجابايت (fp16، VAE مقسّم)",
+      "recommendedVram": "12 جيجابايت",
+      "minRam": "16 جيجابايت",
+      "cuda": "11.8+",
+      "python": "3.9+"
+    },
+    "examples": [
+      {
+        "prompt": "لقطة سينمائية ثابتة لرائد فضاء وحيد على ساحل غريب عاصف، سحب دراماتيكية، توهج عدسة أنامورفيك، واقعية فوتوغرافية",
+        "width": 1024,
+        "height": 1024,
+        "steps": 25,
+        "cfg": 4.0,
+        "seed": 33
+      }
+    ],
+    "tags": ["واقعي", "سينمائي", "sdxl", "تفاصيل عالية"]
+  },
+  "name": "Juggernaut XL",
+  "type": "model",
+  "category": "Checkpoint",
+  "subcategory": "SDXL Fine-Tune",
+  "publisher": "RunDiffusion",
+  "architecture": "SDXL Fine-Tune",
+  "params": "3.5B",
+  "released": "2024-03-01",
+  "version": "9.0",
+  "license": "Community",
+  "rating": 4.8,
+  "ratingsCount": 1204,
+  "downloads": "7.2M",
+  "cover": 9,
+  "featured": false,
+  "description": "Juggernaut XL is a heavily tuned SDXL checkpoint optimized for photorealism and cinematic imagery. It is known for crisp micro-detail, deep contrast and strong results straight out of the box with modest CFG settings.",
+  "features": [
+    "Crisp, high-contrast photographic detail",
+    "Excellent cinematic color and grading",
+    "Performs well at CFG 3–5 for fast workflows",
+    "Handles faces and hands reliably",
+    "Huge community preset ecosystem"
+  ],
+  "quantizations": [
+    { "name": "bf16", "sizeGb": 6.9, "quality": "Reference" }
+  ],
+  "formats": ["safetensors", "ckpt"],
+  "requirements": {
+    "minVram": "6 GB (fp16, tiled VAE)",
+    "recommendedVram": "12 GB",
+    "minRam": "16 GB",
+    "cuda": "11.8+",
+    "python": "3.9+"
+  },
+  "links": {
+    "website": "https://rundiffusion.com",
+    "download": "https://civitai.com/models/133005",
+    "github": null
+  },
+  "examples": [
+    {
+      "prompt": "cinematic still of a lone astronaut on a stormy alien coastline, dramatic clouds, anamorphic lens flare, photorealistic",
+      "width": 1024,
+      "height": 1024,
+      "steps": 25,
+      "cfg": 4.0,
+      "seed": 33
+    }
+  ],
+  "tags": ["photoreal", "cinematic", "sdxl", "high-detail"],
+  "compatibleTools": ["comfyui", "automatic1111", "invokeai"],
+  "related": ["majicmix-realistic", "sdxl-base", "dreamshaper-xl"]
+}

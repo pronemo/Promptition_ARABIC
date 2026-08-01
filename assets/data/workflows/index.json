@@ -1,0 +1,175 @@
+{
+  "type": "workflows",
+  "updated": "2026-07-30",
+  "count": 6,
+  "items": [
+    {
+      "id": "txt2img-basic",
+      "ar": {
+        "name": "نص إلى صورة (أساسي)",
+        "category": "مبتدئ",
+        "difficulty": "مبتدئ",
+        "description": "الرسم البياني الأساسي لبدء العمل مع ComfyUI: ترميز المطالبة، أخذ العينات من المساحة الكامنة وفك ترميز النتيجة.",
+        "steps": [
+          { "title": "تحميل نقطة التفتيش", "description": "اسحب نموذجًا (مثل SDXL أو Flux) إلى عقدة CheckpointLoader. توفر العقدة مراجع النموذج وCLIP وVAE." },
+          { "title": "كتابة المطالبات", "description": "اربط عُقد CLIPTextEncode للنصوص الإيجابية والسلبية بمدخلات جهاز أخذ العينات المناسبة." },
+          { "title": "تكوين جهاز أخذ العينات", "description": "اضبط البذرة والخطوات وCFG وجهاز أخذ العينات. ابدأ بـ 28 خطوة وCFG 5 لـ SDXL؛ بينما يستخدم Flux عادة 3.5 بدون CFG." },
+          { "title": "ضبط الدقة", "description": "اجعل عرض/ارتفاع EmptyLatentImage مطابقًا للهدف، مثل 1024×1024. استخدم الدقة الأصلية للنموذج." },
+          { "title": "التشغيل والاستمتاع", "description": "شغّل الرسم البياني. احفظ JSON الخاصة بسير العمل ليكون كل توليد قابلاً للتكرار بالكامل." }
+        ],
+        "tags": ["comfyui", "مبتدئ", "txt2img", "بدء"]
+      },
+      "name": "Basic Text-to-Image",
+      "category": "Beginner",
+      "difficulty": "Beginner",
+      "estimatedTime": "5 min",
+      "rating": 4.9,
+      "ratingsCount": 2110,
+      "downloads": "1.4M",
+      "description": "The canonical ComfyUI starter graph: encode a prompt, sample the latent and decode the result.",
+      "tags": ["comfyui", "beginner", "txt2img", "starter"],
+      "cover": 1,
+      "featured": true
+    },
+    {
+      "id": "img2img-refine",
+      "ar": {
+        "name": "صورة إلى صورة (تحسين)",
+        "category": "متوسط",
+        "difficulty": "مبتدئ",
+        "description": "إعادة تنسيق أو تحسين صورة موجودة عن طريق إزالة الضوضاء من مساحة كامنة مدمجة بقوة مختارة.",
+        "steps": [
+          { "title": "تحميل الصورة المصدر", "description": "استخدم عقدة LoadImage. تُرجع البكسلات وموضعًا للقالب؛ هنا نستخدم البكسلات فقط." },
+          { "title": "ترميز المساحة الكامنة", "description": "تحوّل عقدة VAEEncode البكسلات المحمّلة إلى مساحة كامنة يمكن لجهاز أخذ العينات التعامل معها." },
+          { "title": "المزج مع الضوضاء", "description": "تتحكم قوة إزالة الضوضاء (0.3–0.7) في جهاز أخذ العينات في مقدار ما يبقى من الأصل." },
+          { "title": "كتابة مطالبة إعادة التنسيق", "description": "صِف النمط أو الموضوع الجديد. اذكر التركيب الأصلي بالكلمات لتوجيه النموذج." },
+          { "title": "فك الترميز والمقارنة", "description": "استخدم VAE Decode وSaveImage، ثم جرّب القوة والمطالبة حتى يبدو المزيج مناسبًا." }
+        ],
+        "tags": ["comfyui", "img2img", "إعادة تنسيق", "متوسط"]
+      },
+      "name": "Image-to-Image Refine",
+      "category": "Intermediate",
+      "difficulty": "Beginner",
+      "estimatedTime": "8 min",
+      "rating": 4.8,
+      "ratingsCount": 1450,
+      "downloads": "0.9M",
+      "description": "Restyle or refine an existing image by denoising from a blended latent at a chosen strength.",
+      "tags": ["comfyui", "img2img", "restyle", "intermediate"],
+      "cover": 2,
+      "featured": true
+    },
+    {
+      "id": "highres-upscale",
+      "ar": {
+        "name": "رفع الدقة العالية",
+        "category": "متوسط",
+        "difficulty": "متوسط",
+        "description": "مرحلة رفع الدقة الكامنة التي تضاعف الدقة مع الحفاظ على التركيب وإضافة التفاصيل.",
+        "steps": [
+          { "title": "توليد الأساس", "description": "ينتج جهاز أخذ العينات الأول المساحة الكامنة الابتدائية بدقة النموذج الأصلية (مثل 1024)." },
+          { "title": "رفع دقة المساحة الكامنة", "description": "تضاعف عقدة LatentUpscale العرض/الارتفاع باستخدام طريقة مدمجة (nearest-exact أو bilinear)." },
+          { "title": "المرور الثاني", "description": "يشغّل جهاز أخذ عينات ثانٍ نفس المطالبة بقوة إزالة ضوضاء 0.4–0.5 لشحذ المساحة الكامنة المكبّرة." },
+          { "title": "فك الترميز مرة واحدة", "description": "يعمل VAE Decode على المساحة الكامنة النهائية فقط لتوفير الذاكرة وتجنب الضغط المزدوج." },
+          { "title": "المقارنة والضبط", "description": "ارفع قوة إزالة الضوضاء لتغيير تفاصيل أكثر، واخفضها للدقة الصرفة." }
+        ],
+        "tags": ["comfyui", "رفع الدقة", "تفاصيل", "متوسط"]
+      },
+      "name": "High-Resolution Upscale",
+      "category": "Intermediate",
+      "difficulty": "Intermediate",
+      "estimatedTime": "10 min",
+      "rating": 4.8,
+      "ratingsCount": 1180,
+      "downloads": "0.8M",
+      "description": "Latent upscale pass that doubles resolution while preserving composition and adding detail.",
+      "tags": ["comfyui", "upscale", "detail", "intermediate"],
+      "cover": 3,
+      "featured": false
+    },
+    {
+      "id": "inpaint-outpaint",
+      "ar": {
+        "name": "إعادة التعبئة والتمديد خارج اللوحة",
+        "category": "متوسط",
+        "difficulty": "متوسط",
+        "description": "تعديل المناطق المقنعة أو توسيع اللوحة باستخدام رسم بياني لأخذ العينات موجه بالقالب.",
+        "steps": [
+          { "title": "تحميل الصورة والقالب", "description": "تُرجع LoadImage البكسلات وقالبًا. ارسم المنطقة المراد تعديلها باللون الأبيض وأبقِ الباقي بالأسود." },
+          { "title": "ضبط المساحة الكامنة", "description": "تطبّق عقدة SetLatentNoiseMask القالب بحيث يؤثر أخذ العينات على المنطقة المحددة فقط." },
+          { "title": "اختيار وضع إعادة التعبئة", "description": "لإعادة التعبئة استخدم ترميزًا مقنّعًا أو اضبط المساحة الكامنة عبر VAEEncodeForInpaint؛ وللتمديد خارج اللوحة وسّع EmptyLatentImage إلى ما بعد المصدر." },
+          { "title": "مطالبة التعبئة", "description": "صِف ما يجب أن يكون داخل المنطقة المقنعة لتوجيه النتيجة." },
+          { "title": "التركيب", "description": "استخدم فك الترميز وSaveImage. استخدم قوة إزالة ضوضاء منخفضة لتفادي اللحامات غير النظيفة." }
+        ],
+        "tags": ["comfyui", "إعادة التعبئة", "التمديد خارج اللوحة", "قالب", "تحرير"]
+      },
+      "name": "Inpainting & Outpainting",
+      "category": "Intermediate",
+      "difficulty": "Intermediate",
+      "estimatedTime": "12 min",
+      "rating": 4.7,
+      "ratingsCount": 970,
+      "downloads": "0.6M",
+      "description": "Edit masked regions or extend the canvas with a mask-guided sampling graph.",
+      "tags": ["comfyui", "inpaint", "outpaint", "mask", "editing"],
+      "cover": 4,
+      "featured": false
+    },
+    {
+      "id": "controlnet-pose",
+      "ar": {
+        "name": "تحكم في الوضعية والتركيب بـ ControlNet",
+        "category": "متقدم",
+        "difficulty": "متقدم",
+        "description": "ثبّت التركيب مع توجيه الوضعية أو العمق بينما يولد جهاز أخذ العينات النمط.",
+        "steps": [
+          { "title": "تثبيت ControlNet", "description": "أضف حزمة ComfyUI ControlNet الرسمية وحمّل نموذج controlnet لـ SDXL (وضعية أو عمق أو canny)." },
+          { "title": "تحميل المرجع", "description": "استخدم LoadImage لمصدر الوضعية/العمق. يمكنك اختياريًا تشغيل Auto-Processor لاستخراج نقاط الوضعية الرئيسية." },
+          { "title": "تطبيق ControlNet", "description": "تحقن عُقد ControlNetApply التوجيه في مدخل النموذج الخاص بجهاز أخذ العينات." },
+          { "title": "ضبط القوة", "description": "control_strength بين 0.5–0.9. القيم الأعلى تثبّت الشكل الهندسي؛ والأدنى تمنح النموذج حرية تفسير أكبر." },
+          { "title": "التوليد", "description": "شغّل الرسم بمطالبة نمطية. يحافظ الناتج على وضعية المرجع مع الأسلوب الجمالي الذي اخترته." }
+        ],
+        "tags": ["comfyui", "controlnet", "وضعية", "عمق", "متقدم"]
+      },
+      "name": "ControlNet Pose & Composition",
+      "category": "Advanced",
+      "difficulty": "Advanced",
+      "estimatedTime": "15 min",
+      "rating": 4.8,
+      "ratingsCount": 1290,
+      "downloads": "0.7M",
+      "description": "Lock composition with pose or depth conditioning while the sampler generates the style.",
+      "tags": ["comfyui", "controlnet", "pose", "depth", "advanced"],
+      "cover": 5,
+      "featured": true
+    },
+    {
+      "id": "ipadapter-style",
+      "ar": {
+        "name": "نقل النمط بـ IPAdapter",
+        "category": "متقدم",
+        "difficulty": "متقدم",
+        "description": "نقل نمط صورة مرجعية إلى صورة نصية باستخدام توجيه IPAdapter.",
+        "steps": [
+          { "title": "تثبيت IPAdapter", "description": "استخدم حزمة ComfyUI-IPAdapter مع ComfyUI Manager للإعداد بنقرة واحدة." },
+          { "title": "تحميل المرجع", "description": "استخدم LoadImage لمرجع النمط. المرجع ذو النمط الواضح يعمل أفضل من المزدحم." },
+          { "title": "توصيل IPAdapter", "description": "تغذي عقدتا IPAdapterUnifiedLoader وIPAdapterAdvanced ترميز المرجع في النموذج." },
+          { "title": "مزج الأوزان", "description": "weight بين 0.4–0.8 مع weight_type 'style transfer' يحافظ على موضوع المطالبة مع اقتباس المظهر." },
+          { "title": "التوليد", "description": "يتبع الناتج مطالبتك النصية مع ألوان المرجع وملمسه ومزاجه." }
+        ],
+        "tags": ["comfyui", "ipadapter", "نقل النمط", "مرجع", "متقدم"]
+      },
+      "name": "IPAdapter Style Transfer",
+      "category": "Advanced",
+      "difficulty": "Advanced",
+      "estimatedTime": "12 min",
+      "rating": 4.7,
+      "ratingsCount": 880,
+      "downloads": "0.5M",
+      "description": "Transfer the style of a reference image onto a text prompt using IPAdapter conditioning.",
+      "tags": ["comfyui", "ipadapter", "style-transfer", "reference", "advanced"],
+      "cover": 6,
+      "featured": false
+    }
+  ]
+}

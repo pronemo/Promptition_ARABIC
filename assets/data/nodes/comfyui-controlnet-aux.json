@@ -1,0 +1,46 @@
+{
+  "id": "comfyui-controlnet-aux",
+  "ar": {
+    "name": "ComfyUI ControlNet Aux",
+    "category": "ControlNet",
+    "description": "توفر حزمة ControlNet Aux المعالجات المسبقة التي يحتاجها ControlNet: استخراج الوضعية (OpenPose وDW-Pose)، والعُمق (MiDaS وZoe)، والحواف (Canny وHED وLineart) وغيرها الكثير، وكلها موصولة كعقد ComfyUI عادية.",
+    "features": [
+      "استخراج النقاط الرئيسية عبر DW-Pose وOpenPose",
+      "تقدير العمق عبر MiDaS وZoe",
+      "حواف Canny وHED وLineart وScribble",
+      "معالجات مسبقة للأنمي والرسوم التوضيحية",
+      "دعم معالجة الصور بالدفعات على معظم العقد"
+    ],
+    "installation": "ثبّت عبر ComfyUI Manager (ابحث عن 'ControlNet Aux')، أو استنسخ https://github.com/Fannovel16/comfyui_controlnet_aux داخل custom_nodes ثم شغّل requirements.txt.",
+    "inputs": ["صورة", "دقة الكشف"],
+    "outputs": ["صورة معالجة مسبقًا"],
+    "requirements": ["ComfyUI", "ControlNet models"],
+    "tags": ["controlnet", "معالجات مسبقة", "وضعية", "عمق"]
+  },
+  "name": "ComfyUI ControlNet Aux",
+  "type": "node",
+  "package": "comfyui_controlnet_aux",
+  "category": "ControlNet",
+  "author": "Fannovel16",
+  "version": "v0.0.9",
+  "license": "Apache-2.0",
+  "rating": 4.8,
+  "stars": "4.1k",
+  "cover": 2,
+  "featured": true,
+  "github": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+  "description": "ControlNet Aux provides the preprocessors ControlNet needs: pose extraction (OpenPose, DW-Pose), depth (MiDaS, Zoe), edges (Canny, HED, Lineart) and many more, all wired as plain ComfyUI nodes.",
+  "features": [
+    "DW-Pose and OpenPose keypoint extraction",
+    "MiDaS and Zoe depth estimation",
+    "Canny, HED, Lineart and Scribble edges",
+    "Anime and illustration preprocessors",
+    "Batch image support on most nodes"
+  ],
+  "installation": "Install via ComfyUI Manager (search 'ControlNet Aux'), or clone https://github.com/Fannovel16/comfyui_controlnet_aux into custom_nodes and run requirements.txt.",
+  "inputs": ["image", "detect resolution"],
+  "outputs": ["preprocessed image"],
+  "requirements": ["ComfyUI", "ControlNet models"],
+  "tags": ["controlnet", "preprocessors", "pose", "depth"],
+  "related": ["comfyui-ipadapter", "comfyui-easy-use", "comfyui-manager"]
+}

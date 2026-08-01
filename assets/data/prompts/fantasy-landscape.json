@@ -1,0 +1,56 @@
+{
+  "id": "fantasy-landscape",
+  "ar": {
+    "name": "منظر طبيعي خيالي ملحمي",
+    "category": "منظر طبيعي",
+    "description": "منظر طبيعي خيالي بانورامي بأسلوب الرسم المطفي مع إضاءة حجمية وعمق جوي. يُفضَّل استخدامه مع نماذج الرسم الفني ونسب العرض الواسعة.",
+    "positive": "منظر طبيعي خيالي ملحمي، لوحة مطفية خلابة، وادٍ ضبابي شاسع بشلال شامخ، أشعة إلهية ذهبية تخترق السحب، جزر طائرة في الأفق، أطلال قديمة على جرف، ضربات فرشاة فنية، إضاءة حجمية، منظور جوي، طحالب وسراخس خضراء في المقدمة، زاوية عريضة فائقة، 8k، رائج على ArtStation",
+    "negative": "ضبابي، تفاصيل منخفضة، تشبع مفرط، كرتوني، إضاءة مسطحة، علامة مائية، نص، توقيع، أخطاء JPEG، مبانٍ حديثة، سيارات، أشخاص",
+    "settings": {
+      "width": 1536,
+      "height": 640,
+      "steps": 32,
+      "cfg": 6.0,
+      "sampler": "dpmpp_2m",
+      "model": "SDXL",
+      "aspect": "21:9"
+    },
+    "tags": ["منظر طبيعي", "خيالي", "رسم مطفي", "طبيعة", "ملحمي"],
+    "examples": [
+      {
+        "title": "قلعة طائرة",
+        "positive": "منظر طبيعي خيالي ملحمي، قلعة حجرية طائرة فوق بحر من السحب عند الفجر، ضوء ذهبي، لوحة مطفية فنية، تفاصيل فائقة"
+      }
+    ]
+  },
+  "name": "Epic Fantasy Landscape",
+  "type": "prompt",
+  "category": "Landscape",
+  "rating": 4.8,
+  "ratingsCount": 980,
+  "usedBy": "176k",
+  "cover": 2,
+  "featured": true,
+  "description": "A sweeping matte-painting fantasy landscape with volumetric light and atmospheric depth. Best paired with painterly checkpoints at wide aspect ratios.",
+  "positive": "epic fantasy landscape, breathtaking matte painting, vast misty valley with a towering waterfall, golden god rays breaking through clouds, floating islands in the distance, ancient ruins on a cliff, painterly brush strokes, volumetric lighting, atmospheric perspective, lush moss and ferns in foreground, ultra wide angle, 8k, artstation trending",
+  "negative": "blurry, low detail, oversaturated, cartoon, flat lighting, watermark, text, signature, jpeg artifacts, modern buildings, cars, people",
+  "settings": {
+    "width": 1536,
+    "height": 640,
+    "steps": 32,
+    "cfg": 6.0,
+    "sampler": "dpmpp_2m",
+    "model": "SDXL",
+    "aspect": "21:9"
+  },
+  "tags": ["landscape", "fantasy", "matte-painting", "nature", "epic"],
+  "compatibleModels": ["dreamshaper-xl", "sdxl-base", "flux-1-dev"],
+  "compatibleLoras": ["landscape-breathtaking", "epi-noise-offset", "detail-tweaker-xl"],
+  "examples": [
+    {
+      "title": "Floating citadel",
+      "positive": "epic fantasy landscape, floating stone citadel above sea of clouds at dawn, golden light, painterly matte painting, ultra detailed"
+    }
+  ],
+  "related": ["concept-art", "wildlife", "retro-80s"]
+}

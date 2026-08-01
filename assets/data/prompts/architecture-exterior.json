@@ -1,0 +1,56 @@
+{
+  "id": "architecture-exterior",
+  "ar": {
+    "name": "تصيير معماري",
+    "category": "عمارة",
+    "description": "تصيير معماري خارجي واقعي فائق في الساعة الذهبية. موثوق لتصور المفاهيم وعروض العملاء.",
+    "positive": "تصوير معماري، فيلا عصرية بسيطة بزجاج من الأرض حتى السقف، طابق علوي معلق، ضوء ساعة ذهبية دافئ، مسبح لا نهائي يعكس الواجهة، مناظر طبيعية مشذبة بأعشاب زينة، سماء من السحب الناعمة، تصيير واقعي فائق، خطوط هندسية حادة، تفاصيل فائقة، 8k",
+    "negative": "ضبابي، منظور مشوه، خطوط معوجة، كرتوني، مظهر تصيير ثلاثي الأبعاد، علامة مائية، نص، شعار، جودة منخفضة، محيط مزدحم، مشهد ليلي",
+    "settings": {
+      "width": 1216,
+      "height": 832,
+      "steps": 32,
+      "cfg": 6.0,
+      "sampler": "dpmpp_2m",
+      "model": "SDXL",
+      "aspect": "3:2"
+    },
+    "tags": ["عمارة", "واجهات خارجية", "حديث", "ساعة ذهبية", "تصور"],
+    "examples": [
+      {
+        "title": "جناح زجاجي",
+        "positive": "جناح زجاجي حديث واقعي فائق في فسحة غابة، ساعة ذهبية، بركة عاكسة، تصوير معماري، تفاصيل فائقة"
+      }
+    ]
+  },
+  "name": "Architectural Visualization",
+  "type": "prompt",
+  "category": "Architecture",
+  "rating": 4.6,
+  "ratingsCount": 510,
+  "usedBy": "76k",
+  "cover": 9,
+  "featured": false,
+  "description": "A photorealistic exterior architecture render at golden hour. Reliable for concept visualization and client presentations.",
+  "positive": "architectural photography, modern minimalist villa with floor-to-ceiling glass, cantilevered upper floor, warm golden hour light, infinity pool reflecting the facade, manicured landscaping with ornamental grasses, skyline of soft clouds, photorealistic render, sharp geometric lines, ultra detailed, 8k",
+  "negative": "blurry, distorted perspective, crooked lines, cartoon, 3d render look, watermark, text, logo, low quality, cluttered surroundings, night scene",
+  "settings": {
+    "width": 1216,
+    "height": 832,
+    "steps": 32,
+    "cfg": 6.0,
+    "sampler": "dpmpp_2m",
+    "model": "SDXL",
+    "aspect": "3:2"
+  },
+  "tags": ["architecture", "exterior", "modern", "golden-hour", "visualization"],
+  "compatibleModels": ["juggernaut-xl", "realistic-vision-v6", "sdxl-base"],
+  "compatibleLoras": ["detail-tweaker-xl", "epi-noise-offset"],
+  "examples": [
+    {
+      "title": "Glass pavilion",
+      "positive": "photorealistic modern glass pavilion in a forest clearing, golden hour, reflecting pool, architectural photography, ultra detailed"
+    }
+  ],
+  "related": ["product-shot", "wildlife", "photorealistic-portrait"]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "sd-3-5-large",
+  "ar": {
+    "name": "Stable Diffusion 3.5 Large",
+    "category": "نص إلى صورة",
+    "subcategory": "MMDiT",
+    "architecture": "محوّل الانتشار متعدد الوسائط (MMDiT)",
+    "license": "رخصة مجتمع Stability AI",
+    "description": "Stable Diffusion 3.5 Large هو محوّل انتشار متعدد الوسائط بـ 8 مليارات معلمة. تعتمد بنيته MMDiT على الشروط المشتركة بين رموز النص والصورة، مما يحقق التزامًا قويًا بالأوامر وتشريحًا مفصّلًا ومجموعة واسعة من الأنماط. وتسمح رخصة المجتمع بالاستخدام التجاري للفرق التي يقل إيرادها عن مليون دولار.",
+    "features": [
+      "شروط مشتركة بين النص والصورة عبر MMDiT",
+      "التزام ممتاز بالأوامر متعددة العناصر",
+      "دعم لمشفّري T5-XXL و CLIP-L",
+      "رخصة مجتمعية بها مجال للاستخدام التجاري",
+      "نسخ مُكمّمة لبطاقات رسوميات المستهلك"
+    ],
+    "quantizations": [
+      { "name": "bf16", "sizeGb": 16.6, "quality": "مرجع" },
+      { "name": "fp8", "sizeGb": 8.4, "quality": "شبه ضائع" },
+      { "name": "gguf-q4", "sizeGb": 5.0, "quality": "جيد لذاكرة منخفضة" }
+    ],
+    "requirements": {
+      "minVram": "8 جيجابايت (fp8)",
+      "recommendedVram": "16 جيجابايت (bf16)",
+      "minRam": "24 جيجابايت",
+      "cuda": "11.8+",
+      "python": "3.10+"
+    },
+    "examples": [
+      {
+        "prompt": "لوحة زيتية مفصلة لفارس يُطل على وادٍ شاسع عند الغروب، ضوء ذهبي، تفاصيل دقيقة للدروع",
+        "width": 1024,
+        "height": 1024,
+        "steps": 40,
+        "cfg": 5.0,
+        "seed": 99
+      }
+    ],
+    "tags": ["sd3.5", "mmodit", "نص إلى صورة", "محوّل"]
+  },
+  "name": "Stable Diffusion 3.5 Large",
+  "type": "model",
+  "category": "Text-to-Image",
+  "subcategory": "MMDiT",
+  "publisher": "Stability AI",
+  "architecture": "Multimodal Diffusion Transformer (MMDiT)",
+  "params": "8B",
+  "released": "2024-10-22",
+  "version": "3.5",
+  "license": "Stability AI Community License",
+  "rating": 4.6,
+  "ratingsCount": 742,
+  "downloads": "3.9M",
+  "cover": 5,
+  "featured": false,
+  "description": "Stable Diffusion 3.5 Large is an 8-billion-parameter multimodal diffusion transformer. Its MMDiT architecture jointly conditions on text and image tokens, yielding strong prompt adherence, detailed anatomy and a broad style range. The Community License permits commercial use for teams under 1M revenue.",
+  "features": [
+    "Joint text–image MMDiT conditioning",
+    "Excellent multi-subject prompt adherence",
+    "Support for the T5-XXL and CLIP-L encoders",
+    "Community license with commercial headroom",
+    "Quantized variants for consumer GPUs"
+  ],
+  "quantizations": [
+    { "name": "bf16", "sizeGb": 16.6, "quality": "Reference" },
+    { "name": "fp8", "sizeGb": 8.4, "quality": "Near-lossless" },
+    { "name": "gguf-q4", "sizeGb": 5.0, "quality": "Good for low VRAM" }
+  ],
+  "formats": ["safetensors", "gguf"],
+  "requirements": {
+    "minVram": "8 GB (fp8)",
+    "recommendedVram": "16 GB (bf16)",
+    "minRam": "24 GB",
+    "cuda": "11.8+",
+    "python": "3.10+"
+  },
+  "links": {
+    "website": "https://stability.ai",
+    "download": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
+    "github": "https://github.com/Stability-AI/generative-models"
+  },
+  "examples": [
+    {
+      "prompt": "A detailed oil painting of a knight overlooking a vast valley at sunset, golden light, intricate armor detail",
+      "width": 1024,
+      "height": 1024,
+      "steps": 40,
+      "cfg": 5.0,
+      "seed": 99
+    }
+  ],
+  "tags": ["sd3.5", "mmodit", "text-to-image", "transformer"],
+  "compatibleTools": ["comfyui", "diffusers", "forge-webui"],
+  "related": ["flux-1-dev", "sdxl-base", "stable-cascade"]
+}

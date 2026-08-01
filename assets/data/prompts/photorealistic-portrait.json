@@ -1,0 +1,56 @@
+{
+  "id": "photorealistic-portrait",
+  "ar": {
+    "name": "بورتريه واقعي فائق",
+    "category": "تصوير",
+    "description": "صورة شخصية احترافية بإضاءة طبيعية مع نسيج جلد مقنع وعمق ميدان ضحل. نقطة البداية الافتراضية لأعمال الأشخاص الواقعية الفائقة.",
+    "positive": "صورة شخصية احترافية لامرأة في الثلاثينيات بمكياج طبيعي ونمش وابتسامة هادئة، ترتدي بلازر كريمي، ضوء نافذة طبيعي، خلفية استوديو بيج محايدة، عدسة 85mm بفتحة f/1.8، عمق ميدان ضحل، نسيج جلد واقعي، مسام وشعر ناعم مفصّل، تركيز حاد على العينين، واقعي فائق، 8k",
+    "negative": "كرتوني، رسم، تصيير ثلاثي الأبعاد، جلد بلاستيكي، نعومة مفرطة، شمعي، أصابع زائدة، أيدي مشوهة، مجوهرات، علامة مائية، نص، جودة منخفضة، ضبابي، فلاش قاسٍ",
+    "settings": {
+      "width": 832,
+      "height": 1088,
+      "steps": 28,
+      "cfg": 5.0,
+      "sampler": "euler_a",
+      "model": "SDXL",
+      "aspect": "2:3"
+    },
+    "tags": ["واقعي فائق", "بورتريه", "صورة شخصية", "بشرة", "احترافي"],
+    "examples": [
+      {
+        "title": "بورتريه أعمال",
+        "positive": "صورة شخصية احترافية لرجل بلحية قصيرة، بدلة كحلية، خلفية رمادية ناعمة، ضوء طبيعي، واقعي فائق"
+      }
+    ]
+  },
+  "name": "Photorealistic Headshot",
+  "type": "prompt",
+  "category": "Photography",
+  "rating": 4.9,
+  "ratingsCount": 1600,
+  "usedBy": "289k",
+  "cover": 7,
+  "featured": true,
+  "description": "A natural-light professional headshot with believable skin texture and shallow depth of field. The default starting point for photoreal people work.",
+  "positive": "professional headshot photograph of a woman in her 30s with natural makeup, freckles, soft smile, wearing a cream blazer, natural window light, neutral beige studio backdrop, 85mm lens at f/1.8, shallow depth of field, realistic skin texture, pores and fine hair detail, sharp focus on eyes, photorealistic, 8k",
+  "negative": "cartoon, painting, 3d render, plastic skin, oversmoothed, waxy, extra fingers, deformed hands, jewelry, watermark, text, low quality, blurry, harsh flash",
+  "settings": {
+    "width": 832,
+    "height": 1088,
+    "steps": 28,
+    "cfg": 5.0,
+    "sampler": "euler_a",
+    "model": "SDXL",
+    "aspect": "2:3"
+  },
+  "tags": ["photoreal", "portrait", "headshot", "skin", "professional"],
+  "compatibleModels": ["realistic-vision-v6", "majicmix-realistic", "juggernaut-xl", "flux-1-dev"],
+  "compatibleLoras": ["detail-tweaker-xl", "film-grain", "realistic-vision-lora"],
+  "examples": [
+    {
+      "title": "Business portrait",
+      "positive": "professional corporate headshot of a man with a short beard, navy suit, soft gray background, natural light, photorealistic"
+    }
+  ],
+  "related": ["cinematic-portrait", "food-photography", "wildlife"]
+}

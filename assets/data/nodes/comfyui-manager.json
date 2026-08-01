@@ -1,0 +1,46 @@
+{
+  "id": "comfyui-manager",
+  "ar": {
+    "name": "ComfyUI Manager",
+    "category": "مدير",
+    "description": "ComfyUI Manager هو مدير الحزم لنظام ComfyUI البيئي. يتيح لك تصفح العقد المخصصة وتثبيتها وتحديثها وإصلاحها من داخل المتصفح، ويحل أخطاء العقد المفقودة بنقرة واحدة، بل ويقدم أداة تنزيل للنماذج.",
+    "features": [
+      "تثبيت حزم العقد المخصصة بنقرة واحدة",
+      "كشف وإصلاح تلقائي للعقد المفقودة",
+      "تحديث مجمّع وإصلاح التبعيات",
+      "أداة تنزيل مدمجة للنماذج وLoRA",
+      "نسخ احتياطي واستعادة لإعداداتك"
+    ],
+    "installation": "استنسخ المستودع داخل مجلد custom_nodes: git clone https://github.com/ltdrdata/ComfyUI-Manager custom_nodes/ComfyUI-Manager، ثم أعد تشغيل ComfyUI.",
+    "inputs": [],
+    "outputs": [],
+    "requirements": ["ComfyUI"],
+    "tags": ["مدير", "تثبيت", "تحديثات", "أساسي"]
+  },
+  "name": "ComfyUI Manager",
+  "type": "node",
+  "package": "ComfyUI-Manager",
+  "category": "Manager",
+  "author": "ltdrdata",
+  "version": "v3.0",
+  "license": "GPL-3.0",
+  "rating": 4.9,
+  "stars": "9.2k",
+  "cover": 1,
+  "featured": true,
+  "github": "https://github.com/ltdrdata/ComfyUI-Manager",
+  "description": "ComfyUI Manager is the package manager for the ComfyUI ecosystem. It lets you browse, install, update and fix custom nodes from inside the browser, resolves missing-node errors with one click and even offers a models downloader.",
+  "features": [
+    "One-click install of custom node packs",
+    "Automatic missing-node detection and fix",
+    "Batch update and dependency repair",
+    "Built-in model and LoRA downloader",
+    "Backup and restore for your setup"
+  ],
+  "installation": "Clone the repository into the custom_nodes folder: git clone https://github.com/ltdrdata/ComfyUI-Manager custom_nodes/ComfyUI-Manager, then restart ComfyUI.",
+  "inputs": [],
+  "outputs": [],
+  "requirements": ["ComfyUI"],
+  "tags": ["manager", "install", "updates", "essential"],
+  "related": ["comfyui-gguf", "comfyui-controlnet-aux", "comfyui-ipadapter"]
+}

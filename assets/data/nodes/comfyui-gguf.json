@@ -1,0 +1,46 @@
+{
+  "id": "comfyui-gguf",
+  "ar": {
+    "name": "ComfyUI GGUF",
+    "category": "الاستدلال",
+    "description": "يستبدل ComfyUI GGUF محمّل نقاط التفتيش القياسي بـUnetLoaderGGUF ومحمّلات أخرى واعية بـGGUF، مما يتيح تشغيل نماذج FLUX وSD3 وSDXL بصيغة GGUF المضغوطة بشدة على بطاقات الرسومات الاستهلاكية.",
+    "features": [
+      "تحميل نماذج GGUF لـFLUX وSD3",
+      "مستويات تكميم من Q2 إلى Q8",
+      "دعم GGUF لكل من VAE وCLIP",
+      "استهلاك أقل بكثير لذاكرة VRAM",
+      "مخرجات شبه خالية من الفقد عند Q5 فأعلى"
+    ],
+    "installation": "ثبّت عبر ComfyUI Manager، ثم نزّل أوزان GGUF من Hugging Face (مثل city96/FLUX.1-dev-gguf) إلى models/checkpoints.",
+    "inputs": ["مسار ملف GGUF"],
+    "outputs": ["نموذج"],
+    "requirements": ["ComfyUI", "GGUF weights"],
+    "tags": ["gguf", "تكميم", "vram", "flux"]
+  },
+  "name": "ComfyUI GGUF",
+  "type": "node",
+  "package": "ComfyUI-GGUF",
+  "category": "Inference",
+  "author": "city96",
+  "version": "v1.0",
+  "license": "GPL-3.0",
+  "rating": 4.9,
+  "stars": "2.9k",
+  "cover": 4,
+  "featured": true,
+  "github": "https://github.com/city96/ComfyUI-GGUF",
+  "description": "ComfyUI GGUF replaces the standard checkpoint loader with UnetLoaderGGUF and other GGUF-aware loaders, letting you run FLUX, SD3 and SDXL models in heavily quantized GGUF form on consumer GPUs.",
+  "features": [
+    "GGUF model loading for FLUX and SD3",
+    "Q2–Q8 quantization tiers",
+    "VAE and CLIP GGUF support",
+    "Dramatically lower VRAM usage",
+    "Near-lossless output at Q5+"
+  ],
+  "installation": "Install via ComfyUI Manager, then download GGUF weights from Hugging Face (e.g. city96/FLUX.1-dev-gguf) into models/checkpoints.",
+  "inputs": ["gguf file path"],
+  "outputs": ["model"],
+  "requirements": ["ComfyUI", "GGUF weights"],
+  "tags": ["gguf", "quantization", "vram", "flux"],
+  "related": ["comfyui-manager", "comfyui-easy-use", "comfyui-ipadapter"]
+}

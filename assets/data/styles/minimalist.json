@@ -1,0 +1,31 @@
+{
+  "id": "minimalist",
+  "ar": {
+    "name": "بسيط ونظيف",
+    "category": "تصميم",
+    "mood": ["هادئ", "دقيق", "عصري"],
+    "palette": ["مساحة بيضاء", "لمسة واحدة", "محايدة مسطحة"],
+    "description": "يبرز التصميم البسيط النظيف المساحات الفارغة وكتل الألوان المسطحة والهندسة الدقيقة. مثالي للتخطيطات التحريرية وصور المنتجات وفنون العلامات التجارية العصرية.",
+    "promptSuffix": "تصميم بسيط، مساحة فارغة، كتل ألوان مسطحة، هندسة دقيقة، تكوين نظيف، أسلوب تحريري عصري، لون لمسة واحد، خلفية بسيطة",
+    "negativeSuffix": "مزدحم، خلفية مزدحمة، تفاصيل واقعية فوتوغرافية، تدرجات لونية، ملمس، علامة مائية، نص، جودة منخفضة، تشبع مفرط",
+    "tags": ["بسيط", "تصميم", "مسطح", "تحريري"]
+  },
+  "name": "Minimalist Clean",
+  "type": "style",
+  "category": "Design",
+  "rating": 4.5,
+  "ratingsCount": 540,
+  "usedBy": "96k",
+  "cover": 6,
+  "featured": false,
+  "mood": ["Calm", "Precise", "Modern"],
+  "palette": ["White space", "Single accent", "Flat neutrals"],
+  "description": "Minimalist Clean emphasizes negative space, flat color blocks and precise geometry. Perfect for editorial layouts, product visuals and modern brand art.",
+  "promptSuffix": "minimalist design, negative space, flat color blocks, precise geometry, clean composition, modern editorial style, single accent color, simple background",
+  "negativeSuffix": "cluttered, busy background, photorealistic detail, gradients, textured, watermark, text, low quality, oversaturated",
+  "strength": 0.85,
+  "tags": ["minimal", "design", "flat", "editorial"],
+  "compatibleModels": ["playground-v25", "sdxl-base", "flux-1-dev"],
+  "compatibleLoras": [],
+  "related": ["watercolor", "anime-cel", "photorealistic"]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sdxl-parameters",
+  "ar": {
+    "title": "معلمات SDXL مشروحة: عدد الخطوات وCFG والسامبلرات",
+    "category": "تقنية",
+    "difficulty": "متوسط",
+    "summary": "عدد الخطوات وCFG واختيار السامبلر هي المقابض الثلاثة التي تشكّل كل صورة من SDXL. إليك ما يفعله كل واحد منها فعلًا — والإعدادات التي تعمل باستمرار.",
+    "content": [
+      {
+        "heading": "عدد الخطوات: دقة إزالة الضوضاء",
+        "paragraphs": [
+          "كل خطوة تنقل الصورة من ضوضاء خالصة نحو برومبتك. خطوات أكثر تعني نتيجة أدق وأكثر تقاربًا — لكن بعد حوالي 30 خطوة تصبح المكاسب هامشية. بالنسبة لـ SDXL، فإن 24–32 خطوة هي النطاق المثالي مع معظم السامبلرات. تحت 15 خطوة ستلاحظ عيوبًا؛ وفوق 40 أنت في الغالب تهدر قدرة الحوسبة."
+        ]
+      },
+      {
+        "heading": "CFG: مدى قوة الدفع نحو البرومبت",
+        "paragraphs": [
+          "يتحكم CFG (التوجيه الخالٍ من التصنيف) في مدى عدوانية اتباع النموذج لنصك مقابل البقاء قريبًا من توزيع تدريبه. يفضّل SDXL نطاق 4.5–7. القيمة المنخفضة جدًا (أقل من 3) تنتج صورًا باهتة غير مكتملة؛ والعالية جدًا (فوق 10) تسبب تشبعًا مفرطًا وحرقًا في التباين.",
+          "نمط مفيد: ارفع CFG عندما يكون البرومبت معقدًا والنموذج يتجاهل التفاصيل؛ واخفضه عندما تبدو الصور متخشبة أو مشبعة."
+        ]
+      },
+      {
+        "heading": "السامبلرات: كيف تُجدول الخطوات",
+        "paragraphs": [
+          "تختلف السامبلرات في طريقة جدولة إزالة الضوضاء. يعد Euler و DPM++ 2M خيارين عامين موثوقين. تضيف المتغيرات 'a' (euler_a, dpmpp_2m_sde) عشوائية قد تنتج ملمسًا أجمل لكن بقابلية إعادة أقل قليلًا. تعمل جداول Karras عمومًا على تحسين جودة الخطوات المنخفضة وهي افتراض آمن."
+        ]
+      },
+      {
+        "heading": "وصفة خط أساس",
+        "list": [
+          "Sampler: DPM++ 2M Karras",
+          "Steps: 28",
+          "CFG: 5.5",
+          "Resolution: 1024 x 1024 (أو 832 x 1216 عمودي / 1216 x 832 أفقي)",
+          "Denoise for img2img: 0.5",
+          "Hires fix (عند رفع الدقة): denoise 0.4"
+        ]
+      }
+    ],
+    "tags": ["sdxl", "معلمات", "سامبلر", "cfg"]
+  },
+  "title": "SDXL Parameters Explained: Step Count, CFG & Samplers",
+  "type": "tutorial",
+  "category": "Technique",
+  "author": "Daniel Reyes",
+  "published": "2026-05-28",
+  "readTime": "9 min",
+  "difficulty": "Intermediate",
+  "rating": 4.8,
+  "ratingsCount": 615,
+  "cover": 2,
+  "featured": true,
+  "summary": "Steps, CFG and sampler choice are the three knobs that shape every SDXL image. Here is what each one actually does — and the settings that consistently work.",
+  "content": [
+    {
+      "heading": "Step count: resolution of the denoise",
+      "paragraphs": [
+        "Each step moves the image from pure noise toward your prompt. More steps mean a finer, more converged result — but after ~30 steps the gains are marginal. For SDXL, 24–32 steps is the sweet spot with most samplers. Below 15 steps you will notice artifacts; above 40 you are mostly wasting compute."
+      ]
+    },
+    {
+      "heading": "CFG: how hard you push the prompt",
+      "paragraphs": [
+        "CFG (classifier-free guidance) controls how aggressively the model follows your text versus staying close to its training distribution. SDXL likes 4.5–7. Too low (under 3) produces washed-out, undercooked images; too high (over 10) causes oversaturation and contrast burn."
+        , "A useful pattern: raise CFG when the prompt is complex and the model is ignoring details; lower it when images feel crunchy or saturated."
+      ]
+    },
+    {
+      "heading": "Samplers: how steps are scheduled",
+      "paragraphs": [
+        "Samplers differ in how they schedule noise removal. Euler and DPM++ 2M are reliable generalists. 'a' variants (euler_a, dpmpp_2m_sde) add stochasticity that can produce nicer texture but slightly less repeatability. Karras schedulers generally improve low-step quality and are a safe default."
+      ]
+    },
+    {
+      "heading": "A baseline recipe",
+      "list": [
+        "Sampler: DPM++ 2M Karras",
+        "Steps: 28",
+        "CFG: 5.5",
+        "Resolution: 1024 x 1024 (or 832 x 1216 portrait / 1216 x 832 landscape)",
+        "Denoise for img2img: 0.5",
+        "Hires fix (when upscaling): denoise 0.4"
+      ]
+    }
+  ],
+  "tags": ["sdxl", "parameters", "sampler", "cfg"],
+  "related": ["comfyui-beginners", "prompt-engineering-guide", "flux-on-8gb"]
+}

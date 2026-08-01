@@ -1,0 +1,125 @@
+/* ==========================================================================
+   Promptition — Home Page
+   Pages: home.css
+   ========================================================================== */
+
+.home-categories {
+  margin-top: var(--sp-2);
+}
+
+.home-section {
+  padding-block: var(--sp-6);
+}
+
+.home-section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+  flex-wrap: wrap;
+}
+.home-section-head h2 {
+  font-size: var(--fs-xl);
+  letter-spacing: -0.02em;
+}
+.home-section-head .see-all {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--brand-500);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.home-section-head .see-all .icon {
+  width: 15px;
+  height: 15px;
+  transition: transform var(--dur) var(--ease);
+}
+.home-section-head .see-all:hover .icon {
+  transform: translateX(3px);
+}
+
+/* Highlights row */
+.home-highlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--sp-4);
+}
+
+/* CTA banner */
+.cta-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  padding: var(--sp-7) var(--sp-6);
+  background: linear-gradient(120deg, #2a1b63, #7c3aed 55%, #0891b2);
+  color: #fff;
+  text-align: center;
+}
+.cta-banner-alt {
+  background: linear-gradient(120deg, #0f2b46, #0e7490 55%, #3b82f6);
+}
+.home-cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-4);
+}
+@media (max-width: 860px) {
+  .home-cta-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.cta-banner h2 {
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--sp-2);
+}
+.cta-banner p {
+  opacity: 0.85;
+  max-width: 52ch;
+  margin: 0 auto var(--sp-5);
+}
+.cta-banner .btn {
+  background: #fff;
+  color: #4c1d95;
+}
+.cta-banner .btn:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.cta-banner .pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background-image: radial-gradient(#fff 1px, transparent 1px);
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+
+/* "Why Promptition" features */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--sp-4);
+}
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+.feature-item .icon {
+  width: 24px;
+  height: 24px;
+  color: var(--brand-500);
+}
+.feature-item h3 {
+  font-size: var(--fs-md);
+  margin-top: var(--sp-1);
+}
+.feature-item p {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}

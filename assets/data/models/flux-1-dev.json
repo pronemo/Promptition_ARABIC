@@ -1,0 +1,99 @@
+{
+  "id": "flux-1-dev",
+  "ar": {
+    "name": "FLUX.1 dev",
+    "category": "نص إلى صورة",
+    "subcategory": "محوّل الانتشار",
+    "architecture": "محوّل التدفق المصحح (DiT)",
+    "license": "رخصة FLUX.1 dev غير التجارية",
+    "description": "FLUX.1 dev هو محوّل تدفق مصحح بـ 12 مليار معلمة طورته شركة Black Forest Labs. يبني على بنية هجينة من كتل المحوّلات المتوازية والمكدّسة المقطّرة من FLUX.1 pro، مقدّمًا جودة صور متطورة، والتفاتًا فائقًا للأوامر، ونصوصًا قوية، وتركيبات معقدة متعددة العناصر بدقة تصل إلى 2 ميغابكسل.",
+    "features": [
+      "دقة أصلية تصل إلى 2 ميغابكسل",
+      "أفضل عرض للنصوص والخطوط في فئتها",
+      "اتباع دقيق للأوامر في مشاهد متعددة العناصر",
+      "يعمل مع مشفّري النصوص T5-XXL و CLIP-L",
+      "أخذ عينات مطابقة التدفق (التدفق المصحح) مع توجيه في 28 خطوة",
+      "نسخ مُكمّمة fp8 / nf4 لبطاقات رسوميات المستهلك"
+    ],
+    "quantizations": [
+      { "name": "bf16", "sizeGb": 23.8, "quality": "مرجع" },
+      { "name": "fp8", "sizeGb": 12.1, "quality": "شبه ضائع" },
+      { "name": "nf4", "sizeGb": 6.9, "quality": "توازن ممتاز" },
+      { "name": "gguf-q4", "sizeGb": 7.0, "quality": "جيد لذاكرة منخفضة" }
+    ],
+    "requirements": {
+      "minVram": "12 جيجابايت (fp8)",
+      "recommendedVram": "24 جيجابايت (bf16)",
+      "minRam": "32 جيجابايت",
+      "cuda": "11.8+",
+      "python": "3.10+"
+    },
+    "examples": [
+      {
+        "prompt": "سوق سايبربانك مريح ليلًا، لافتات نيون تنعكس على الأسفلت المبلل، إضاءة سينمائية، تفاصيل فائقة الدقة",
+        "width": 1024,
+        "height": 1024,
+        "steps": 28,
+        "cfg": 3.5,
+        "seed": 1337
+      }
+    ],
+    "tags": ["flux", "انتشار", "نص إلى صورة", "محوّل", "12b"]
+  },
+  "name": "FLUX.1 dev",
+  "type": "model",
+  "category": "Text-to-Image",
+  "subcategory": "Diffusion Transformer",
+  "publisher": "Black Forest Labs",
+  "architecture": "Rectified Flow Transformer (DiT)",
+  "params": "12B",
+  "released": "2024-08-01",
+  "version": "1.0",
+  "license": "FLUX.1 dev Non-Commercial License",
+  "rating": 4.9,
+  "ratingsCount": 1284,
+  "downloads": "12.4M",
+  "cover": 3,
+  "featured": true,
+  "description": "FLUX.1 dev is a 12-billion-parameter rectified flow transformer developed by Black Forest Labs. It builds on a hybrid architecture of parallel and stacked transformer blocks distilled from FLUX.1 pro, delivering state-of-the-art image quality, superior prompt adherence, robust typography and complex multi-object composition at up to 2 MP resolution.",
+  "features": [
+    "Native resolution up to 2 megapixels",
+    "Best-in-class text and typography rendering",
+    "Accurate prompt following for multi-subject scenes",
+    "Works with the T5-XXL and CLIP-L text encoders",
+    "Flow-matching (rectified flow) sampling with 28-step guidance",
+    "Quantized fp8 / nf4 variants for consumer GPUs"
+  ],
+  "quantizations": [
+    { "name": "bf16", "sizeGb": 23.8, "quality": "Reference" },
+    { "name": "fp8", "sizeGb": 12.1, "quality": "Near-lossless" },
+    { "name": "nf4", "sizeGb": 6.9, "quality": "Great trade-off" },
+    { "name": "gguf-q4", "sizeGb": 7.0, "quality": "Good for low VRAM" }
+  ],
+  "formats": ["safetensors", "gguf"],
+  "requirements": {
+    "minVram": "12 GB (fp8)",
+    "recommendedVram": "24 GB (bf16)",
+    "minRam": "32 GB",
+    "cuda": "11.8+",
+    "python": "3.10+"
+  },
+  "links": {
+    "website": "https://blackforestlabs.ai",
+    "download": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+    "github": "https://github.com/black-forest-labs/flux"
+  },
+  "examples": [
+    {
+      "prompt": "A cozy cyberpunk street market at night, neon signs reflecting on wet asphalt, cinematic lighting, ultra detailed",
+      "width": 1024,
+      "height": 1024,
+      "steps": 28,
+      "cfg": 3.5,
+      "seed": 1337
+    }
+  ],
+  "tags": ["flux", "diffusion", "text-to-image", "transformer", "12b"],
+  "compatibleTools": ["comfyui", "automatic1111", "forge-webui"],
+  "related": ["flux-1-schnell", "sd-3-5-large", "sdxl-base"]
+}

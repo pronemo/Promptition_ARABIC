@@ -1,0 +1,67 @@
+{
+  "id": "cinematic-style",
+  "ar": {
+    "name": "Cinematic Style",
+    "category": "أسلوب",
+    "license": "مجتمعي",
+    "triggerWords": ["cinematic film still", "anamorphic"],
+    "description": "Cinematic Style يطبق فورًا تأطيرًا أنامورفيًا وتدرجًا لونيًا بين الفيروزي والبرتقالي ووهج عدسة خفيفًا على أي برومبت. وهو أسرع طريقة لجعل النتائج تبدو كلقطات أفلام بدلًا من صور رقمية.",
+    "effects": [
+      "تأطير أنامورفي وبوكيه",
+      "تدرج لوني سينمائي بين الفيروزي والبرتقالي",
+      "وهج عدسة خفيف وهالة ناعمة",
+      "أجواء لقطات أفلام متسقة"
+    ],
+    "trainedOn": ["لقطات أفلام وإعلانات تشويقية حديثة"],
+    "settings": {
+      "steps": 10000,
+      "networkDim": 32,
+      "learningRate": "8e-5 cosine",
+      "scheduler": "cosine"
+    },
+    "tags": ["سينمائي", "فيلم", "تدرج لوني", "anamorphic", "أسلوب"],
+    "examples": [
+      {
+        "prompt": "لقطة فيلم سينمائية، مسافر وحيد في صحراء عند الغسق، عدسة أنامورفية، تدرج فيروزي وبرتقالي",
+        "strength": 0.6
+      }
+    ]
+  },
+  "name": "Cinematic Style",
+  "type": "lora",
+  "category": "Style",
+  "baseModel": "SDXL",
+  "publisher": "Jawhney",
+  "recommendedStrength": 0.6,
+  "range": [0.2, 1.0],
+  "sizeMb": 64,
+  "license": "Community",
+  "rating": 4.8,
+  "ratingsCount": 1560,
+  "downloads": "2.3M",
+  "cover": 8,
+  "featured": true,
+  "triggerWords": ["cinematic film still", "anamorphic"],
+  "description": "Cinematic Style instantly applies anamorphic framing, teal-and-orange color grading and subtle lens flare to any prompt. It is the fastest way to make renders read as film stills rather than digital images.",
+  "effects": [
+    "Anamorphic framing and bokeh",
+    "Teal-orange film color grading",
+    "Subtle lens flare and halation",
+    "Consistent movie-still mood"
+  ],
+  "trainedOn": ["Modern film stills and trailers"],
+  "settings": {
+    "steps": 10000,
+    "networkDim": 32,
+    "learningRate": "8e-5 cosine",
+    "scheduler": "cosine"
+  },
+  "tags": ["cinematic", "film", "color-grading", "anamorphic", "style"],
+  "examples": [
+    {
+      "prompt": "cinematic film still, lone wanderer in a desert at dusk, anamorphic lens, teal and orange grade",
+      "strength": 0.6
+    }
+  ],
+  "related": ["film-grain", "epi-noise-offset", "landscape-breathtaking"]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "cinematic-portrait",
+  "ar": {
+    "name": "بورتريه شخصية سينمائي",
+    "category": "بورتريه",
+    "description": "بورتريه شخصية درامي بإضاءة منخفضة مغمور بضوء حافة أنامورفي. يعمل بشكل جميل مع نماذج الواقعية والرسم الفني، خاصة Juggernaut وDreamShaper XL.",
+    "positive": "إطار سينمائي، بورتريه شخصية درامي لمستكشف منهك، إضاءة منخفضة، ضوء حافة قوي من اليسار، تدرج لوني بين التركواز والبرتقالي، عدسة أنامورفية، عمق ميدان ضحل، نسيج جلد مفصّل، جزيئات غبار في الهواء، عدسة 85mm، تفاصيل فائقة، 8k",
+    "negative": "ضبابي، خارج نطاق التركيز، تشبع لوني مفرط، كرتوني، تصيير ثلاثي الأبعاد، أصابع زائدة، أيدي مشوهة، علامة مائية، نص، شعار، جودة منخفضة، أخطاء JPEG، خلفية بوكيه",
+    "settings": {
+      "width": 832,
+      "height": 1216,
+      "steps": 28,
+      "cfg": 5.0,
+      "sampler": "euler_a",
+      "model": "SDXL",
+      "aspect": "2:3"
+    },
+    "tags": ["بورتريه", "سينمائي", "فيلم", "شخصية", "أنامورفي"],
+    "examples": [
+      {
+        "title": "متجول الصحراء",
+        "positive": "إطار سينمائي، بورتريه درامي لمتجول صحراوي بوشاح ممزق، إضاءة منخفضة، ضوء حافة، تدرج تركواز وبرتقالي، جزيئات غبار، تفاصيل فائقة"
+      }
+    ]
+  },
+  "name": "Cinematic Character Portrait",
+  "type": "prompt",
+  "category": "Portrait",
+  "rating": 4.9,
+  "ratingsCount": 1320,
+  "usedBy": "214k",
+  "cover": 1,
+  "featured": true,
+  "description": "A dramatic low-key character portrait bathed in anamorphic rim light. Works beautifully with photoreal and painterly checkpoints, especially Juggernaut and DreamShaper XL.",
+  "positive": "cinematic film still, dramatic character portrait of a weathered explorer, low-key lighting, strong rim light from the left, teal and orange color grade, anamorphic lens, shallow depth of field, detailed skin texture, dust particles in the air, 85mm lens, ultra detailed, 8k",
+  "negative": "blurry, out of focus, oversaturated, cartoon, 3d render, extra fingers, deformed hands, watermark, text, logo, low quality, jpeg artifacts, bokeh background",
+  "settings": {
+    "width": 832,
+    "height": 1216,
+    "steps": 28,
+    "cfg": 5.0,
+    "sampler": "euler_a",
+    "model": "SDXL",
+    "aspect": "2:3"
+  },
+  "tags": ["portrait", "cinematic", "film", "character", "anamorphic"],
+  "compatibleModels": ["juggernaut-xl", "dreamshaper-xl", "sdxl-base", "flux-1-dev"],
+  "compatibleLoras": ["cinematic-style", "film-grain", "detail-tweaker-xl"],
+  "examples": [
+    {
+      "title": "Desert wanderer",
+      "positive": "cinematic film still, dramatic portrait of a desert wanderer with a tattered scarf, low-key lighting, rim light, teal and orange grade, dust particles, ultra detailed"
+    }
+  ],
+  "related": ["photorealistic-portrait", "concept-art", "cyberpunk-city"]
+}

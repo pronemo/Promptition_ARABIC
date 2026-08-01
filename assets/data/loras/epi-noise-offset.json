@@ -1,0 +1,67 @@
+{
+  "id": "epi-noise-offset",
+  "ar": {
+    "name": "EPI Noise Offset",
+    "category": "إضاءة",
+    "license": "مجتمعي",
+    "triggerWords": ["لا شيء (عام)"],
+    "description": "EPI Noise Offset يصحح النطاق اللوني الباهت الذي قد تنتجه SDXL عبر تطبيق تقنية إزاحة الضوضاء في التدريب. النتيجة سواد أعمق وتباين طبيعي أكثر ودرجات وسيطة أغنى — كأنك ترفع المدى الديناميكي لكل صورة.",
+    "effects": [
+      "يعيد التباين والعمق الطبيعيين",
+      "سواد أعمق ودرجات وسيطة أغنى",
+      "يمنع الظلال الموحلة المسطحة",
+      "الأفضل استخدامه بقوة منخفضة (0.2–0.4)"
+    ],
+    "trainedOn": ["قاعدة SDXL مع تقنية إزاحة الضوضاء"],
+    "settings": {
+      "steps": 8500,
+      "networkDim": 32,
+      "learningRate": "1e-4 cosine",
+      "scheduler": "cosine"
+    },
+    "tags": ["إضاءة", "تباين", "لون", "sdxl", "درجة لونية"],
+    "examples": [
+      {
+        "prompt": "شارع مدينة ليلي تحت المطر، ظلال عميقة، انعكاسات نيون، مدى ديناميكي عالٍ",
+        "strength": 0.3
+      }
+    ]
+  },
+  "name": "EPI Noise Offset",
+  "type": "lora",
+  "category": "Lighting",
+  "baseModel": "SDXL",
+  "publisher": "epiLapse",
+  "recommendedStrength": 0.3,
+  "range": [0.0, 0.7],
+  "sizeMb": 65,
+  "license": "Community",
+  "rating": 4.7,
+  "ratingsCount": 980,
+  "downloads": "1.4M",
+  "cover": 3,
+  "featured": false,
+  "triggerWords": ["none (global)"],
+  "description": "EPI Noise Offset corrects the washed-out tonal range SDXL can produce by applying noise-offset training. The result is deeper blacks, more natural contrast and richer midtones — like raising the dynamic range of every render.",
+  "effects": [
+    "Restores natural contrast and depth",
+    "Deeper blacks and richer midtones",
+    "Prevents muddy, flat shadows",
+    "Best used at low strength (0.2–0.4)"
+  ],
+  "trainedOn": ["SDXL base with noise-offset technique"],
+  "settings": {
+    "steps": 8500,
+    "networkDim": 32,
+    "learningRate": "1e-4 cosine",
+    "scheduler": "cosine"
+  },
+  "tags": ["lighting", "contrast", "color", "sdxl", "tone"],
+  "examples": [
+    {
+      "prompt": "night city street in the rain, deep shadows, neon reflections, high dynamic range",
+      "strength": 0.3
+    }
+  ],
+  "related": ["detail-tweaker-xl", "add-detail-xl", "cinematic-style"]
+}

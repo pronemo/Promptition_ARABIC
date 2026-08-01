@@ -1,0 +1,67 @@
+{
+  "id": "realistic-vision-lora",
+  "ar": {
+    "name": "Realistic Vision Character",
+    "category": "شخصية",
+    "license": "مجتمعي",
+    "triggerWords": ["realistic vision character", "rv character"],
+    "description": "رفيق الشخصيات من LoRA لعائلة نماذج Realistic Vision. يثبت ملامح الوجه ويحسن أبعاد الجسم ويحافظ على ثبات هوية الشخصية عبر عمليات توليد متعددة — وهو أساسي للحفاظ على شخصيات OC متسقة وأعمال البورتريه على SD 1.5.",
+    "effects": [
+      "هوية وجه ثابتة عبر البذور المختلفة",
+      "أبعاد محسنة للجسم واليدين",
+      "مصمم لنقاط فحص Realistic Vision",
+      "يعمل بدقة 512–768 بكسل"
+    ],
+    "trainedOn": ["نتائج Realistic Vision V6", "مجموعات بيانات البورتريه وكامل الجسم"],
+    "settings": {
+      "steps": 14000,
+      "networkDim": 64,
+      "learningRate": "5e-5 cosine",
+      "scheduler": "cosine"
+    },
+    "tags": ["شخصية", "بورتريه", "واقعي فوتوغرافي", "sd1.5", "هوية"],
+    "examples": [
+      {
+        "prompt": "شخصية realistic vision، بورتريه استوديو لشابة بعيون زرقاء ونمش وضوء نافذة ناعم",
+        "strength": 0.8
+      }
+    ]
+  },
+  "name": "Realistic Vision Character",
+  "type": "lora",
+  "category": "Character",
+  "baseModel": "SD 1.5",
+  "publisher": "SG161222",
+  "recommendedStrength": 0.8,
+  "range": [0.2, 1.0],
+  "sizeMb": 144,
+  "license": "Community",
+  "rating": 4.6,
+  "ratingsCount": 1450,
+  "downloads": "1.8M",
+  "cover": 5,
+  "featured": false,
+  "triggerWords": ["realistic vision character", "rv character"],
+  "description": "The character companion LoRA for the Realistic Vision checkpoint family. It stabilizes facial features, improves body proportions and keeps character identity consistent across multiple generations — essential for consistent OC and portrait work on SD 1.5.",
+  "effects": [
+    "Stable facial identity across seeds",
+    "Improved body and hand proportions",
+    "Designed for Realistic Vision checkpoints",
+    "Works at 512–768px"
+  ],
+  "trainedOn": ["Realistic Vision V6 renders", "Portrait and full-body datasets"],
+  "settings": {
+    "steps": 14000,
+    "networkDim": 64,
+    "learningRate": "5e-5 cosine",
+    "scheduler": "cosine"
+  },
+  "tags": ["character", "portrait", "photoreal", "sd1.5", "identity"],
+  "examples": [
+    {
+      "prompt": "realistic vision character, studio portrait of a young woman with blue eyes, freckles, soft window light",
+      "strength": 0.8
+    }
+  ],
+  "related": ["character-design", "cinematic-style", "film-grain"]
+}

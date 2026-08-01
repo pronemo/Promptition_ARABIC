@@ -1,0 +1,289 @@
+/* ==========================================================================
+   Promptition — Hero (home) & Big Search
+   Components: hero.css
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--sp-8) var(--sp-7);
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(720px 380px at 12% -10%, rgba(124, 92, 252, 0.16), transparent 60%),
+    radial-gradient(640px 360px at 88% 8%, rgba(34, 211, 238, 0.12), transparent 60%),
+    linear-gradient(180deg, var(--bg-soft), var(--bg));
+  border-bottom: 1px solid var(--border);
+}
+.hero-bg .pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-image: radial-gradient(var(--brand-500) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: linear-gradient(180deg, #000 0%, transparent 80%);
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 80%);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: var(--sp-6);
+  align-items: center;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-full);
+  background: rgba(124, 92, 252, 0.1);
+  border: 1px solid rgba(124, 92, 252, 0.24);
+  color: var(--brand-600);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  margin-bottom: var(--sp-4);
+}
+:root[data-theme="dark"] .hero-eyebrow,
+:root:not([data-theme="light"]) .hero-eyebrow {
+  color: var(--brand-300);
+}
+.hero-eyebrow .icon {
+  width: 14px;
+  height: 14px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4.6vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--hero-text);
+}
+.hero h1 .grad {
+  background: linear-gradient(120deg, var(--brand-500), var(--accent-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-lead {
+  margin-top: var(--sp-4);
+  color: var(--text-muted);
+  font-size: var(--fs-lg);
+  max-width: 52ch;
+}
+
+.hero-search {
+  margin-top: var(--sp-5);
+  max-width: 560px;
+}
+
+.hero-quick {
+  margin-top: var(--sp-4);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+}
+.hero-quick .chip {
+  font-size: var(--fs-xs);
+}
+
+.hero-visual {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  background: linear-gradient(160deg, #181b3a, #0d1025);
+  aspect-ratio: 4 / 3;
+}
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.92;
+}
+.hero-visual .float-card {
+  position: absolute;
+  background: var(--surface-glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: var(--sp-3) var(--sp-4);
+  font-size: var(--fs-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  animation: float 5s ease-in-out infinite;
+}
+.hero-visual .float-card .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--brand-400);
+}
+.hero-visual .float-card strong {
+  display: block;
+  font-size: var(--fs-sm);
+}
+.hero-visual .float-card small {
+  color: var(--text-muted);
+}
+.hero-visual .fc-1 {
+  top: 14%;
+  left: -22px;
+}
+.hero-visual .fc-2 {
+  bottom: 18%;
+  right: -18px;
+  animation-delay: 1.2s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 960px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+  .hero-visual {
+    display: none;
+  }
+  .hero {
+    padding-block: var(--sp-7) var(--sp-6);
+  }
+}
+
+/* ---------- Big search bar ---------- */
+.searchbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 6px 6px 6px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  transition: border-color var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease);
+}
+.searchbar:focus-within {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 4px rgba(124, 92, 252, 0.14), var(--shadow-md);
+}
+.searchbar .icon {
+  width: 20px;
+  height: 20px;
+  color: var(--text-faint);
+  flex-shrink: 0;
+}
+.searchbar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: var(--fs-base);
+  min-width: 0;
+}
+.searchbar input::placeholder {
+  color: var(--text-faint);
+}
+.searchbar .btn {
+  flex-shrink: 0;
+}
+
+/* Global search dropdown */
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: var(--z-modal);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  max-height: 420px;
+  overflow-y: auto;
+}
+.search-dropdown:not(.is-open) {
+  display: none;
+}
+.sd-group {
+  padding: var(--sp-2) var(--sp-2) var(--sp-3);
+}
+.sd-group + .sd-group {
+  border-top: 1px solid var(--border);
+  padding-top: var(--sp-3);
+}
+.sd-title {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  padding: 0 var(--sp-2) var(--sp-2);
+}
+.sd-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-2) var(--sp-2);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--text-soft);
+  font-size: var(--fs-sm);
+}
+.sd-item:hover,
+.sd-item.is-highlighted {
+  background: var(--bg-soft);
+  color: var(--text);
+}
+.sd-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.sd-thumb img,
+.sd-thumb svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sd-name {
+  flex: 1;
+  min-width: 0;
+}
+.sd-name strong {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sd-name small {
+  color: var(--text-faint);
+}
+.sd-empty {
+  padding: var(--sp-4);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}

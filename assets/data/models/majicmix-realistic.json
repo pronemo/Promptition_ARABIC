@@ -1,0 +1,91 @@
+{
+  "id": "majicmix-realistic",
+  "ar": {
+    "name": "MajicMix Realistic",
+    "category": "نقطة فحص",
+    "subcategory": "ضبط دقيق على SDXL",
+    "architecture": "ضبط دقيق على SDXL",
+    "license": "مجتمع",
+    "description": "MajicMix Realistic هو نموذج SDXL واقعي مدمج يُحتفى به لدرجات بشرة جميلة وطبيعية وبورتريهات حادة جذابة. يمزج تدريبه المتوازن بين الإضاءة السينمائية والواقعية التوثيقية لتصوير أشخاص موثوق.",
+    "features": [
+      "عرض جميل وطبيعي لدرجات البشرة",
+      "نتائج بورتريه جذابة ومتسقة",
+      "عمق ميداني وبوكيه طبيعيان",
+      "موثوق على متطلبات أجهزة SDXL",
+      "تحديثات وإصلاحات مجتمعية متكررة"
+    ],
+    "quantizations": [
+      { "name": "bf16", "sizeGb": 6.9, "quality": "مرجع" }
+    ],
+    "requirements": {
+      "minVram": "6 جيجابايت (fp16، VAE مقسّم)",
+      "recommendedVram": "12 جيجابايت",
+      "minRam": "16 جيجابايت",
+      "cuda": "11.8+",
+      "python": "3.9+"
+    },
+    "examples": [
+      {
+        "prompt": "بورتريه استوديو أنيق لرجل بلحية، إضاءة حافة دراماتيكية، خلفية فحمية، عينان حادتان، بشرة واقعية",
+        "width": 896,
+        "height": 1152,
+        "steps": 30,
+        "cfg": 5.5,
+        "seed": 58
+      }
+    ],
+    "tags": ["بورتريه", "واقعي", "بشرة", "sdxl"]
+  },
+  "name": "MajicMix Realistic",
+  "type": "model",
+  "category": "Checkpoint",
+  "subcategory": "SDXL Fine-Tune",
+  "publisher": "Merjic",
+  "architecture": "SDXL Fine-Tune",
+  "params": "3.5B",
+  "released": "2024-06-10",
+  "version": "7.0",
+  "license": "Community",
+  "rating": 4.7,
+  "ratingsCount": 833,
+  "downloads": "4.8M",
+  "cover": 10,
+  "featured": false,
+  "description": "MajicMix Realistic is an SDXL photorealistic merge celebrated for beautiful, natural skin tones and sharp, flattering portraits. Its balanced training blends cinematic lighting with documentary realism for dependable people photography.",
+  "features": [
+    "Beautiful, natural skin tone rendering",
+    "Flattering and consistent portrait results",
+    "Natural depth of field and bokeh",
+    "Reliable on SDXL hardware requirements",
+    "Frequent community updates and fixes"
+  ],
+  "quantizations": [
+    { "name": "bf16", "sizeGb": 6.9, "quality": "Reference" }
+  ],
+  "formats": ["safetensors", "ckpt"],
+  "requirements": {
+    "minVram": "6 GB (fp16, tiled VAE)",
+    "recommendedVram": "12 GB",
+    "minRam": "16 GB",
+    "cuda": "11.8+",
+    "python": "3.9+"
+  },
+  "links": {
+    "website": "https://civitai.com",
+    "download": "https://civitai.com/models/43331",
+    "github": null
+  },
+  "examples": [
+    {
+      "prompt": "elegant studio portrait of a man with a beard, dramatic rim light, charcoal backdrop, sharp eyes, photorealistic skin",
+      "width": 896,
+      "height": 1152,
+      "steps": 30,
+      "cfg": 5.5,
+      "seed": 58
+    }
+  ],
+  "tags": ["portrait", "photoreal", "skin", "sdxl"],
+  "compatibleTools": ["comfyui", "automatic1111", "forge-webui"],
+  "related": ["realistic-vision-v6", "juggernaut-xl", "sdxl-base"]
+}

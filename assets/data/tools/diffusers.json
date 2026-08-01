@@ -1,0 +1,63 @@
+{
+  "id": "diffusers",
+  "ar": {
+    "name": "Hugging Face Diffusers",
+    "category": "مكتبة",
+    "description": "Diffusers هي مكتبة بايثون لتوليد وتدريب ومشاركة نماذج الانتشار. توفر خطوط أنابيب رسمية لكل معمارية مفتوحة تقريبًا — Flux و SDXL و SD3 و Stable Cascade و PixArt وغيرها — مع تكامل سلس مع Hugging Face Hub.",
+    "features": [
+      "واجهة برمجة تطبيقات موحدة لخطوط الأنابيب لكل النماذج الرئيسية",
+      "دعم رسمي لـ Flux و SD3 و Cascade",
+      "واجهات تدريب لـ LoRA والضبط الدقيق الكامل",
+      "تكامل سلس مع Hugging Face Hub",
+      "استدلال موفّر للذاكرة مع التكميم",
+      "توثيق غني ودروس تعليمية من المجتمع"
+    ],
+    "requirements": {
+      "os": ["ويندوز", "لينكس", "ماك"],
+      "gpu": "اختياري (الاستدلال عبر وحدة المعالجة المركزية مدعوم)",
+      "minVram": "2 جيجابايت (مكمم)",
+      "python": "3.9+",
+      "cuda": "11.8+ (اختياري)"
+    },
+    "license": "Apache-2.0",
+    "tags": ["python", "مكتبة", "تدريب", "متطورة", "hub"]
+  },
+  "name": "Hugging Face Diffusers",
+  "type": "tool",
+  "category": "Library",
+  "publisher": "Hugging Face",
+  "version": "0.32",
+  "license": "Apache-2.0",
+  "rating": 4.8,
+  "ratingsCount": 1500,
+  "released": "2022-10",
+  "cover": 9,
+  "featured": true,
+  "description": "Diffusers is the Python library for generating, training and sharing diffusion models. It provides first-party pipelines for virtually every open architecture — Flux, SDXL, SD3, Stable Cascade, PixArt and more — with seamless integration into the Hugging Face Hub.",
+  "features": [
+    "Unified pipeline API for all major models",
+    "First-party Flux, SD3 and Cascade support",
+    "Training APIs for LoRA and full fine-tune",
+    "Seamless Hugging Face Hub integration",
+    "Quantization and memory-efficient inference",
+    "Rich documentation and community tutorials"
+  ],
+  "requirements": {
+    "os": ["Windows", "Linux", "macOS"],
+    "gpu": "Optional (CPU inference supported)",
+    "minVram": "2 GB (quantized)",
+    "python": "3.9+",
+    "cuda": "11.8+ (optional)"
+  },
+  "supportedModels": ["flux-1-dev", "flux-1-schnell", "sdxl-base", "sd-3-5-large", "sd-1-5", "stable-cascade", "pixart-sigma"],
+  "supportedFormats": ["safetensors", "lora", "pt"],
+  "links": {
+    "website": "https://huggingface.co/docs/diffusers",
+    "github": "https://github.com/huggingface/diffusers",
+    "download": "https://pypi.org/project/diffusers/"
+  },
+  "screenshots": [9, 10],
+  "tags": ["python", "library", "training", "sota", "hub"],
+  "downloads": { "monthly": "4.4M", "stars": "27k" },
+  "related": ["comfyui", "kohya-ss", "onetrainer"]
+}

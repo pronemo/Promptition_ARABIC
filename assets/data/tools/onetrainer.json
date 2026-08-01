@@ -1,0 +1,63 @@
+{
+  "id": "onetrainer",
+  "ar": {
+    "name": "OneTrainer",
+    "category": "تدريب",
+    "description": "OneTrainer تطبيق تدريب حديث يركز على الواجهة الرسومية مع إعدادات جاهزة لـ LoRA والتحويل النصي والضبط الدقيق وحتى التقنيات المتقدمة مثل جدولة التضمينات ودمج النماذج. واجهته البديهية تخفض الحاجز أمام المبتدئين لخوض تدريب النماذج.",
+    "features": [
+      "واجهة رسومية مع إعدادات جاهزة منطقية",
+      "أدوات LoRA والتحويل النصي والضبط الدقيق والدمج",
+      "تحكم متقدم بالخسارة وأخذ العينات",
+      "دعم Flux و SDXL و SD 1.5",
+      "مقاييس حية وتوليد نماذج تجريبية",
+      "حفظ حالة التدريب واستئنافها"
+    ],
+    "requirements": {
+      "os": ["ويندوز", "لينكس"],
+      "gpu": "إنفيديا CUDA",
+      "minVram": "12 جيجابايت (SDXL LoRA)",
+      "python": "3.10.x",
+      "cuda": "11.8+"
+    },
+    "license": "GPL-3.0",
+    "tags": ["تدريب", "lora", "واجهة رسومية", "إعدادات جاهزة", "مبتدئ"]
+  },
+  "name": "OneTrainer",
+  "type": "tool",
+  "category": "Training",
+  "publisher": "Nerogar",
+  "version": "v1.2",
+  "license": "GPL-3.0",
+  "rating": 4.4,
+  "ratingsCount": 410,
+  "released": "2023-06",
+  "cover": 8,
+  "featured": false,
+  "description": "OneTrainer is a modern, GUI-first training application with presets for LoRA, text inversion, fine-tuning and even advanced techniques like embedding scheduling and model merging. Its intuitive interface lowers the barrier for newcomers to model training.",
+  "features": [
+    "GUI with sensible presets",
+    "LoRA, TI, fine-tune and merge tools",
+    "Advanced loss and sampling controls",
+    "Flux, SDXL and SD 1.5 support",
+    "Live metrics and sample generation",
+    "Snapshot and resume training"
+  ],
+  "requirements": {
+    "os": ["Windows", "Linux"],
+    "gpu": "NVIDIA CUDA",
+    "minVram": "12 GB (SDXL LoRA)",
+    "python": "3.10.x",
+    "cuda": "11.8+"
+  },
+  "supportedModels": ["sdxl-base", "sd-1-5", "flux-1-dev"],
+  "supportedFormats": ["lora", "safetensors", "ckpt"],
+  "links": {
+    "website": "https://github.com/Nerogar/OneTrainer",
+    "github": "https://github.com/Nerogar/OneTrainer",
+    "download": "https://github.com/Nerogar/OneTrainer/releases"
+  },
+  "screenshots": [8, 9],
+  "tags": ["training", "lora", "gui", "presets", "beginner"],
+  "downloads": { "monthly": "0.2M", "stars": "3k" },
+  "related": ["kohya-ss", "diffusers", "comfyui"]
+}

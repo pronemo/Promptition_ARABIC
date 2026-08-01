@@ -1,0 +1,61 @@
+{
+  "id": "forge-webui",
+  "ar": {
+    "name": "Stable Diffusion WebUI Forge",
+    "category": "واجهة ويب",
+    "description": "Forge نسخة مشتقة من WebUI الخاصة بـ AUTOMATIC1111 تركّز على الأداء. تطبّق تحسينًا متقدمًا للذاكرة وتسريع الانتباه المتبادل وإدارة موحدة لوحدات المعالجة الرسومية، بحيث تعمل النماذج الأثقل مثل Flux بسلاسة حتى على وحدات معالجة بسعة 6 جيجابايت، مع تجربة استخدام شبه مطابقة لـ A1111.",
+    "features": [
+      "متوافق مع إضافات ونماذج A1111",
+      "أسرع حتى 3 أضعاف على ذاكرة فيديو محدودة",
+      "دعم أصلي لـ Flux و SD3",
+      "أدوات مساعدة FreeU و SAG وغيرها مدمجة",
+      "بصمة ذاكرة أقل عبر تفريغ الانتباه"
+    ],
+    "requirements": {
+      "os": ["ويندوز", "لينكس"],
+      "gpu": "إنفيديا CUDA (أساسي)",
+      "minVram": "4 جيجابايت",
+      "python": "3.10.x",
+      "cuda": "11.8+"
+    },
+    "license": "AGPL-3.0",
+    "tags": ["واجهة ويب", "سريع", "flux", "ذاكرة منخفضة", "نسخة مشتقة"]
+  },
+  "name": "Stable Diffusion WebUI Forge",
+  "type": "tool",
+  "category": "Web UI",
+  "publisher": "lllyasviel",
+  "version": "v2024.10",
+  "license": "AGPL-3.0",
+  "rating": 4.7,
+  "ratingsCount": 1290,
+  "released": "2024-01",
+  "cover": 3,
+  "featured": false,
+  "description": "Forge is a performance-oriented fork of AUTOMATIC1111's WebUI. It applies advanced memory optimization, faster cross-attention and unified GPU management so heavier models like Flux run smoothly even on 6 GB GPUs, with near-identical UX to A1111.",
+  "features": [
+    "Compatible with A1111 extensions and models",
+    "Up to 3x faster on limited VRAM",
+    "Native Flux and SD3 support",
+    "FreeU, SAG and other sampler helpers built in",
+    "Lower memory footprint via attention offloading"
+  ],
+  "requirements": {
+    "os": ["Windows", "Linux"],
+    "gpu": "NVIDIA CUDA (primary)",
+    "minVram": "4 GB",
+    "python": "3.10.x",
+    "cuda": "11.8+"
+  },
+  "supportedModels": ["flux-1-dev", "flux-1-schnell", "sdxl-base", "sd-1-5", "sd-3-5-large"],
+  "supportedFormats": ["safetensors", "ckpt", "lora", "gguf"],
+  "links": {
+    "website": "https://github.com/lllyasviel/stable-diffusion-webui-forge",
+    "github": "https://github.com/lllyasviel/stable-diffusion-webui-forge",
+    "download": "https://github.com/lllyasviel/stable-diffusion-webui-forge/releases"
+  },
+  "screenshots": [3, 4],
+  "tags": ["webui", "fast", "flux", "low-vram", "fork"],
+  "downloads": { "monthly": "0.9M", "stars": "14k" },
+  "related": ["automatic1111", "sd-next", "comfyui"]
+}

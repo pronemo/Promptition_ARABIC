@@ -1,0 +1,31 @@
+{
+  "id": "photorealistic",
+  "ar": {
+    "name": "واقعي فوتوغرافي فائق",
+    "category": "تصوير",
+    "mood": ["صادق", "متين", "طبيعي"],
+    "palette": ["درجات بشرة طبيعية", "محايدة ناعمة", "بريق مطابق للواقع"],
+    "description": "الواقعية الفوتوغرافية الفائقة هي الإعداد الافتراضي للواقع: بشرة مقنعة، وإضاءة صادقة، واستجابة مادية فيزيائية. اجمعها مع نقاط تفتيش واقعية فوتوغرافيًا وـLoRA معزز التفاصيل للحصول على أقصى درجات الواقعية.",
+    "promptSuffix": "واقعي فوتوغرافي، ملمس بشرة طبيعي، إضاءة واقعية، تدرج لوني صادق، تركيز حاد جدًا، مواد دقيقة فيزيائيًا، مسام بشرة مفصلة، صُوّر بعدسة 85mm f/1.8",
+    "negativeSuffix": "كرتوني، رسم، تصيير ثلاثي الأبعاد، بشرة بلاستيكية، شمعية، منعّمة بشكل مفرط، ضبابي، علامة مائية، نص، تباين عالٍ HDR، سريالي",
+    "tags": ["photoreal", "تصوير", "واقعية", "بشرة"]
+  },
+  "name": "Ultra Photorealistic",
+  "type": "style",
+  "category": "Photography",
+  "rating": 4.9,
+  "ratingsCount": 1720,
+  "usedBy": "264k",
+  "cover": 3,
+  "featured": true,
+  "mood": ["Honest", "Grounded", "Natural"],
+  "palette": ["Natural skin tones", "Soft neutrals", "True-to-life highlights"],
+  "description": "Ultra Photorealistic is the default reality preset: believable skin, honest lighting and physical material response. Combine with photoreal checkpoints and a Detail Tweaker LoRA for maximum realism.",
+  "promptSuffix": "photorealistic, natural skin texture, realistic lighting, honest color grading, razor sharp focus, physically accurate materials, detailed skin pores, shot on 85mm f/1.8",
+  "negativeSuffix": "cartoon, painting, 3d render, plastic skin, waxy, oversmoothed, blurry, watermark, text, high contrast hdr, surreal",
+  "strength": 0.7,
+  "tags": ["photoreal", "photography", "realism", "skin"],
+  "compatibleModels": ["realistic-vision-v6", "majicmix-realistic", "juggernaut-xl", "flux-1-dev"],
+  "compatibleLoras": ["detail-tweaker-xl", "film-grain"],
+  "related": ["cinematic-film", "retro-analog", "cyberpunk-neon"]
+}

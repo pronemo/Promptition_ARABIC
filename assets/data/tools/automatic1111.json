@@ -1,0 +1,63 @@
+{
+  "id": "automatic1111",
+  "ar": {
+    "name": "Stable Diffusion WebUI",
+    "category": "واجهة ويب",
+    "description": "واجهة Stable Diffusion WebUI من AUTOMATIC1111 هي الواجهة الأكثر استخدامًا لـ Stable Diffusion والمبنية على Gradio. يغطي تصميمها المُبوَّب تحويل النص إلى صورة (txt2img) والصور (img2img) وإعادة التلوين والتدريب ودمج النماذج وسوق إضافات ضخم، مما يجعلها أسهل نقطة انطلاق إلى التوليد المحلي.",
+    "features": [
+      "مثبّت بنقرة واحدة لويندوز",
+      "تحويل النص إلى صورة والصورة إلى صورة وإعادة التلوين وتكبير الدقة",
+      "تبويبات تدريب Dreambooth و LoRA",
+      "آلاف الإضافات من المجتمع",
+      "إدارة النماذج ودمجها",
+      "يعمل بالكامل دون اتصال"
+    ],
+    "requirements": {
+      "os": ["ويندوز", "لينكس", "ماك"],
+      "gpu": "إنفيديا CUDA / AMD / سيليكون آبل",
+      "minVram": "4 جيجابايت",
+      "python": "3.10.x",
+      "cuda": "11.8+"
+    },
+    "license": "AGPL-3.0",
+    "tags": ["واجهة ويب", "gradio", "مبتدئ", "إضافات", "شائع"]
+  },
+  "name": "Stable Diffusion WebUI",
+  "type": "tool",
+  "category": "Web UI",
+  "publisher": "AUTOMATIC1111",
+  "version": "1.10.1",
+  "license": "AGPL-3.0",
+  "rating": 4.8,
+  "ratingsCount": 3410,
+  "released": "2022-08",
+  "cover": 2,
+  "featured": true,
+  "description": "Stable Diffusion WebUI by AUTOMATIC1111 is the most widely used Gradio-based interface for Stable Diffusion. Its tabbed design covers txt2img, img2img, inpainting, training, model merging and an enormous extension marketplace, making it the easiest entry point into local generation.",
+  "features": [
+    "One-click installer for Windows",
+    "txt2img, img2img, inpainting, upscaling",
+    "Dreambooth and LoRA training tabs",
+    "Thousands of community extensions",
+    "Model management and merging",
+    "Runs fully offline"
+  ],
+  "requirements": {
+    "os": ["Windows", "Linux", "macOS"],
+    "gpu": "NVIDIA CUDA / AMD / Apple Silicon",
+    "minVram": "4 GB",
+    "python": "3.10.x",
+    "cuda": "11.8+"
+  },
+  "supportedModels": ["sdxl-base", "sd-1-5", "flux-1-dev", "flux-1-schnell"],
+  "supportedFormats": ["safetensors", "ckpt", "lora", "pt", "gguf"],
+  "links": {
+    "website": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+    "github": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+    "download": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases"
+  },
+  "screenshots": [2, 4, 5],
+  "tags": ["webui", "gradio", "beginner", "extensions", "popular"],
+  "downloads": { "monthly": "3.2M", "stars": "152k" },
+  "related": ["forge-webui", "sd-next", "comfyui", "invokeai"]
+}
